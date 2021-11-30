@@ -1,0 +1,5 @@
+.background {
+    background-color: #FFFFFF;
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+    min-height: 2000px; /* TODO REMOVE */
+}
