@@ -1,0 +1,17 @@
+.profileTitle {
+    color: var(--main-color);
+}
+
+.accoladeList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+    background: -webkit-linear-gradient(120deg, var(--main-color), var(--tertiary-color), var(--secondary-color));
+    font-weight: 600;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.accoladeList li {
+    padding: 20px 0;
+}

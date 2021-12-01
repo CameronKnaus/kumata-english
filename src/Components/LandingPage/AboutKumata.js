@@ -17,7 +17,8 @@ export default function AboutKumata({ isXS }) {
             </h1>
             <div className={styles.descriptionContainer}>
                 { LANDING_TEXT.kumataOpeningLines.map((line, index) => (
-                    <p className={`${isXS ? 'header-text' : 'large-header-text'}`}
+                    <p key={`about-line-${index}`} // eslint-disable-line
+                       className={`${isXS ? 'header-text' : 'large-header-text'}`}
                        style={{ textAlign: textAlignment[index] }}
                     >
                         {line}

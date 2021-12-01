@@ -1,0 +1,25 @@
+.container {
+    margin-top: 50px;
+    margin-bottom: 1000px;
+/*    TODO REMOVE THIS MARGIN*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.profileTextGroup {
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.snowKumataImage {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.smallSnowKumataImage {
+    width: 100%;
+}

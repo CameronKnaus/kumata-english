@@ -2,17 +2,25 @@ import React from 'react';
 import styles from '../Styles/Pages/LandingPage.module.css';
 import KumataCoin from '../Components/LandingPage/KumataCoin';
 import AboutKumata from '../Components/LandingPage/AboutKumata';
+import KumataProfile from '../Components/LandingPage/ProfileSection/KumataProfile';
+import GradiantTransition from '../Components/LandingPage/GradiantTransition.js';
 
 // XS Defined here as 556px and smaller
 const checkIfXS = () => window.innerWidth < 557;
+const checkIfSM = () => window.innerWidth < 769;
 
 export default function LandingPage() {
     const [isXS, setIsXS] = React.useState(checkIfXS());
+    const [isSM, setIsSM] = React.useState(checkIfSM());
+
 
     // Window resize event listener
     React.useEffect(() => {
         // Handler for resize event
-        const resizeHandler = () => setIsXS(checkIfXS());
+        const resizeHandler = () => {
+            setIsXS(checkIfXS());
+            setIsSM(checkIfSM());
+        };
 
         window.addEventListener('resize', resizeHandler);
 
@@ -21,11 +29,14 @@ export default function LandingPage() {
 
     return (
         <>
-            <div className={styles.introSection}>
+            <section id='intro-section' className={styles.introSection}>
                 <KumataCoin />
                 <AboutKumata isXS={isXS} />
-            </div>
-            <div />
+            </section>
+            <GradiantTransition />
+            <section id='profile-section'>
+                <KumataProfile isSM={isSM} />
+            </section>
         </>
     );
 }

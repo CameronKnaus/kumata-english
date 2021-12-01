@@ -1,0 +1,33 @@
+import React from 'react';
+import styles from '../../../Styles/Components/LandingPage/ProfileSection/KumataProfile.module.css';
+import Image from '../../UIElements/Image';
+import webpImage from '../../../Images/webpDist/SnowKumata.webp';
+import regularImage from '../../../Images/Characters/SnowKumata.png';
+import ProfileText from './ProfileText';
+import { Parallax } from 'react-scroll-parallax';
+
+export default function KumataProfile({ isSM }) {
+    if(isSM) {
+        return (
+            <>
+                <Image webpImage={webpImage} regularImage={regularImage} imageBaseType='png' classes={styles.smallSnowKumataImage} />
+                <ProfileText />
+            </>
+        );
+    }
+
+    return (
+        <div className={`average-container ${styles.container} `}>
+            <div className={styles.profileTextGroup}>
+                <Parallax y={[30, -10]}>
+                    <ProfileText />
+                </Parallax>
+            </div>
+            <div className={styles.imageContainer}>
+                <Parallax y={[0, 30]}>
+                    <Image webpImage={webpImage} regularImage={regularImage} imageBaseType='png' classes={styles.snowKumataImage} />
+                </Parallax>
+            </div>
+        </div>
+    );
+}
