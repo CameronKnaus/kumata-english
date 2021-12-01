@@ -1,0 +1,37 @@
+/* FORM_FACTORS */
+:root {
+    --min-supported-width: 320px;
+    --breakpoint-xs: 375px;
+    --breakpoint-sm: 556px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1920px;
+}
+
+/* Works like bootstrap container */
+.average-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 290px; /* 290px + 15 padding each side = 320px minimum supported screen size */
+}
+
+@media (min-width: 768px) {
+    .average-container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .average-container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .average-container {
+        width: 1170px;
+    }
+}
