@@ -1,18 +1,9 @@
 .container {
     margin-top: 50px;
-    margin-bottom: 1000px;
-/*    TODO REMOVE THIS MARGIN*/
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0;
-}
-
-.profileTextGroup {
-}
-
-.imageContainer {
-    position: relative;
 }
 
 .snowKumataImage {
@@ -22,4 +13,10 @@
 
 .smallSnowKumataImage {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .profileTextGroup {
+        padding: 15px 5%;
+    }
 }

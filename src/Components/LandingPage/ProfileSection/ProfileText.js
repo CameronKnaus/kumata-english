@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from '../../../Styles/Components/LandingPage/ProfileSection/ProfileText.module.css';
 import LANDING_TEXT from '../../../Content/LandingPage';
+import AccoladeItem from './AccoladeItem';
 
-export default function ProfileText() {
+export default function ProfileText({ small }) {
 
     return (
         <>
@@ -12,9 +13,7 @@ export default function ProfileText() {
             <ul className={styles.accoladeList}>
                 {
                     LANDING_TEXT.accolades.map(accolade => (
-                        <li key={accolade} className='large-header-text'>
-                            {accolade}
-                        </li>
+                        <AccoladeItem key={accolade} accolade={accolade} small={small} />
                     ))
                 }
             </ul>

@@ -7,7 +7,7 @@ const LANDING_TEXT = {
         'Kumata Englishのホームページにお越し頂き、ありがとうございます！',
         '楽しく英語を学びましょう！'
     ],
-    profile: 'プロファイル',
+    profile: '【プロファイル】',
     accolades: [
         'フリーランス英会話講師',
         'フリーランス英語コーチ',

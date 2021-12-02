@@ -35,3 +35,29 @@
         width: 1170px;
     }
 }
+
+.wide-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 290px; /* 290px + 15 padding each side = 320px minimum supported screen size */
+}
+
+@media (min-width: 768px) {
+    .wide-container {
+        width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wide-container {
+        width: 992px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wide-container {
+        width: 1200px;
+    }
+}

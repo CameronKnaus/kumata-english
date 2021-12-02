@@ -3,7 +3,6 @@ import styles from '../Styles/Pages/LandingPage.module.css';
 import KumataCoin from '../Components/LandingPage/KumataCoin';
 import AboutKumata from '../Components/LandingPage/AboutKumata';
 import KumataProfile from '../Components/LandingPage/ProfileSection/KumataProfile';
-import GradiantTransition from '../Components/LandingPage/GradiantTransition.js';
 
 // XS Defined here as 556px and smaller
 const checkIfXS = () => window.innerWidth < 557;
@@ -33,7 +32,6 @@ export default function LandingPage() {
                 <KumataCoin />
                 <AboutKumata isXS={isXS} />
             </section>
-            <GradiantTransition />
             <section id='profile-section'>
                 <KumataProfile isSM={isSM} />
             </section>

@@ -1,17 +1,49 @@
 .profileTitle {
-    color: var(--main-color);
-}
-
-.accoladeList {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 0 0 10px;
-    background: -webkit-linear-gradient(120deg, var(--main-color), var(--tertiary-color), var(--secondary-color));
-    font-weight: 600;
+    background: -webkit-linear-gradient(60deg, #1369BF, #B07D2E, #8FD714);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.accoladeList {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-shadow: 1px 1px 0 var(--gray-scale-13);
+}
+
 .accoladeList li {
-    padding: 20px 0;
+    padding: 40px 0 60px 1rem;
+    text-indent: -0.7rem;
+}
+
+.accoladeList li:nth-child(1)::before {
+    content: '👨🏻‍🏫 '
+}
+
+.accoladeList li:nth-child(2)::before {
+    content: '📚 '
+}
+
+.accoladeList li:nth-child(3)::before {
+    content: '📱 '
+}
+
+.accoladeList li:nth-child(4)::before {
+    content: '✅ '
+}
+
+.accoladeList li:nth-child(5)::before {
+    content: '🇨🇦 '
+}
+
+@media (max-width: 768px) {
+    .profileTitle, .accoladeList {
+        text-align: center;
+    }
+
+    .accoladeList li {
+        padding: 30px 0;
+    }
 }
