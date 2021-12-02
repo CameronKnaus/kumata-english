@@ -16,7 +16,7 @@ const mimeTypeMapper = {
  */
 
 // Will attempt to render the image as a webp if the browser supports webp type images.  Else it will try the default image
-export default function Image({ webpImage, regularImage, imageBaseType, optionalAlt, classes = '' }) {
+export default function Image({ webpImage, regularImage, imageBaseType, optionalAlt, classes = '', label }) {
     const fileType = imageBaseType.toLowerCase();
     const mimeType = mimeTypeMapper[fileType];
 
@@ -25,19 +25,21 @@ export default function Image({ webpImage, regularImage, imageBaseType, optional
     }
 
     return (
-        <picture>
-            <source type='image/webp'
-                    srcSet={webpImage}
-                    className={classes}
-            />
-            <source type={mimeType}
-                    srcSet={regularImage}
-                    className={classes}
-            />
-            <img src={regularImage}
-                 alt={optionalAlt || ''}
-                 className={classes}
-            />
-        </picture>
+        <div role='img' aria-label={label}>
+            <picture>
+                <source type='image/webp'
+                        srcSet={webpImage}
+                        className={classes}
+                />
+                <source type={mimeType}
+                        srcSet={regularImage}
+                        className={classes}
+                />
+                <img src={regularImage}
+                     alt={optionalAlt || ''}
+                     className={classes}
+                />
+            </picture>
+        </div>
     );
 }

@@ -14,7 +14,8 @@ const LANDING_TEXT = {
         'Instagramで毎日使えるフレーズを更新',
         'TOEIC 910点',
         'カナダ、バンクーバーへの留学経験有'
-    ]
+    ],
+    imageAria: '英語が人生を楽しくしてくれる。あなたも英語で人生をより豊かにしませんか？'
 };
 
 export default LANDING_TEXT;

@@ -7,6 +7,7 @@ import webpImageTall from '../../../Images/webpDist/TallSnowKumata.webp';
 import regularImageTall from '../../../Images/Characters/TallSnowKumata.jpg';
 import ProfileText from './ProfileText';
 import { Parallax } from 'react-scroll-parallax';
+import LANDING_TEXT from '../../../Content/LandingPage';
 
 export default function KumataProfile({ isSM }) {
     if(isSM) {
@@ -26,7 +27,7 @@ export default function KumataProfile({ isSM }) {
                 </Parallax>
             </div>
             <Parallax y={[0, 30]}>
-                <Image webpImage={webpImageTall} regularImage={regularImageTall} imageBaseType='png' classes={styles.snowKumataImage} />
+                <Image webpImage={webpImageTall} regularImage={regularImageTall} imageBaseType='png' classes={styles.snowKumataImage} label={LANDING_TEXT.imageAria} />
             </Parallax>
         </div>
     );
