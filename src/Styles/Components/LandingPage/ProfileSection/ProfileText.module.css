@@ -1,5 +1,5 @@
 .profileTitle {
-    background: -webkit-linear-gradient(60deg, #1369BF, #B07D2E, #8FD714);
+    background: -webkit-linear-gradient(60deg, var(--green), var(--navy), #8FD714);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0 0 0 10px;
     font-weight: 600;
-    color: var(--main-color);
+    color: var(--navy);
     text-shadow: 1px 1px 0 var(--gray-scale-13);
 }
 

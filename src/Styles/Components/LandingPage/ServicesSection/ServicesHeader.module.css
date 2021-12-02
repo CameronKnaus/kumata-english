@@ -1,0 +1,26 @@
+.headerContainer {
+    margin-top: 30px;
+    height: 100px;
+    margin-bottom: 1000px;
+}
+
+.headerContainer h2 {
+    /* TODO ASK KUMATA */
+    /*background: -webkit-linear-gradient(60deg, #1369BF, #B07D2E, #8FD714);*/
+    background: -webkit-linear-gradient(0deg, var(--navy), var(--green), var(--orange), var(--pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
+}
+
+.headerContainer p {
+    color: var(--dark-accent);
+}
+
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 15px 0;
+}

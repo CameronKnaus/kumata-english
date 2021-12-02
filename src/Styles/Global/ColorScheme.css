@@ -14,12 +14,24 @@
     --gray-scale-12: #CCC;
     --gray-scale-13: #DDD;
     --gray-scale-14: #EEE;
-    --gray-scale-15: #FFF;
+    --gray-scale-15: #ffffff;
 
+    /* TODO: Review color schemes and choose a final */
+    /* Potential Color Scheme 1 - Not looking good*/
     --dark-accent: #424b54;
     --tertiary-color: #93a8ac;
     --secondary-color: #e2b4bd;
-    --main-color: #9b6a6c;
+    --primary-color: #9b6a6c;
+
+    /* Potential Color Scheme 2 */
+    --green: #00c49a;
+    --navy: #156064;
+    --pink: #ef767a;
+    --brown: #554348;
+    --orange: #fb8f67;
+
+    --youtube-red: #ff0000;
+    --instagram-violet: #bc2a8d;
 
     --site-background: #FFFFFF;
 }

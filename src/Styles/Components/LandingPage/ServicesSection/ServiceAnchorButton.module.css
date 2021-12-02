@@ -1,0 +1,36 @@
+.buttonStyle {
+    padding: 15px 25px;
+    color: var(--gray-scale-15);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    transition: filter 0.3s ease;
+}
+
+.buttonStyle:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+.icon {
+    margin-top: -2px;
+    padding-right: 5px;
+    font-size: 1.8rem;
+}
+
+.text {
+    font-size: 1.3rem;
+}
+
+@media (max-width:768px) {
+    .buttonStyle {
+        flex: 0 1 40%;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 555px) {
+    .buttonStyle {
+        flex: 0 1 100%;
+    }
+}
