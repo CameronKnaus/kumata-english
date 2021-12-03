@@ -1,10 +1,9 @@
 .headerContainer {
     margin-top: 30px;
-    height: 100px;
-    margin-bottom: 1000px;
 }
 
 .headerContainer h2 {
+    color: var(--navy);
     /* TODO ASK KUMATA */
     /*background: -webkit-linear-gradient(60deg, #1369BF, #B07D2E, #8FD714);*/
     background: -webkit-linear-gradient(0deg, var(--navy), var(--green), var(--orange), var(--pink));

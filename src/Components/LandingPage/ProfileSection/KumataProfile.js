@@ -8,9 +8,10 @@ import regularImageTall from '../../../Images/Characters/TallSnowKumata.jpg';
 import ProfileText from './ProfileText';
 import { Parallax } from 'react-scroll-parallax';
 import LANDING_TEXT from '../../../Content/LandingPage';
+import { useFormFactor } from '../../../Util/FormFactorContext';
 
-export default function KumataProfile({ isSM }) {
-    if(isSM) {
+export default function KumataProfile() {
+    if(useFormFactor().SM) {
         return (
             <>
                 <Image webpImage={webpImage} regularImage={regularImage} imageBaseType='png' classes={styles.smallSnowKumataImage} />

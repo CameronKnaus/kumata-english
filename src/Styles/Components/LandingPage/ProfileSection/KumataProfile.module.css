@@ -9,6 +9,7 @@
 .snowKumataImage {
     width: 100%;
     border-radius: 6px;
+    box-shadow: 2px 2px 10px 0 var(--gray-scale-13)
 }
 
 .smallSnowKumataImage {

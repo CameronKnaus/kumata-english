@@ -228,7 +228,7 @@
       ],
       "react/no-danger": "warn",
       "react/no-children-prop": "warn",
-      "react/no-array-index-key": "warn",
+      "react/no-array-index-key": 0,
       "react/no-unstable-nested-components": "warn",
       "react/self-closing-comp": "error",
       "react/jsx-child-element-spacing": "warn",

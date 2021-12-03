@@ -31,6 +31,16 @@
 
 @media (max-width: 555px) {
     .buttonStyle {
+        padding: 10px 25px 0 25px;
         flex: 0 1 100%;
+    }
+
+    .icon {
+        margin-top: -6px;
+        font-size: 1.7rem;
+    }
+
+    .text {
+        font-size: 1rem;
     }
 }

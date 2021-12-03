@@ -1,9 +1,11 @@
 import React from 'react';
 import { animated, useSpring, config } from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
+import { useFormFactor } from '../../../Util/FormFactorContext';
 
-export default function AccoladeItem({ accolade, small }) {
+export default function AccoladeItem({ accolade }) {
     const [isVisible, setIsVisible] = React.useState(false);
+    const small = useFormFactor().SM;
 
     const handleVisibilityChange = (newValue) => {
         // Intentionally only setting true once

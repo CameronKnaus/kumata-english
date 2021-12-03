@@ -1,0 +1,94 @@
+.flexContainer {
+    margin-top: 100px;
+    display: flex;
+}
+
+.flexContainer > * {
+    flex-basis: 100%;
+}
+
+.contentBox {
+    background-color: var(--navy);
+    color: var(--gray-scale-14);
+}
+
+.textWrapper {
+    padding: 0 50px 30px 20px;
+}
+
+.titleText {
+    color: var(--gray-scale-15);
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 2px var(--navy-dark);
+    font-size: var(--extra-large-header-text-font-size);
+    line-height: var(--extra-large-header-text-line-height);
+}
+
+.manToManText {
+    margin-top: 0;
+    text-shadow: 2px 1px 0 var(--navy-dark);
+    font-size: var(--large-header-text-font-size);
+    line-height: var(--large-header-text-line-height);
+}
+
+.descriptionText {
+    font-size: var(--small-header-text-font-size);
+    line-height: var(--small-header-text-line-height);
+    margin-top: 5px;
+}
+
+.answerAllQuestionsText {
+    margin-bottom: 0;
+    font-size: var(--small-header-text-font-size);
+    line-height: var(--small-header-text-line-height);
+}
+
+@media (max-width: 767px) {
+    .flexContainer {
+        flex-wrap: wrap;
+    }
+
+    .textWrapper {
+        padding: 0 15px 30px;
+    }
+}
+
+@media (max-width: 555px) {
+    .flexContainer {
+        margin-top: 40px;
+    }
+
+    .titleText {
+        text-align: center;
+        font-size: var(--large-header-text-font-size);
+        line-height: var(--large-header-text-line-height);
+    }
+
+    .manToManText {
+        text-align: center;
+        font-size: var(--header-text-font-size);
+        line-height: var(--header-text-line-height);
+    }
+
+    .answerAllQuestionsText {
+        font-size: var(--enlarged-body-text-font-size);
+        line-height: var(--enlarged-body-text-line-height);
+    }
+
+    .descriptionText {
+        font-size: var(--body-text-font-size);
+        line-height: var(--body-text-line-height);
+    }
+}
+
+@media (max-width: 370px) {
+    .titleText {
+        font-size: var(--header-text-font-size);
+        line-height: var(--header-text-line-height);
+    }
+
+    .manToManText {
+        font-size: var(--small-header-text-font-size);
+        line-height: var(--small-header-text-line-height);
+    }
+}

@@ -1,0 +1,38 @@
+.container {
+    padding-bottom: 30px;
+}
+
+.textWrap {
+    padding: 0 5px;
+}
+
+.thoughtText {
+    padding-top: 20px;
+    text-align: center;
+    color: var(--gray-scale-4);
+}
+
+.imageContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.characterImage {
+    width: 220px;
+    height: 220px;
+}
+
+.solutionText {
+    text-align: center;
+    font-weight: bold;
+    color: var(--navy);
+}
+
+@media (max-width: 767px) {
+    .characterImage {
+        width: 160px;
+        height: 160px;
+    }
+}

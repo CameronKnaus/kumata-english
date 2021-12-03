@@ -1,10 +1,10 @@
 .imKumata {
     text-align: center;
     font-weight: bold;
-    color: var(--gray-scale-1);
+    color: var(--gray-scale-3);
 }
 
 .descriptionContainer {
     padding: 0 10%;
-    color: var(--gray-scale-3)
+    color: var(--gray-scale-4)
 }

@@ -1,13 +1,12 @@
 /* FONT FAMILIES */
 @font-face {
-    font-family: 'asobi-memogaki';
+    font-family: 'YasashisaGothic';
     font-display: swap;
-    src: local('Asobi-Memogaki'), url(../../Fonts/Asobi-Memogaki.ttf) format('truetype');
+    src: local('YasashisaGothic'), url(../../Fonts/YasashisaGothic.otf) format('truetype');
 }
 
 .hand-written {
-    font-family: asobi-memogaki, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック" , "MS Gothic", "Noto Sans CJK JP", TakaoPGothic, sans-serif;
-    font-weight: bold;
+    font-family: YasashisaGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック" , "MS Gothic", "Noto Sans CJK JP", TakaoPGothic, sans-serif;
 }
 
 /* FONT SIZING */
@@ -59,4 +58,37 @@
 .large-title-text {
     font-size: 64px;
     line-height: 88px;
+}
+
+/* FONT SIZING AS VARIABLES */
+:root {
+    --reduced-body-text-font-size: 12px;
+    --reduced-body-text-line-height: 16px;
+
+    --body-text-font-size: 14px;
+    --body-text-line-height: 20px;
+
+    --enlarged-body-text-font-size: 16px;
+    --enlarged-body-text-line-height: 24px;
+
+    --small-header-text-font-size: 18px;
+    --small-header-text-line-height: 28px;
+
+    --header-text-font-size: 24px;
+    --header-text-line-height: 28px;
+
+    --large-header-text-font-size: 28px;
+    --large-header-text-line-height: 36px;
+
+    --extra-large-header-text-font-size: 36px;
+    --extra-large-header-text-line-height: 48px;
+
+    --small-title-text-font-size: 40px;
+    --small-title-text-line-height: 52px;
+
+    --title-text-font-size: 48px;
+    --title-text-line-height: 72px;
+
+    --large-title-text-font-size: 64px;
+    --large-title-text-line-height: 88px
 }
