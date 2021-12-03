@@ -1,8 +1,8 @@
 import React from 'react';
 import OnlineLessonsCharacterBox from './OnlineLessonsCharacterBox';
-import styles from '../../../Styles/Components/LandingPage/ServicesSection/OnlineLessons.module.css';
-import LANDING_TEXT from '../../../Content/LandingPage';
-import { useFormFactor } from '../../../Util/FormFactorContext';
+import styles from '../../../../Styles/Components/LandingPage/ServicesSection/OnlineLessons/OnlineLessons.module.css';
+import LANDING_TEXT from '../../../../Content/LandingPage';
+import { useFormFactor } from '../../../../Util/FormFactorContext';
 
 export default function OnlineLessons() {
     const TEXT = LANDING_TEXT.onlineLessons;

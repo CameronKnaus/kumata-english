@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from '../../../Styles/Components/LandingPage/ServicesSection/OnlineLessonsCharacterBox.module.css';
-import regularImage from '../../../Images/Characters/BashfulKumata.png';
-import webpImage from '../../../Images/webpDist/BashfulKumata.webp';
-import Image from '../../UIElements/Image';
+import styles from '../../../../Styles/Components/LandingPage/ServicesSection/OnlineLessons/OnlineLessonsCharacterBox.module.css';
+import regularImage from '../../../../Images/Characters/BashfulKumata.png';
+import webpImage from '../../../../Images/webpDist/BashfulKumata.webp';
+import Image from '../../../UIElements/Image';
 import VisibilitySensor from 'react-visibility-sensor';
 import { useSprings, animated } from 'react-spring';
 

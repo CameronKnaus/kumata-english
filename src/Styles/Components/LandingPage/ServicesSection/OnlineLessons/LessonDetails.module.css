@@ -1,0 +1,65 @@
+.detailsFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detailsBlock {
+    flex-basis: 50%;
+    min-width: 290px;
+}
+
+.targetList {
+    list-style-type: '✓';
+    color: var(--navy);
+    padding-left: 25px;
+    padding-right: 15px;
+    font-size: var(--small-header-text-font-size);
+    line-height: var(--small-header-text-line-height);
+}
+
+.targetList li {
+    padding-left: 15px;
+}
+
+.detailsList {
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+.mainDetail {
+    color: var(--navy);
+    font-size: var(--small-header-text-font-size);
+    line-height: var(--small-header-text-line-height);
+}
+
+.secondaryDetail {
+    color: var(--navy);
+    list-style: none;
+    font-size: var(--body-text-font-size);
+    line-height: var(--body-text-line-height);
+    padding-bottom: 15px;
+}
+
+.lessonDetailsTitle {
+    color: var(--navy);
+    background: -webkit-linear-gradient(80deg, var(--navy), var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.targetAudienceTitle {
+    color: var(--navy);
+    background: -webkit-linear-gradient(260deg, var(--navy) 40%, var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: var(--large-header-text-font-size);
+        line-height: var(--large-header-text-line-height);
+    }
+    .detailsBlock {
+        flex-basis: 100%;
+    }
+}

@@ -4,8 +4,9 @@ import KumataCoin from '../Components/LandingPage/KumataCoin';
 import AboutKumata from '../Components/LandingPage/AboutKumata';
 import KumataProfile from '../Components/LandingPage/ProfileSection/KumataProfile';
 import CanadaImage from '../Components/LandingPage/CanadaImage';
-import OnlineLessons from '../Components/LandingPage/ServicesSection/OnlineLessons';
+import OnlineLessons from '../Components/LandingPage/ServicesSection/OnlineLessons/OnlineLessons';
 import ServicesHeader from '../Components/LandingPage/ServicesSection/ServicesHeader';
+import OnlineLessonsInDetail from '../Components/LandingPage/ServicesSection/OnlineLessons/OnlineLessonsInDetail';
 
 export default function LandingPage() {
     return (
@@ -22,9 +23,10 @@ export default function LandingPage() {
             </section>
             <section id='offered-services-section'>
                 <ServicesHeader />
-                <section id='online-lessons-section'>
+                <div id='online-lessons-section'>
                     <OnlineLessons />
-                </section>
+                    <OnlineLessonsInDetail />
+                </div>
             </section>
         </>
     );

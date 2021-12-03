@@ -1,5 +1,7 @@
 .container {
-    padding-bottom: 30px;
+    border-bottom: 15px solid var(--navy);
+    border-top: 15px solid var(--navy);
+    border-right: 15px solid var(--navy);
 }
 
 .textWrap {
@@ -31,6 +33,10 @@
 }
 
 @media (max-width: 767px) {
+    .container {
+        padding-bottom: 20px;
+        border: none;
+    }
     .characterImage {
         width: 160px;
         height: 160px;
