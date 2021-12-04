@@ -5,7 +5,6 @@
 
 .detailsBlock {
     flex-basis: 50%;
-    min-width: 290px;
 }
 
 .targetList {
@@ -61,5 +60,22 @@
     }
     .detailsBlock {
         flex-basis: 100%;
+    }
+}
+
+@media (max-width: 555px) {
+    .mainDetail {
+        font-size: var(--enlarged-body-text-font-size);
+        line-height: var(--enlarged-body-text-line-height);
+    }
+
+    .secondaryDetail {
+        font-size: var(--reduced-body-text-font-size);
+        line-height: var(--reduced-body-text-line-height);
+    }
+
+    .targetList {
+        font-size: var(--enlarged-body-text-font-size);
+        line-height: var(--enlarged-body-text-line-height);
     }
 }

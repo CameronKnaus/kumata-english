@@ -1,0 +1,79 @@
+.lessonTile {
+    width: 400px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px 0 #efefef;
+    color: var(--navy);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.lessonTileTitle {
+    font-size: var(--header-text-font-size);
+    line-height: var(--header-text-line-height);
+    margin-bottom: 0;
+}
+
+.activityGroup {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activityWrapper {
+    margin-bottom: 25px;
+}
+
+.timeFrame {
+    color: var(--navy);
+    font-weight: bold;
+    font-size: var(--enlarged-body-text-font-size);
+    line-height: var(--enlarged-body-text-line-height);
+}
+
+.activityDescription {
+    padding-left: 30px;
+    color: var(--gray-scale-5);
+    font-size: var(--body-text-font-size);
+    line-height: var(--body-text-line-height);
+}
+
+.descriptionText {
+    margin: 0 0 20px 0;
+    font-size: var(--body-text-font-size);
+    line-height: var(--body-text-line-height);
+}
+
+@media (max-width: 991px) {
+    .lessonTile {
+        width: 320px;
+        margin: 10px;
+    }
+    .descriptionText {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 767px) {
+    .lessonTile {
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 555px) {
+    .timeFrame {
+        font-size: var(--body-text-font-size);
+        line-height: var(--body-text-line-height);
+    }
+
+    .activityDescription, .descriptionText {
+        font-size: var(--reduced-body-text-font-size);
+        line-height: var(--reduced-body-text-line-height);
+    }
+
+    .lessonTileTitle {
+        font-size: var(--header-text-font-size);
+        line-height: var(--header-text-line-height);
+    }
+}

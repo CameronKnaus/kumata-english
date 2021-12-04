@@ -13,10 +13,10 @@ import { useFormFactor } from '../../../Util/FormFactorContext';
 export default function KumataProfile() {
     if(useFormFactor().SM) {
         return (
-            <>
+            <div className={styles.smallContainer}>
                 <Image webpImage={webpImage} regularImage={regularImage} imageBaseType='png' classes={styles.smallSnowKumataImage} />
                 <ProfileText small />
-            </>
+            </div>
         );
     }
 

@@ -73,7 +73,54 @@ const LANDING_TEXT = {
             '英会話の機会が欲しい方',
             '何か新しい趣味が欲しい方',
             '発音を綺麗にしたい方'
-        ]
+        ],
+        exampleLessonsTitle: '具体的内容の例え',
+        beginnerTarget: {
+            title: '初心者向け',
+            description: '※ 慣れてきたら、TOPICを使ってディスカッションを行います',
+            activityList: [
+                {
+                    timeFrame: '①　0〜15分',
+                    activity: [
+                        '→ 挨拶',
+                        '→ 自己紹介',
+                        '→ 自分の好きな事',
+                        '→ 周りの出来事について'
+                    ]
+                },
+                {
+                    timeFrame: '②　15〜25分',
+                    activity: 'アウトプットを意識した文法の勉強'
+                },
+                {
+                    timeFrame: '③　25〜30分',
+                    activity: '習った大事な内容の復習'
+                }
+            ]
+        },
+        middleTarget: {
+            title: '中級者向け',
+            description: '※ フリートークを使用して「実践形式」で学んでいきます',
+            activityList: [
+                {
+                    timeFrame: '①　0〜10分',
+                    activity: [
+                        '→ 挨拶',
+                        '→ 自己紹介',
+                        '→ 自分の好きな事',
+                        '→ 周りの出来事について'
+                    ]
+                },
+                {
+                    timeFrame: '②　10〜25分',
+                    activity: 'こちらで用意したTOPICでディスカッション'
+                },
+                {
+                    timeFrame: '③　25〜30分',
+                    activity: '習った大事な内容の復習'
+                }
+            ]
+        }
     }
 };
 

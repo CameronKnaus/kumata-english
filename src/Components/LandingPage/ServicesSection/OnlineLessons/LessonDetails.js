@@ -1,14 +1,18 @@
 import React from 'react';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/OnlineLessons/LessonDetails.module.css';
 import LANDING_TEXT from '../../../../Content/LandingPage';
+import { useFormFactor } from '../../../../Util/FormFactorContext';
 
 export default function LessonDetails() {
     const TEXT = LANDING_TEXT.onlineLessons;
+    const isXS = useFormFactor().XS;
+
+    const headerTextClass = isXS ? 'header-text' : 'large-header-text';
 
     return (
         <div className={styles.detailsFlexContainer}>
             <div className={styles.detailsBlock}>
-                <h2 className={`large-header-text ${styles.lessonDetailsTitle}`}>
+                <h2 className={`${headerTextClass} ${styles.lessonDetailsTitle}`}>
                     {TEXT.lessonDetailsTitle}
                 </h2>
                 <ul className={styles.detailsList}>
@@ -24,7 +28,7 @@ export default function LessonDetails() {
                 </ul>
             </div>
             <div className={styles.detailsBlock}>
-                <h2 className={`large-header-text ${styles.targetAudienceTitle}`}>
+                <h2 className={`${headerTextClass} ${styles.targetAudienceTitle}`}>
                     {TEXT.targetAudience}
                 </h2>
                 <ul className={styles.targetList}>

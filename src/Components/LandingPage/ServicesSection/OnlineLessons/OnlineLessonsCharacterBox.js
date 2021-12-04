@@ -20,8 +20,8 @@ export default function OnlineLessonsCharacterBox({ text }) {
         doubtsList.length,
         doubtsList.map((doubtItem, index) => {
             return {
-                config: { mass: 5, tension: 3000, friction: 700 },
-                delay: 400 + (index * 900),
+                config: { mass: 5, tension: 1000, friction: 600 },
+                delay: 400 + (index * 800),
                 to: {
                     opacity: doubtsInView ? 1 : 0,
                     transform: doubtsInView ? 'scale(1)' : 'scale(0.7)'

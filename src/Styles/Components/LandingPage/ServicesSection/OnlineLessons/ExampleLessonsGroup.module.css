@@ -1,0 +1,17 @@
+.groupContainer {
+
+}
+
+.header {
+    color: var(--navy);
+    text-align: center;
+    font-size: var(--large-header-text-font-size);
+    line-height: var(--large-header-text-line-height);
+    font-weight: normal;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
