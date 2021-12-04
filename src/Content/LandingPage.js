@@ -1,4 +1,4 @@
-// Keeping all landing page text here for simplicity.
+// Keeping all landing page text here for simplicity. Under normal circumstances all of this text content would be split up
 
 const LANDING_TEXT = {
     kumataName: 'Kumata (くまた)',
@@ -24,6 +24,11 @@ const LANDING_TEXT = {
         coaching: 'コーチング',
         youtube: 'ユーチューブ',
         instagram: 'インスタ'
+    },
+    costMenuSharedText: {
+        howToApplyHeader: 'お申し込みはこちら↓',
+        email: 'kumataenglish@gmail.com',
+        emailLink: 'Kumataにメールを送信'
     },
     onlineLessons: {
         kumataTalk: {
@@ -119,6 +124,71 @@ const LANDING_TEXT = {
                     timeFrame: '③　25〜30分',
                     activity: '習った大事な内容の復習'
                 }
+            ]
+        },
+        costMenu: {
+            bannerTitle: '英会話レッスンの料金',
+            promotion: {
+                title: '★ 入会金：',
+                cost: '10,000',
+                costNote: '（初月のみ）'
+            },
+            // セールがなかったらこうのままにセットして： ''
+            saleDescription: '', // for demo: 'クリスマスのセール！一月一日までのセール！レッスンをもう受けてる方は参加できない。',
+            menuItems: [
+                {
+                    title: '月4回',
+                    price: '10,000円',
+                    // specialPriceとpriceは違かったら割引があるように現れる。
+                    // セールがなかったらspecialPriceとpriceを等しくしてください
+                    specialPrice: '10,000円',
+                    /*
+                        noteListで何も書いてなかったら何も現れない。
+
+                        免責とかはない場合（例え）：
+                        noteList: [
+                            ''
+                        ]
+
+                        一つのノートの場合：
+                        noteList: [
+                            'あいうえお'
+                        ]
+
+                        一つ以上のノートの場合：
+                        noteList: [
+                            'あいうえお',
+                            'かきくけこ',
+                            'さしすせそ'
+                        ]
+                    */
+                    noteList: [
+                        '' // For demo: '※ クリスマスのセールのためだけ。レッスンをもう受けてる方は参加できない。'
+                    ]
+                },
+                {
+                    title: '月6回',
+                    price: '14,000円',
+                    specialPrice: '14,000円',
+                    noteList: [
+                        ''
+                    ]
+                },
+                {
+                    title: '月8回',
+                    price: '17,000円',
+                    specialPrice: '17,000円',
+                    noteList: [
+                        ''
+                    ]
+                }
+            ],
+            emailSubjectLine: '「マンツーマン英会話について」',
+            howToApply: (emailSubject) => `Please use the subject ${emailSubject} and include your name and desired course.`,
+            // 免責とかはこちら
+            disclaimerList: [
+                '※ 月額の継続性となっております。退会は翌月以降可能となりますが、再入会する際に入会金10,000円が再度掛かってしまうのでご注意ください。',
+                '※ これはもう一つの免責の例'
             ]
         }
     }
