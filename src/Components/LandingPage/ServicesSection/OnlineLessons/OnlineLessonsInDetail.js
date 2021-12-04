@@ -2,8 +2,6 @@ import React from 'react';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/OnlineLessons/OnlineLessonsInDetail.module.css';
 import LessonDetails from './LessonDetails';
 import ExampleLessonsGroup from './ExampleLessonsGroup';
-// import LANDING_TEXT from '../../../../Content/LandingPage';
-// import { useFormFactor } from '../../../../Util/FormFactorContext';
 
 export default function OnlineLessonsInDetail() {
 

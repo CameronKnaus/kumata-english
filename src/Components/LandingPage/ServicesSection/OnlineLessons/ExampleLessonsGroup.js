@@ -9,7 +9,7 @@ export default function ExampleLessonsGroup() {
         MIDDLE_TEXT = TEXT.middleTarget;
 
     return (
-        <div className={styles.groupContainer}>
+        <>
             <h2 className={styles.header}>
                 {TEXT.exampleLessonsTitle}
             </h2>
@@ -23,6 +23,6 @@ export default function ExampleLessonsGroup() {
                                    activityList={MIDDLE_TEXT.activityList}
                 />
             </div>
-        </div>
+        </>
     );
 }

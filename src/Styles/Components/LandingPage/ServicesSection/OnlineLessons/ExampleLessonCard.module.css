@@ -1,8 +1,8 @@
 .lessonTile {
     width: 400px;
-    background-color: #fdfdfd;
+    background-color: #eefbfc;
     border-radius: 12px;
-    box-shadow: 1px 1px 10px 0 #efefef;
+    /*box-shadow: 1px 1px 10px 0 #eefbfc;*/
     color: var(--navy);
     padding-left: 15px;
     padding-right: 15px;
@@ -33,7 +33,7 @@
 
 .activityDescription {
     padding-left: 30px;
-    color: var(--gray-scale-5);
+    color: var(--navy-dark);
     font-size: var(--body-text-font-size);
     line-height: var(--body-text-line-height);
 }

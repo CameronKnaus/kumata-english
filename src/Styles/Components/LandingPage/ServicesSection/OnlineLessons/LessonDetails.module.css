@@ -9,7 +9,7 @@
 
 .targetList {
     list-style-type: '✓';
-    color: var(--navy);
+    color: var(--navy-dark);
     padding-left: 25px;
     padding-right: 15px;
     font-size: var(--small-header-text-font-size);
@@ -26,7 +26,7 @@
 }
 
 .mainDetail {
-    color: var(--navy);
+    color: var(--navy-dark);
     font-size: var(--small-header-text-font-size);
     line-height: var(--small-header-text-line-height);
 }
