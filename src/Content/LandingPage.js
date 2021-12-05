@@ -187,7 +187,7 @@ const LANDING_TEXT = {
             howToApply: (emailSubject) => `Please use the subject ${emailSubject} and include your name and desired course.`,
             // 免責とかはこちら
             disclaimerList: [
-                '※ 月額の継続性となっております。退会は翌月以降可能となりますが、再入会する際に入会金10,000円が再度掛かってしまうのでご注意ください。'
+                '※ 月額の継続性となっております。退会は翌月以降可能となりますが、再入会する際に入会金10,000円が再度掛かってしまうのでご注意ください。TEST'
             ]
         }
     }
