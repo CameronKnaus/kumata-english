@@ -1,8 +1,9 @@
 .imageContainer {
-    width: 96%;
+    width: 100%;
     padding: 0 2%;
     margin-top: 110px;
     min-width: var(--min-supported-width);
+    box-sizing: border-box;
 }
 
 .image {

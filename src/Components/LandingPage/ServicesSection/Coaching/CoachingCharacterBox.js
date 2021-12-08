@@ -36,8 +36,8 @@ export default function CoachingCharacterBox() {
                     setWordIndex(currentIndex);
                     setShowWord(true);
                 }
-            }, 50);
-        }, 1950);
+            }, 100);
+        }, 1900);
 
         return () => clearInterval(interval);
     }, [wordIndex, wordList.length]);
