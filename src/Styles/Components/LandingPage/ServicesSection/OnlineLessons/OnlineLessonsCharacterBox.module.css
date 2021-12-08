@@ -20,11 +20,13 @@
     width: 100%;
     justify-content: center;
     margin-top: 15px;
+    height: 260px;
 }
 
 .characterImage {
-    width: 220px;
-    height: 220px;
+    width: 400px;
+    height: 400px;
+    margin-top: -140px;
 }
 
 .solutionText {
@@ -39,7 +41,11 @@
         border: none;
     }
     .characterImage {
-        width: 160px;
-        height: 160px;
+        width: 260px;
+        height: 260px;
+        margin-top: -80px;
+    }
+    .imageContainer {
+        height: 180px;
     }
 }
