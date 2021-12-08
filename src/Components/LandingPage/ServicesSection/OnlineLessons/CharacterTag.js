@@ -7,6 +7,7 @@ import webpKumata from '../../../../Images/webpDist/kumataChase.webp';
 import regularBeaver from '../../../../Images/Characters/beaverChase.png';
 import regularKumata from '../../../../Images/Characters/kumataChase.png';
 import { useFormFactor } from '../../../../Util/FormFactorContext';
+import ParallaxCache from '../../../../Util/ParallaxCache';
 
 export default function CharacterTag() {
     const isSM = useFormFactor().SM;
@@ -16,28 +17,30 @@ export default function CharacterTag() {
 
     return (
         <div className={styles.sceneContainer}>
-            <div className={styles.characterContainer}>
-                <div className={styles.beaverContainer}>
-                    <Parallax x={beaverParallax}>
-                        <Image webpImage={webpBeaver}
-                               regularImage={regularBeaver}
-                               classes={styles.beaverImage}
-                               imageBaseType='png'
-                        />
-                    </Parallax>
+            <ParallaxCache>
+                <div className={styles.characterContainer}>
+                    <div className={styles.beaverContainer}>
+                        <Parallax x={beaverParallax}>
+                            <Image webpImage={webpBeaver}
+                                   regularImage={regularBeaver}
+                                   classes={styles.beaverImage}
+                                   imageBaseType='png'
+                            />
+                        </Parallax>
+                    </div>
                 </div>
-            </div>
-            <div className={styles.characterContainer}>
-                <div className={styles.kumataContainer}>
-                    <Parallax x={kumataParallax}>
-                        <Image webpImage={webpKumata}
-                               regularImage={regularKumata}
-                               classes={styles.kumataImage}
-                               imageBaseType='png'
-                        />
-                    </Parallax>
+                <div className={styles.characterContainer}>
+                    <div className={styles.kumataContainer}>
+                        <Parallax x={kumataParallax}>
+                            <Image webpImage={webpKumata}
+                                   regularImage={regularKumata}
+                                   classes={styles.kumataImage}
+                                   imageBaseType='png'
+                            />
+                        </Parallax>
+                    </div>
                 </div>
-            </div>
+            </ParallaxCache>
         </div>
     );
 }
