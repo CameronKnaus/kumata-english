@@ -32,7 +32,7 @@
     padding-left: 15px;
 }
 
-.promotionContainer {
+.initiationFeeContainer {
     width: 100%;
     text-align: center;
     padding: 40px 0 20px;
@@ -40,7 +40,7 @@
     line-height: var(--enlarged-body-text-line-height);
 }
 
-.promotionYenValue {
+.initiationFee {
     font-size: var(--header-text-font-size);
     /* Line height difference here is intentional */
     line-height: var(--enlarged-body-text-line-height);
@@ -64,6 +64,8 @@
 .costLineContainer {
     width: 100%;
     display: flex;
+    font-size: var(--small-header-text-font-size);
+    line-height: var(--small-header-text-line-height);
 }
 
 .costDescriptionGroup {

@@ -79,7 +79,7 @@ const LANDING_TEXT = {
             '何か新しい趣味が欲しい方',
             '発音を綺麗にしたい方'
         ],
-        exampleLessonsTitle: '具体的内容の例え',
+        exampleLessonsTitle: '【具体的なレッスンの内容】',
         beginnerTarget: {
             title: '初心者向け',
             description: '※ 慣れてきたら、TOPICを使ってディスカッションを行います',
@@ -129,7 +129,7 @@ const LANDING_TEXT = {
         costMenu: {
             bannerTitle: '英会話レッスンの料金',
             promotion: {
-                title: '★ 入会金：',
+                title: '入会金：',
                 cost: '10,000',
                 costNote: '（初月のみ）'
             },
@@ -183,12 +183,12 @@ const LANDING_TEXT = {
                     ]
                 }
             ],
-            emailSubjectLine: '「マンツーマン英会話について」',
-            howToApply: (emailSubject) => `Please use the subject ${emailSubject} and include your name and desired course.`,
+            emailSubjectLine: '「マンツーマンオンライン英会話の件について」',
+            emailContents: 'お名前：',
+            howToApply: (emailSubject) => `${emailSubject}お名前を記載の上、送信お願いします。`,
             // 免責とかはこちら
             disclaimerList: [
-                '※ 月額の継続性となっております。退会は翌月以降可能となりますが、再入会する際に入会金10,000円が再度掛かってしまうのでご注意ください。',
-                '※ これはもう一つの免責の例'
+                '※ 月額の継続性となっております。退会は翌月以降可能となりますが、再入会する際に入会金10,000円が再度掛かってしまうのでご注意ください。'
             ]
         }
     }

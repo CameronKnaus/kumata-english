@@ -18,7 +18,7 @@ export default function CostMenu({
     // Styles
     const bannerStyles = { backgroundColor: accentColor };
     const menuStyles = { border: `1px solid ${accentColor}` };
-    const promotionContainerStyles = { color: accentColor };
+    const initiationFeeContainerStyles = { color: accentColor };
     const accentedDividerStyle = { backgroundColor: accentColor };
     const howToApplyHeaderStyle = { color: accentColor };
     const buttonStyle = { backgroundColor: accentColor };
@@ -76,9 +76,9 @@ export default function CostMenu({
                             </span>
                         </div>
                 }
-                <div className={styles.promotionContainer} style={promotionContainerStyles}>
+                <div className={styles.initiationFeeContainer} style={initiationFeeContainerStyles}>
                     {promotion.title}
-                    <span className={styles.promotionYenValue}>
+                    <span className={styles.initiationFee}>
                         {promotion.cost}
                     </span>
                     {'円'}

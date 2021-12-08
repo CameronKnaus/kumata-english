@@ -1,9 +1,10 @@
 .header {
     color: var(--navy);
+    background: -webkit-linear-gradient(260deg, var(--navy) 40%, var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: var(--large-header-text-font-size);
-    line-height: var(--large-header-text-line-height);
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .flexContainer {
