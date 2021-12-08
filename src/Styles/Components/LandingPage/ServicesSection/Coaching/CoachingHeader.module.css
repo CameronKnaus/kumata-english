@@ -60,13 +60,13 @@
     }
 
     .descriptionSubHeaderText {
-        font-size: var(--enlarged-body-text-font-size);
-        line-height: var(--enlarged-body-text-line-height);
+        font-size: var(--small-header-text-font-size);
+        line-height: var(--small-header-text-line-height);
     }
 
     .descriptionText {
-        font-size: var(--body-text-font-size);
-        line-height: var(--body-text-line-height);
+        font-size: var(--small-header-text-font-size);
+        line-height: var(--small-header-text-line-height);
     }
 }
 
