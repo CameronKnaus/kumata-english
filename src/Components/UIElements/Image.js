@@ -29,11 +29,9 @@ export default function Image({ webpImage, regularImage, imageBaseType, optional
             <picture>
                 <source type='image/webp'
                         srcSet={webpImage}
-                        className={classes}
                 />
                 <source type={mimeType}
                         srcSet={regularImage}
-                        className={classes}
                 />
                 <img src={regularImage}
                      alt={optionalAlt || ''}

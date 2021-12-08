@@ -4,6 +4,7 @@ import LessonDetails from './LessonDetails';
 import ExampleLessonsGroup from './ExampleLessonsGroup';
 import CostMenu from '../CostMenu';
 import LANDING_TEXT from '../../../../Content/LandingPage';
+import CharacterTag from './CharacterTag';
 
 export default function OnlineLessonsInDetail() {
     const COST_MENU = LANDING_TEXT.onlineLessons.costMenu;
@@ -14,6 +15,7 @@ export default function OnlineLessonsInDetail() {
                 <div className='average-container'>
                     <LessonDetails />
                 </div>
+                <CharacterTag />
                 <ExampleLessonsGroup />
             </div>
             {/* TODO Remove marginBottom Div */}

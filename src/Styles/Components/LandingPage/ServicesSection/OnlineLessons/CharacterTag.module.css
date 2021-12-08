@@ -1,0 +1,51 @@
+.sceneContainer {
+    overflow: hidden;
+    width: 100%;
+}
+
+.characterContainer {
+    width: 50%;
+    display: inline-block;
+}
+
+.beaverImage, .kumataImage {
+    /* Images have a lot of transparent blank space above them, this compensates */
+    margin-top: -120px;
+}
+
+.kumataContainer {
+    position: relative;
+    width: 330px;
+    z-index: 1;
+}
+
+.beaverContainer {
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    float: right;
+}
+
+.beaverImage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.kumataImage {
+    left: 0;
+    filter: blur(1px);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .beaverContainer {
+        width: 320px;
+    }
+
+    .kumataContainer {
+        width: 230px;
+    }
+}
