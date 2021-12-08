@@ -22,7 +22,7 @@ export default function OnlineLessonsInDetail() {
             <div style={{ marginBottom: 200 }}>
                 <CostMenu accentColor='var(--navy)'
                           bannerTitle={COST_MENU.bannerTitle}
-                          promotion={COST_MENU.promotion}
+                          headerCost={COST_MENU.headerCost}
                           menuItems={COST_MENU.menuItems}
                           saleDescription={COST_MENU.saleDescription}
                           emailSubjectLine={COST_MENU.emailSubjectLine}

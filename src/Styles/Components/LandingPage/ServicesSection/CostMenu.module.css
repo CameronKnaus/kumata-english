@@ -32,7 +32,7 @@
     padding-left: 15px;
 }
 
-.initiationFeeContainer {
+.headerCostContainer {
     width: 100%;
     text-align: center;
     padding: 40px 0 20px;
@@ -40,11 +40,25 @@
     line-height: var(--enlarged-body-text-line-height);
 }
 
-.initiationFee {
+.headerCostFee {
     font-size: var(--header-text-font-size);
     /* Line height difference here is intentional */
     line-height: var(--enlarged-body-text-line-height);
     font-weight: bold;
+}
+
+.headerCostDiscount {
+    color: #85ca12;
+    font-weight: bold;
+    text-align: center;
+    font-size: var(--header-text-font-size);
+    /* Line height difference here is intentional */
+    line-height: var(--enlarged-body-text-line-height);
+}
+
+.specialNote {
+    font-size: var(--enlarged-body-text-font-size);
+    line-height: var(--enlarged-body-text-line-height);
 }
 
 .accentedDividerBar {

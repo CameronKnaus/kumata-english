@@ -132,10 +132,13 @@ const LANDING_TEXT = {
         },
         costMenu: {
             bannerTitle: '英会話レッスンの料金',
-            promotion: {
+            headerCost: {
                 title: '入会金：',
+                // costとspecialCostは等しくなかったら割引があるデザインは現れる
                 cost: '10,000',
-                costNote: '（初月のみ）'
+                specialCost: '10,000',
+                costNote: '（初月のみ）',
+                specialNote: '期間限定の割引!'
             },
             // セールがなかったらこうのままにセットして： ''
             saleDescription: '',

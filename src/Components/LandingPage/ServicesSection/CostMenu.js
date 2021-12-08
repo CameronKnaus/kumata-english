@@ -6,7 +6,7 @@ import LANDING_TEXT from '../../../Content/LandingPage';
 export default function CostMenu({
     accentColor = '#333',
     bannerTitle,
-    promotion,
+    headerCost,
     menuItems,
     saleDescription = '',
     emailSubjectLine = '',
@@ -18,7 +18,7 @@ export default function CostMenu({
     // Styles
     const bannerStyles = { backgroundColor: accentColor };
     const menuStyles = { border: `1px solid ${accentColor}` };
-    const initiationFeeContainerStyles = { color: accentColor };
+    const headerCostContainerStyles = { color: accentColor };
     const accentedDividerStyle = { backgroundColor: accentColor };
     const howToApplyHeaderStyle = { color: accentColor };
     const buttonStyle = { backgroundColor: accentColor };
@@ -61,6 +61,8 @@ export default function CostMenu({
         });
     }, [menuItems]);
 
+    const headerCostDiscount = headerCost.cost !== headerCost.specialCost;
+
     return (
         <div className={styles.menuContainer}>
             <div className={styles.banner} style={bannerStyles}>
@@ -76,13 +78,22 @@ export default function CostMenu({
                             </span>
                         </div>
                 }
-                <div className={styles.initiationFeeContainer} style={initiationFeeContainerStyles}>
-                    {promotion.title}
-                    <span className={styles.initiationFee}>
-                        {promotion.cost}
+                <div className={styles.headerCostContainer} style={headerCostContainerStyles}>
+                    {headerCost.title}
+                    <span className={`${styles.headerCostFee} ${headerCostDiscount ? styles.stalePrice : ''}`}>
+                        {headerCost.cost}
                     </span>
                     {'円'}
-                    {promotion.costNote}
+                    {headerCost.costNote}
+                    {
+                        headerCostDiscount &&
+                        <div className={styles.headerCostDiscount}>
+                            {headerCost.specialCost + '円 '}
+                            <span className={styles.specialNote}>
+                                {headerCost.specialNote}
+                            </span>
+                        </div>
+                    }
                 </div>
                 <div className={styles.accentedDividerBar} style={accentedDividerStyle} />
                 {menuList}
