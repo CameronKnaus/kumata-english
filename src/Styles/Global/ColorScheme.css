@@ -24,7 +24,11 @@
     --primary-color: #9b6a6c;
 
     /* Potential Color Scheme 2 */
-    --green: #00c49a;
+    /* Green light may need to be EBFFFB, will determine later */
+    --green-light: #d6fff6;
+    --green: #00b890;
+    /* Green dark may need to be 002920 */
+    --green-dark: #003d30;
     --navy-light: #DDF7F8;
     --navy: #156064;
     --navy-dark: #0e4143;

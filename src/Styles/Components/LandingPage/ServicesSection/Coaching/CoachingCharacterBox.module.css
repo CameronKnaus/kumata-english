@@ -1,0 +1,77 @@
+.container {
+    border-bottom: 15px solid var(--green);
+    border-top: 15px solid var(--green);
+    border-right: 15px solid var(--green);
+    min-width: var(--min-supported-width);
+    position: relative;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    height: 270px;
+    position: relative;
+}
+
+.levelUpContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 22%;
+    width: 400px;
+    margin: auto;
+}
+
+.levelUpText {
+    position: relative;
+}
+
+.characterImage {
+    width: 400px;
+    height: 400px;
+    margin-top: -160px;
+}
+
+.learnWordAnimation {
+    opacity: 0;
+    animation: learnedWordFadeIn 2s infinite;
+}
+
+@keyframes learnedWordFadeIn {
+    0%, 25% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    75%, 90% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding-bottom: 20px;
+        border: none;
+    }
+    .characterImage {
+        width: 260px;
+        height: 260px;
+        margin-top: -80px;
+    }
+    .imageContainer {
+        height: 180px;
+    }
+
+    .levelUpContainer {
+        width: 260px;
+    }
+}

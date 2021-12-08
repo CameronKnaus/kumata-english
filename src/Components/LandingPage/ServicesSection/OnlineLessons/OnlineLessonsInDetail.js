@@ -18,18 +18,15 @@ export default function OnlineLessonsInDetail() {
                 <CharacterTag />
                 <ExampleLessonsGroup />
             </div>
-            {/* TODO Remove marginBottom Div */}
-            <div style={{ marginBottom: 200 }}>
-                <CostMenu accentColor='var(--navy)'
-                          bannerTitle={COST_MENU.bannerTitle}
-                          headerCost={COST_MENU.headerCost}
-                          menuItems={COST_MENU.menuItems}
-                          saleDescription={COST_MENU.saleDescription}
-                          emailSubjectLine={COST_MENU.emailSubjectLine}
-                          howToApply={COST_MENU.howToApply}
-                          disclaimerList={COST_MENU.disclaimerList}
-                />
-            </div>
+            <CostMenu accentColor='var(--navy)'
+                      bannerTitle={COST_MENU.bannerTitle}
+                      headerCost={COST_MENU.headerCost}
+                      menuItems={COST_MENU.menuItems}
+                      saleDescription={COST_MENU.saleDescription}
+                      emailSubjectLine={COST_MENU.emailSubjectLine}
+                      howToApply={COST_MENU.howToApply}
+                      disclaimerList={COST_MENU.disclaimerList}
+            />
         </>
     );
 }

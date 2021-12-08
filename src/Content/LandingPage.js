@@ -198,6 +198,33 @@ const LANDING_TEXT = {
                 '※ 月額の継続性となっております。退会は翌月以降可能となりますが、再入会する際に入会金10,000円が再度掛かってしまうのでご注意ください。'
             ]
         }
+    },
+    coaching: {
+        kumataTalk: {
+            doubtsList: [
+                '「英会話を始めたいけど、今更遅いよね？」',
+                '「オンライン英会話を始めたけど全然話せるようにならない。。。」',
+                'そういった方の為に、「話せるようになる」レッスンを提供します！'
+            ],
+            mySolution: 'そういった方の為に、「話せるようになる」レッスンを提供します！'
+        },
+        coaching: '英語コーチング',
+        descriptionSubHeader: '【英語コーチング】って何？',
+        serviceDescription: '英語コーチングとは、生徒さんに専門のコーチがつき、短期間（2〜3ヶ月）で英語を集中的に学べる教育法のことです！',
+        coachingLearnedWords: [
+            'Ambiguous',
+            'Decipher',
+            'Chronological',
+            'Famine',
+            'Abundant',
+            'Impair',
+            'Negligent',
+            'Prestigious',
+            'Rigid',
+            'Scrutinize',
+            'Transition',
+            'Widespread'
+        ]
     }
 };
 
