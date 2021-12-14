@@ -232,6 +232,54 @@ const LANDING_TEXT = {
                 '英会話始めたいけど一人で継続できる自信がない'
             ],
             solution: 'クマタコーチングでは、毎日勉強法に就いてのアドバイス、モチベーションを維持できるようにメンタル面でのサポートを提供します！'
+        },
+        costMenu: {
+            bannerTitle: '英語コーチングの料金',
+            headerCost: {
+                title: '入会金：',
+                // costとspecialCostは等しくなかったら割引があるデザインは現れる
+                cost: '10,000',
+                specialCost: '10,000',
+                costNote: '（初月のみ）',
+                specialNote: ''
+            },
+            // セールがなかったらこうのままにセットして： ''
+            saleDescription: '',
+            menuItems: [
+                {
+                    title: '教材費',
+                    price: '3,840円',
+                    // specialPriceとpriceは違かったら割引があるように現れる。
+                    // セールがなかったらspecialPriceとpriceを等しくしてください
+                    specialPrice: '3,840円',
+                    noteList: [
+                        ''
+                    ]
+                },
+                {
+                    title: '１ヶ月目',
+                    price: '40,000円',
+                    specialPrice: '40,000円',
+                    noteList: [
+                        '（２８日間）'
+                    ]
+                },
+                {
+                    title: '２ヶ月目',
+                    price: '17,000円',
+                    specialPrice: '17,000円',
+                    noteList: [
+                        '（３５日間）'
+                    ]
+                }
+            ],
+            emailSubjectLine: 'CHANGE ME',
+            emailContents: 'CHANGE ME',
+            howToApply: (emailSubject) => `${emailSubject}お名前を記載の上、送信お願いします。`,
+            // 免責とかはこちら
+            disclaimerList: [
+                '※ 全期間受講した場合でも、103,840円！！　他社のコーチングと比較した場合でも、かなりリーズナブルな価格で提供しております！'
+            ]
         }
     }
 };

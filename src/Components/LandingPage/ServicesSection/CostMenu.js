@@ -5,6 +5,7 @@ import LANDING_TEXT from '../../../Content/LandingPage';
 
 export default function CostMenu({
     accentColor = '#333',
+    shadowColor = '#222',
     bannerTitle,
     headerCost,
     menuItems,
@@ -16,7 +17,10 @@ export default function CostMenu({
     const TEXT = LANDING_TEXT.costMenuSharedText;
 
     // Styles
-    const bannerStyles = { backgroundColor: accentColor };
+    const bannerStyles = {
+        backgroundColor: accentColor,
+        textShadow: `2px 2px 2px ${shadowColor}`
+    };
     const menuStyles = { border: `1px solid ${accentColor}` };
     const headerCostContainerStyles = { color: accentColor };
     const accentedDividerStyle = { backgroundColor: accentColor };

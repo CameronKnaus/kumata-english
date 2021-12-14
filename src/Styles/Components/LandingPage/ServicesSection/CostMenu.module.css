@@ -11,7 +11,6 @@
     line-height: var(--large-header-text-line-height);
     padding: 10px 0;
     color: var(--gray-scale-15);
-    text-shadow: 2px 2px 2px var(--navy-dark);
 }
 
 .menu {

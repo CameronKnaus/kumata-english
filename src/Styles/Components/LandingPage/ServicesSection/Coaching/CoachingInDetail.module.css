@@ -1,3 +1,7 @@
 .container {
     background-color: var(--green-light);
 }
+
+.costContainer {
+    padding-top: 50px;
+}

@@ -19,6 +19,7 @@ export default function OnlineLessonsInDetail() {
                 <ExampleLessonsGroup />
             </div>
             <CostMenu accentColor='var(--navy)'
+                      shadowColor='var(--navy-dark)'
                       bannerTitle={COST_MENU.bannerTitle}
                       headerCost={COST_MENU.headerCost}
                       menuItems={COST_MENU.menuItems}
