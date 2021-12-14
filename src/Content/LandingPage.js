@@ -224,7 +224,15 @@ const LANDING_TEXT = {
             'Scrutinize',
             'Transition',
             'Widespread'
-        ]
+        ],
+        selfDoubtSection: {
+            title: '【こう思われている方いませんか？】',
+            doubtsList: [
+                '英語に興味はあるけど、何から勉強したらいいかわからない',
+                '英会話始めたいけど一人で継続できる自信がない'
+            ],
+            solution: 'クマタコーチングでは、毎日勉強法に就いてのアドバイス、モチベーションを維持できるようにメンタル面でのサポートを提供します！'
+        }
     }
 };
 

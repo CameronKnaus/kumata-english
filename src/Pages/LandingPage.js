@@ -8,6 +8,7 @@ import OnlineLessons from '../Components/LandingPage/ServicesSection/OnlineLesso
 import ServicesHeader from '../Components/LandingPage/ServicesSection/ServicesHeader';
 import OnlineLessonsInDetail from '../Components/LandingPage/ServicesSection/OnlineLessons/OnlineLessonsInDetail';
 import CoachingHeader from '../Components/LandingPage/ServicesSection/Coaching/CoachingHeader';
+import CoachingInDetail from '../Components/LandingPage/ServicesSection/Coaching/CoachingInDetail';
 
 // Lower end of the page can be lazily loaded
 // const CanadaImage = React.lazy(() => import('../Components/LandingPage/CanadaImage'));
@@ -37,6 +38,7 @@ export default function LandingPage() {
                 </div>
                 <div id='coaching-section'>
                     <CoachingHeader />
+                    <CoachingInDetail />
                 </div>
             </section>
         </>

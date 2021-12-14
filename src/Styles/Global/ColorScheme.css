@@ -16,19 +16,12 @@
     --gray-scale-14: #EEE;
     --gray-scale-15: #ffffff;
 
-    /* TODO: Review color schemes and choose a final */
-    /* Potential Color Scheme 1 - Not looking good*/
-    --dark-accent: #424b54;
-    --tertiary-color: #93a8ac;
-    --secondary-color: #e2b4bd;
-    --primary-color: #9b6a6c;
-
     /* Potential Color Scheme 2 */
     /* Green light may need to be EBFFFB, will determine later */
     --green-light: #d6fff6;
     --green: #00b890;
     /* Green dark may need to be 002920 */
-    --green-dark: #003d30;
+    --green-dark: #006650;
     --navy-light: #DDF7F8;
     --navy: #156064;
     --navy-dark: #0e4143;
