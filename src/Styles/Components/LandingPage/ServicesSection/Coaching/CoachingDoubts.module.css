@@ -4,23 +4,23 @@
 
 .titleText {
     color: var(--green);
-    font-size: var(--extra-large-header-text-font-size);
-    line-height: var(--extra-large-header-text-line-height);
+    font-size: var(--large-header-text-font-size);
+    line-height: var(--large-header-text-line-height);
 }
 
 .doubtsList li {
-    padding: 15px 0;
+    padding-bottom: 15px;
 }
 
 .doubtText {
     color: var(--green-dark);
-    font-size: var(--header-text-font-size);
-    line-height: var(--header-text-line-height);
+    font-size: var(--small-header-text-font-size);
+    line-height: var(--small-header-text-line-height);
 }
 
 .solutionText {
-    font-size: var(--large-header-text-font-size);
-    line-height: var(--large-header-text-line-height);
+    font-size: var(--small-header-text-font-size);
+    line-height: var(--small-header-text-line-height);
     color: var(--green);
 }
 
@@ -29,10 +29,9 @@
 }
 
 .iconContainer {
-    font-size: 65px;
+    font-size: 45px;
     padding-right: 10px;
     color: var(--green);
-    line-height: var(--large-header-text-line-height);
     display: inline-block;
 }
 
