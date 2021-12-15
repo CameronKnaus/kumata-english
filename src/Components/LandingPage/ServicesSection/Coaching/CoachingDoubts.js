@@ -3,9 +3,9 @@ import styles from '../../../../Styles/Components/LandingPage/ServicesSection/Co
 import LANDING_TEXT from '../../../../Content/LandingPage';
 import { animated, config, useSpring, useSprings } from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
-import SportsIcon from '@material-ui/icons/Sports';
+import FireIcon from '@material-ui/icons/Whatshot';
 
-export default function CoachingDoubts() {
+export default function CoachingDoubts({ onAnimComplete }) {
     const [listInView, setListInView] = React.useState(false);
     const TEXT = LANDING_TEXT.coaching.selfDoubtSection;
 
@@ -19,7 +19,7 @@ export default function CoachingDoubts() {
         doubtsList.map((doubtItem, index) => {
             return {
                 config: { mass: 5, tension: 1000, friction: 600 },
-                delay: 400 + (index * 700),
+                delay: 400 + (index * 300),
                 to: {
                     opacity: listInView ? 1 : 0,
                     transform: listInView ? 'translateX(0)' : 'translateX(-20px)'
@@ -31,17 +31,18 @@ export default function CoachingDoubts() {
 
     const solutionSpring = useSpring({
         config: { ...config.slow },
-        delay: 2400,
+        delay: 1400,
         to: {
             opacity: listInView ? 1 : 0,
             transform: listInView
                 ? 'translateY(0)'
                 : 'translateY(30px)'
-        }
+        },
+        onRest: () => onAnimComplete(true)
     });
 
     return (
-        <div className={`average-container ${styles.container}`}>
+        <div className={styles.container}>
             <h2 className={styles.titleText}>
                 {TEXT.title}
             </h2>
@@ -61,7 +62,7 @@ export default function CoachingDoubts() {
                 </VisibilitySensor>
                 <animated.div style={solutionSpring} className={styles.solutionContainer}>
                     <div className={styles.iconContainer}>
-                        <SportsIcon fontSize='inherit' />
+                        <FireIcon fontSize='inherit' />
                     </div>
                     <span className={styles.solutionText}>
                         {TEXT.solution}

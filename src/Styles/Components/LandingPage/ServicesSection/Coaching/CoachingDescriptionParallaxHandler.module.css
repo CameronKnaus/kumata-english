@@ -1,0 +1,31 @@
+.contentContainer {
+    display: inline-block;
+    width: 60%;
+}
+
+.imageContainer {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+}
+
+@media (max-width: 767px) {
+    .imageContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .image {
+        margin-left: -20px;
+        margin-top: -120px;
+        width: 320px;
+        height: 320px;
+    }
+}

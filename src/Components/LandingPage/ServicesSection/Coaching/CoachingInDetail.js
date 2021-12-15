@@ -1,8 +1,8 @@
 import React from 'react';
-import CoachingDoubts from './CoachingDoubts';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/Coaching/CoachingInDetail.module.css';
 import CostMenu from '../CostMenu';
 import LANDING_TEXT from '../../../../Content/LandingPage';
+import CoachingDescriptionParallaxHandler from './CoachingDescriptionParallaxHandler';
 
 export default function CoachingInDetail() {
     const COST_MENU = LANDING_TEXT.coaching.costMenu;
@@ -10,7 +10,7 @@ export default function CoachingInDetail() {
     return (
         <>
             <div className={styles.container}>
-                <CoachingDoubts />
+                <CoachingDescriptionParallaxHandler />
             </div>
             <div className={styles.costContainer}>
                 <CostMenu accentColor='var(--green)'
