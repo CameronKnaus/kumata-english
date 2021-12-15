@@ -255,6 +255,8 @@ const LANDING_TEXT = {
                 '毎日リスニング・発音チェック・英作文の課題で「会話」で必要な能力をUP！'
             ]
         },
+        closingHeader: '今からでも遅くない！',
+        closingDescLine: '今、「英語を始めて見たい」と思っているのであれば、その時がベストタイミングです！',
         costMenu: {
             bannerTitle: '英語コーチングの料金',
             headerCost: {

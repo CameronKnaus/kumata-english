@@ -21,6 +21,14 @@ export default function CoachingInDetail() {
                 <ExampleCoachingGroup header={TEXT.coachingContentsSection.header}
                                       contentList={TEXT.coachingContentsSection.coachingContents}
                 />
+                <div className={styles.closingRemarksContainer}>
+                    <h3 className={styles.closingHeader}>
+                        {TEXT.closingHeader}
+                    </h3>
+                    <p className={styles.closingDescLine}>
+                        {TEXT.closingDescLine}
+                    </p>
+                </div>
             </div>
             <div className={styles.costContainer}>
                 <CostMenu accentColor='var(--purple)'
