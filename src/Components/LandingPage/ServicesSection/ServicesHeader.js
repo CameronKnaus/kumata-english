@@ -52,7 +52,7 @@ export default function ServicesHeader() {
                     />
                     <ServiceAnchorButton text={TEXT.coaching}
                                          icon='coaching'
-                                         backgroundColor='var(--green)'
+                                         backgroundColor='var(--purple)'
                                          clickHandler={(event) => scrollToTarget({ targetId: 'coaching-section', delay: 200 }, event)}
                     />
                     <ServiceAnchorButton text={TEXT.youtube}

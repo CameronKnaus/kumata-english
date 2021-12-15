@@ -9,6 +9,7 @@ import ServicesHeader from '../Components/LandingPage/ServicesSection/ServicesHe
 import OnlineLessonsInDetail from '../Components/LandingPage/ServicesSection/OnlineLessons/OnlineLessonsInDetail';
 import CoachingHeader from '../Components/LandingPage/ServicesSection/Coaching/CoachingHeader';
 import CoachingInDetail from '../Components/LandingPage/ServicesSection/Coaching/CoachingInDetail';
+import ScrollForMore from '../Components/LandingPage/ScrollForMore';
 
 // Lower end of the page can be lazily loaded
 // const CanadaImage = React.lazy(() => import('../Components/LandingPage/CanadaImage'));
@@ -20,9 +21,12 @@ const NAV_BAR_OFFSET = 40;
 export default function LandingPage() {
     return (
         <div style={{ paddingBottom: NAV_BAR_OFFSET }}>
-            <section id='intro-section' className={styles.introSection}>
-                <KumataCoin />
-                <AboutKumata />
+            <section id='intro-section'>
+                <div className={styles.introSection}>
+                    <KumataCoin />
+                    <AboutKumata />
+                </div>
+                <ScrollForMore />
             </section>
             <section id='profile-section'>
                 <KumataProfile />

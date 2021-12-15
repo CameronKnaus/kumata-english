@@ -4,7 +4,7 @@
 
 .headerContainer h2 {
     color: var(--navy);
-    background: -webkit-linear-gradient(0deg, var(--navy), var(--green), var(--orange), var(--pink));
+    background: -webkit-linear-gradient(0deg, var(--green), var(--purple), var(--orange), var(--pink));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0;

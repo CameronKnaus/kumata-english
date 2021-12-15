@@ -20,6 +20,7 @@ const LANDING_TEXT = {
         'TOEIC 910点',
         'カナダ、バンクーバーへの留学経験有'
     ],
+    scrollDown: 'したにスクロールしてください',
     imageAria: '英語が人生を楽しくしてくれる。あなたも英語で人生をより豊かにしませんか？',
     servicesHeader: {
         providedServices: '提供しているサービス',
