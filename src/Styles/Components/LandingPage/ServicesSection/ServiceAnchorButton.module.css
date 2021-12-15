@@ -12,17 +12,37 @@
     cursor: pointer;
 }
 
+.slimButtonStyle {
+    color: var(--gray-scale-15);
+    display: flex;
+    transition: filter 0.3s ease;
+    padding: 5px 25px;
+    border-radius: 0;
+    flex-grow: 1;
+}
+
+.slimButtonStyle:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
 .icon {
     margin-top: -2px;
     padding-right: 5px;
     font-size: 1.8rem;
 }
 
+.slimIcons {
+    margin: 0 auto;
+    font-size: 1.8rem;
+    padding-right: 5px;
+}
+
 .text {
     font-size: 1.3rem;
 }
 
-@media (max-width:768px) {
+@media (max-width: 767px) {
     .buttonStyle {
         flex: 0 1 40%;
         margin: 5px;

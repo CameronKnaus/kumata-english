@@ -1,0 +1,14 @@
+.navContainer {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    bottom: -50px;
+    display: flex;
+    z-index: 10;
+    border-top: 1px solid var(--gray-scale-3);
+    transition-duration: 0.5s;
+}
+
+.showNavBar {
+    bottom: 0;
+}

@@ -298,7 +298,7 @@ const LANDING_TEXT = {
             ],
             emailSubjectLine: '「コーチングの件について」',
             emailContents: 'CHANGE ME', // TODO
-            howToApply: (emailSubject) => `${emailSubject}お名前を記載の上、送信お願いします。`,
+            howToApply: (emailSubject) => `ぜひ興味ある方は、件名${emailSubject}、お名前を記載の上、送信お願いします。`,
             // 免責とかはこちら
             disclaimerList: [
                 '※ 全期間受講した場合でも、103,840円！！　他社のコーチングと比較した場合でも、かなりリーズナブルな価格で提供しております！'

@@ -16,10 +16,10 @@ import CoachingInDetail from '../Components/LandingPage/ServicesSection/Coaching
 // const ServicesHeader = React.lazy(() => import('../Components/LandingPage/ServicesSection/ServicesHeader'));
 // const OnlineLessonsInDetail = React.lazy(() => import('../Components/LandingPage/ServicesSection/OnlineLessons/OnlineLessonsInDetail'));
 
-
+const NAV_BAR_OFFSET = 40;
 export default function LandingPage() {
     return (
-        <>
+        <div style={{ paddingBottom: NAV_BAR_OFFSET }}>
             <section id='intro-section' className={styles.introSection}>
                 <KumataCoin />
                 <AboutKumata />
@@ -41,6 +41,6 @@ export default function LandingPage() {
                     <CoachingInDetail />
                 </div>
             </section>
-        </>
+        </div>
     );
 }
