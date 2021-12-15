@@ -4,6 +4,7 @@ import CostMenu from '../CostMenu';
 import LANDING_TEXT from '../../../../Content/LandingPage';
 import CoachingDescriptionParallaxHandler from './CoachingDescriptionParallaxHandler';
 import ExampleCoachingGroup from './ExampleCoachingGroup';
+import DanceParty from './DanceParty';
 
 export default function CoachingInDetail() {
     const TEXT = LANDING_TEXT.coaching;
@@ -21,6 +22,7 @@ export default function CoachingInDetail() {
                 <ExampleCoachingGroup header={TEXT.coachingContentsSection.header}
                                       contentList={TEXT.coachingContentsSection.coachingContents}
                 />
+                <DanceParty />
                 <div className={styles.closingRemarksContainer}>
                     <h3 className={styles.closingHeader}>
                         {TEXT.closingHeader}
