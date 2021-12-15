@@ -12,10 +12,10 @@ const iconMapper = {
     instagram: <InstagramIcon fontSize='inherit' />
 };
 
-export default function ServiceAnchorButton({ backgroundColor, text, icon }) {
+export default function ServiceAnchorButton({ backgroundColor, text, icon, clickHandler = () => { /* NOOP */ } }) {
 
     return (
-        <button className={styles.buttonStyle} style={{ backgroundColor }}>
+        <button className={styles.buttonStyle} style={{ backgroundColor }} onClick={clickHandler}>
             <div className={styles.icon}>
                 {iconMapper[icon] || ''}
             </div>

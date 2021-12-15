@@ -243,8 +243,7 @@ const LANDING_TEXT = {
                 costNote: '（初月のみ）',
                 specialNote: ''
             },
-            // セールがなかったらこうのままにセットして： ''
-            saleDescription: '',
+            saleDescription: '無料カウンセリングもしています。',
             menuItems: [
                 {
                     title: '教材費',
@@ -266,15 +265,15 @@ const LANDING_TEXT = {
                 },
                 {
                     title: '２ヶ月目',
-                    price: '17,000円',
-                    specialPrice: '17,000円',
+                    price: '50,000円',
+                    specialPrice: '50,000円',
                     noteList: [
                         '（３５日間）'
                     ]
                 }
             ],
-            emailSubjectLine: 'CHANGE ME',
-            emailContents: 'CHANGE ME',
+            emailSubjectLine: '「コーチングの件について」',
+            emailContents: 'CHANGE ME', // TODO
             howToApply: (emailSubject) => `${emailSubject}お名前を記載の上、送信お願いします。`,
             // 免責とかはこちら
             disclaimerList: [
