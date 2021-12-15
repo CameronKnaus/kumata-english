@@ -4,7 +4,7 @@
 }
 
 .titleText {
-    color: var(--green);
+    color: var(--purple);
     font-size: var(--large-header-text-font-size);
     line-height: var(--large-header-text-line-height);
 }
@@ -19,7 +19,7 @@
 }
 
 .doubtText {
-    color: var(--green-dark);
+    color: var(--purple-dark);
     font-size: var(--small-header-text-font-size);
     line-height: var(--small-header-text-line-height);
 }
@@ -28,7 +28,7 @@
     font-weight: bold;
     font-size: var(--small-header-text-font-size);
     line-height: var(--small-header-text-line-height);
-    color: var(--green);
+    color: var(--purple);
 }
 
 .solutionContainer {
@@ -38,13 +38,13 @@
 .iconContainer {
     font-size: 40px;
     padding-right: 10px;
-    color: var(--green);
+    color: var(--purple);
     display: inline-block;
 }
 
 @media (max-width: 767px) {
     .titleText {
-        color: var(--green);
+        color: var(--purple);
         font-size: var(--header-text-font-size);
         line-height: var(--header-text-line-height);
         text-align: center;
@@ -55,7 +55,7 @@
     }
 
     .doubtText {
-        color: var(--green-dark);
+        color: var(--purple-dark);
         font-size: var(--small-header-text-font-size);
         line-height: var(--small-header-text-line-height);
         text-align: center;
@@ -77,13 +77,13 @@
 
 @media (max-width: 555px) {
     .titleText {
-        color: var(--green);
+        color: var(--purple);
         font-size: var(--small-header-text-font-size);
         line-height: var(--small-header-text-line-height);
     }
 
     .doubtText {
-        color: var(--green-dark);
+        color: var(--purple-dark);
         font-size: var(--body-text-font-size);
         line-height: var(--body-text-line-height);
     }

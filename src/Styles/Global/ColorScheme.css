@@ -16,16 +16,25 @@
     --gray-scale-14: #EEE;
     --gray-scale-15: #ffffff;
 
-    /* Potential Color Scheme 2 */
-    /* Green light may need to be EBFFFB, will determine later */
     --green-extra-light: #EBFFFB;
     --green-light: #d6fff6;
     --green: #00b890;
-    /* Green dark may need to be 002920 */
     --green-dark: #006650;
+
+    --purple-extra-light: #f5f3f7;
+    --purple-light: #E2DAE7;
+    --purple: #805D93;
+    --purple-dark: #36283E;
+
+    --crimson-extra-light: #FCEDEF;
+    --crimson-light: #F4B8BF;
+    --crimson: #74121D;
+    --crimson-dark: #35080D;
+
     --navy-light: #DDF7F8;
     --navy: #156064;
     --navy-dark: #0e4143;
+
     --pink: #ef767a;
     --brown: #554348;
     --orange: #fb8f67;

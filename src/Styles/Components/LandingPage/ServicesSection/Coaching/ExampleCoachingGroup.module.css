@@ -1,25 +1,27 @@
 .header {
     color: var(--navy);
-    background: -webkit-linear-gradient(140deg, var(--green) 30%, var(--navy-dark));
+    background: -webkit-linear-gradient(140deg, var(--purple) 30%, var(--navy-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
     font-weight: bold;
+    font-size: var(--header-text-font-size);
+    line-height: var(--header-text-line-height);
 }
 
 .exampleTile {
     width: 100%;
     max-width: 900px;
     padding: 15px 20px;
-    margin: auto;
+    margin: 0 auto 60px;
     box-sizing: border-box;
-    background-color: var(--green-extra-light);
+    background-color: var(--purple-extra-light);
     border-radius: 12px;
 }
 
 .exampleList {
     padding-top: 10px;
-    color: var(--green-dark);
+    color: var(--purple-dark);
     font-size: var(--small-header-text-font-size);
     line-height: var(--small-header-text-line-height);
 }
@@ -30,4 +32,21 @@
 
 .exampleList li:last-child {
     padding-bottom: 0;
+}
+
+@media (max-width: 555px) {
+    .header {
+        font-size: var(--small-header-text-font-size);
+        line-height: var(--small-header-text-line-height);
+    }
+
+    .exampleList {
+        font-size: var(--enlarged-body-text-font-size);
+        line-height: var(--enlarged-body-text-line-height);
+        padding-left: 15px;
+    }
+
+    .exampleTile {
+        padding: 15px 20px;
+    }
 }

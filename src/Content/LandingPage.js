@@ -238,6 +238,14 @@ const LANDING_TEXT = {
             description: '週に数回受講する形式の「英会話」とは異なり、あなたの毎日を「マンツーマン」でサポート。',
             solution: '英語力がゼロの状態からでも、短期間で成長を感じることができます。'
         },
+        importantTopics: {
+            header: '【英語の学習で大切なこと】',
+            pointsList: [
+                'インプットしたことをしっかり「アウトプット(実際に使う)こと」',
+                '文法をしっかり理解すること',
+                'モチベーションを保って継続すること'
+            ]
+        },
         coachingContentsSection: {
             header: '【Kumataコーチングでの具体的内容】',
             coachingContents: [

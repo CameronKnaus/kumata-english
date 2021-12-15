@@ -6,7 +6,8 @@ import CoachingDescriptionParallaxHandler from './CoachingDescriptionParallaxHan
 import ExampleCoachingGroup from './ExampleCoachingGroup';
 
 export default function CoachingInDetail() {
-    const COST_MENU = LANDING_TEXT.coaching.costMenu;
+    const TEXT = LANDING_TEXT.coaching;
+    const COST_MENU = TEXT.costMenu;
 
     return (
         <>
@@ -14,11 +15,16 @@ export default function CoachingInDetail() {
                 <div className={styles.parallaxContainer}>
                     <CoachingDescriptionParallaxHandler />
                 </div>
-                <ExampleCoachingGroup />
+                <ExampleCoachingGroup header={TEXT.importantTopics.header}
+                                      contentList={TEXT.importantTopics.pointsList}
+                />
+                <ExampleCoachingGroup header={TEXT.coachingContentsSection.header}
+                                      contentList={TEXT.coachingContentsSection.coachingContents}
+                />
             </div>
             <div className={styles.costContainer}>
-                <CostMenu accentColor='var(--green)'
-                          shadowColor='var(--green-dark)'
+                <CostMenu accentColor='var(--purple)'
+                          shadowColor='var(--purple-dark)'
                           bannerTitle={COST_MENU.bannerTitle}
                           headerCost={COST_MENU.headerCost}
                           menuItems={COST_MENU.menuItems}
