@@ -1,0 +1,33 @@
+.header {
+    color: var(--navy);
+    background: -webkit-linear-gradient(140deg, var(--green) 30%, var(--navy-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-weight: bold;
+}
+
+.exampleTile {
+    width: 100%;
+    max-width: 900px;
+    padding: 15px 20px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: var(--green-extra-light);
+    border-radius: 12px;
+}
+
+.exampleList {
+    padding-top: 10px;
+    color: var(--green-dark);
+    font-size: var(--small-header-text-font-size);
+    line-height: var(--small-header-text-line-height);
+}
+
+.exampleList li {
+    padding-bottom: 15px;
+}
+
+.exampleList li:last-child {
+    padding-bottom: 0;
+}

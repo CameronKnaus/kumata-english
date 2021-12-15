@@ -1,6 +1,10 @@
 .container {
     background-color: var(--green-light);
-    padding-bottom: 200px;
+    padding-bottom: 60px;
+}
+
+.parallaxContainer {
+    margin-bottom: 80px;
 }
 
 .costContainer {

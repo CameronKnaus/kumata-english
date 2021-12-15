@@ -1,7 +1,7 @@
 .container {
     border-bottom: 15px solid var(--green);
     border-top: 15px solid var(--green);
-    border-right: 15px solid var(--green);
+    border-left: 15px solid var(--green);
     min-width: var(--min-supported-width);
     position: relative;
 }

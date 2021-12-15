@@ -238,6 +238,15 @@ const LANDING_TEXT = {
             description: '週に数回受講する形式の「英会話」とは異なり、あなたの毎日を「マンツーマン」でサポート。',
             solution: '英語力がゼロの状態からでも、短期間で成長を感じることができます。'
         },
+        coachingContentsSection: {
+            header: '【Kumataコーチングでの具体的内容】',
+            coachingContents: [
+                '毎日文法をインプット・アウトプットを通して学習',
+                '不明点をLINEで質問して疑問を解消',
+                '週2回のオンラインレッスンで学んだことをアウトプット',
+                '毎日リスニング・発音チェック・英作文の課題で「会話」で必要な能力をUP！'
+            ]
+        },
         costMenu: {
             bannerTitle: '英語コーチングの料金',
             headerCost: {

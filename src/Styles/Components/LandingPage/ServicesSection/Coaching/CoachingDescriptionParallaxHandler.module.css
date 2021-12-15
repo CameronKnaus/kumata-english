@@ -12,6 +12,7 @@
 .image {
     width: 400px;
     height: 400px;
+    filter: blur(1px);
 }
 
 @media (max-width: 767px) {
