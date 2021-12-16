@@ -10,6 +10,7 @@ import OnlineLessonsInDetail from '../Components/LandingPage/ServicesSection/Onl
 import CoachingHeader from '../Components/LandingPage/ServicesSection/Coaching/CoachingHeader';
 import CoachingInDetail from '../Components/LandingPage/ServicesSection/Coaching/CoachingInDetail';
 import ScrollForMore from '../Components/LandingPage/ScrollForMore';
+import { useFormFactor } from '../Util/FormFactorContext';
 
 // Lower end of the page can be lazily loaded
 // const CanadaImage = React.lazy(() => import('../Components/LandingPage/CanadaImage'));
@@ -19,6 +20,8 @@ import ScrollForMore from '../Components/LandingPage/ScrollForMore';
 
 const NAV_BAR_OFFSET = 40;
 export default function LandingPage() {
+    const isSM = useFormFactor().SM;
+
     return (
         <div style={{ paddingBottom: NAV_BAR_OFFSET }}>
             <section id='intro-section'>
@@ -26,13 +29,10 @@ export default function LandingPage() {
                     <KumataCoin />
                     <AboutKumata />
                 </div>
-                <ScrollForMore />
+                {!isSM && <ScrollForMore />}
             </section>
             <section id='profile-section'>
                 <KumataProfile />
-            </section>
-            <section id='canada-image-section'>
-                <CanadaImage />
             </section>
             <section id='offered-services-section'>
                 <ServicesHeader />
@@ -44,6 +44,9 @@ export default function LandingPage() {
                     <CoachingHeader />
                     <CoachingInDetail />
                 </div>
+            </section>
+            <section id='canada-image-section'>
+                <CanadaImage />
             </section>
         </div>
     );

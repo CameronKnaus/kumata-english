@@ -5,7 +5,7 @@ import { useFormFactor } from '../../../Util/FormFactorContext';
 
 export default function AccoladeItem({ accolade }) {
     const [isVisible, setIsVisible] = React.useState(false);
-    const small = useFormFactor().SM;
+    const isSM = useFormFactor().SM;
 
     const handleVisibilityChange = (newValue) => {
         // Intentionally only setting true once
@@ -25,7 +25,7 @@ export default function AccoladeItem({ accolade }) {
 
     return (
         <VisibilitySensor onChange={handleVisibilityChange}>
-            <animated.li style={animatedStyle} className={`${small ? 'large-header-text' : 'large-header-text'}`}>
+            <animated.li style={animatedStyle} className={`${isSM ? 'header-text' : 'large-header-text'}`}>
                 {accolade}
             </animated.li>
         </VisibilitySensor>

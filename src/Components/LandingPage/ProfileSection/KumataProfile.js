@@ -9,6 +9,7 @@ import ProfileText from './ProfileText';
 import { Parallax } from 'react-scroll-parallax';
 import LANDING_TEXT from '../../../Content/LandingPage';
 import { useFormFactor } from '../../../Util/FormFactorContext';
+import ProfileLinkGroup from './ProfileLinkGroup';
 
 export default function KumataProfile() {
     if(useFormFactor().SM) {
@@ -16,6 +17,7 @@ export default function KumataProfile() {
             <div className={styles.smallContainer}>
                 <Image webpImage={webpImage} regularImage={regularImage} imageBaseType='png' classes={styles.smallSnowKumataImage} />
                 <ProfileText small />
+                <ProfileLinkGroup showHeader />
             </div>
         );
     }
@@ -29,6 +31,7 @@ export default function KumataProfile() {
             </div>
             <Parallax y={[0, 30]}>
                 <Image webpImage={webpImageTall} regularImage={regularImageTall} imageBaseType='png' classes={styles.snowKumataImage} label={LANDING_TEXT.imageAria} />
+                <ProfileLinkGroup />
             </Parallax>
         </div>
     );

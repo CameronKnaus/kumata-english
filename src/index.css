@@ -17,7 +17,7 @@ code {
 }
 
 a {
-  color: #0694db;
+  color: var(--link-blue);
 }
 
 /* Overwrite default button styling */

@@ -5,7 +5,7 @@ import { animated, config, useSpring, useSprings } from 'react-spring';
 import VisibilitySensor from 'react-visibility-sensor';
 import FireIcon from '@material-ui/icons/Whatshot';
 
-export default function CoachingDoubts({ onAnimComplete }) {
+export default function CoachingDoubts() {
     const [listInView, setListInView] = React.useState(false);
     const TEXT = LANDING_TEXT.coaching.selfDoubtSection;
 
@@ -37,8 +37,7 @@ export default function CoachingDoubts({ onAnimComplete }) {
             transform: listInView
                 ? 'translateY(0)'
                 : 'translateY(30px)'
-        },
-        onRest: () => onAnimComplete(true)
+        }
     });
 
     return (
@@ -46,29 +45,27 @@ export default function CoachingDoubts({ onAnimComplete }) {
             <h2 className={styles.titleText}>
                 {TEXT.title}
             </h2>
-            <div className={styles.textContentWrap}>
-                <VisibilitySensor onChange={handleVisibilityChange}>
-                    <ul className={styles.doubtsList}>
-                        {
-                            doubtsList.map((doubt, index) => {
-                                return (
-                                    <animated.li key={`coaching-doubt-${index}`} className={`${styles.doubtText}`} style={doubtsListSprings[index]}>
-                                        { doubtsList[index] }
-                                    </animated.li>
-                                );
-                            })
-                        }
-                    </ul>
-                </VisibilitySensor>
-                <animated.div style={solutionSpring} className={styles.solutionContainer}>
-                    <div className={styles.iconContainer}>
-                        <FireIcon fontSize='inherit' />
-                    </div>
-                    <span className={styles.solutionText}>
-                        {TEXT.solution}
-                    </span>
-                </animated.div>
-            </div>
+            <VisibilitySensor onChange={handleVisibilityChange}>
+                <ul className={styles.doubtsList}>
+                    {
+                        doubtsList.map((doubt, index) => {
+                            return (
+                                <animated.li key={`coaching-doubt-${index}`} className={`${styles.doubtText}`} style={doubtsListSprings[index]}>
+                                    { doubtsList[index] }
+                                </animated.li>
+                            );
+                        })
+                    }
+                </ul>
+            </VisibilitySensor>
+            <animated.div style={solutionSpring} className={styles.solutionContainer}>
+                <div className={styles.iconContainer}>
+                    <FireIcon fontSize='inherit' />
+                </div>
+                <span className={styles.solutionText}>
+                    {TEXT.solution}
+                </span>
+            </animated.div>
         </div>
     );
 }

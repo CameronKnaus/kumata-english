@@ -4,22 +4,19 @@ import LANDING_TEXT from '../../../../Content/LandingPage';
 import VisibilitySensor from 'react-visibility-sensor';
 import { useSpring, animated } from 'react-spring';
 import TrendingUpIcon from '@material-ui/icons/TrendingUp';
-import { useFormFactor } from '../../../../Util/FormFactorContext';
 
-export default function ZeroEnglishOkay({ readyToShow }) {
-    const isXS = useFormFactor().XS;
+export default function ZeroEnglishOkay() {
     const [isVisible, setIsVisible] = React.useState(false);
     const TEXT = LANDING_TEXT.coaching.noEnglishSection;
 
     const handleVisibilityChange = (setToShow) => {
-        // Start the fade in animation immediately within view for XS or when it's within view AND readyToShow prop is true for SM+
-        (setToShow || isXS) && !isVisible && setIsVisible(true);
+        setToShow && !isVisible && setIsVisible(true);
     };
 
     const springStyle = useSpring({
         config: { mass: 250, tension: 500, friction: 250 },
         to: {
-            opacity: readyToShow && isVisible ? 1 : 0
+            opacity: isVisible ? 1 : 0
         }
     });
 

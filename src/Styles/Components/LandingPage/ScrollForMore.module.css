@@ -9,11 +9,12 @@
 
 .container {
     display: flex;
+    width: 300px;
     color: var(--gray-scale-3);
     line-height: var(--small-header-text-line-height);
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin: 15px auto;
 }
 
 .iconContainer {

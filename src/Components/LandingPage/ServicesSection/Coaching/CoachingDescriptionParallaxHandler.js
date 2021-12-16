@@ -9,17 +9,16 @@ import styles from '../../../../Styles/Components/LandingPage/ServicesSection/Co
 import ZeroEnglishOkay from './ZeroEnglishOkay';
 
 export default function CoachingDescriptionParallaxHandler() {
-    const [doubtsAnimComplete, setDoubtsAnimComplete] = React.useState(false);
     const isSM = useFormFactor().SM;
 
     if(isSM) {
         return (
             <div className='average-container'>
-                <CoachingDoubts onAnimComplete={setDoubtsAnimComplete} />
+                <CoachingDoubts />
                 <div className={styles.imageContainer}>
                     <Image webpImage={webpKumata} regularImage={regularKumata} classes={styles.image} imageBaseType='png' />
                 </div>
-                <ZeroEnglishOkay readyToShow={doubtsAnimComplete} />
+                <ZeroEnglishOkay />
             </div>
         );
     }
@@ -28,8 +27,8 @@ export default function CoachingDescriptionParallaxHandler() {
         <div className='average-container'>
             <div className={styles.contentContainer}>
                 <Parallax y={[30, -10]}>
-                    <CoachingDoubts onAnimComplete={setDoubtsAnimComplete} />
-                    <ZeroEnglishOkay readyToShow={doubtsAnimComplete} />
+                    <CoachingDoubts />
+                    <ZeroEnglishOkay />
                 </Parallax>
             </div>
             <div className={styles.imageContainer}>
