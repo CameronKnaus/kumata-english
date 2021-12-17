@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './Styles/Global/ColorScheme.css';
+import './Styles/Global/Typography.css';
+import './Styles/Global/Layout.css';
 import './index.css';
 import { PAGE_ROUTES } from './Constants/RouteConstants';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
