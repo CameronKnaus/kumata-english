@@ -58,10 +58,12 @@ export default function ServicesHeader() {
                     <ServiceAnchorButton text={TEXT.youtube}
                                          icon='youtube'
                                          backgroundColor='var(--orange)'
+                                         clickHandler={(event) => scrollToTarget({ targetId: 'youtube-section', delay: 200, scrollTargetTo: 'center' }, event)}
                     />
                     <ServiceAnchorButton text={TEXT.instagram}
                                          icon='instagram'
                                          backgroundColor='var(--pink)'
+                                         clickHandler={(event) => scrollToTarget({ targetId: 'instagram-section', delay: 200 }, event)}
                     />
                 </div>
             </div>

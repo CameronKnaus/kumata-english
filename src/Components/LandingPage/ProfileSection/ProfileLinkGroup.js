@@ -5,6 +5,7 @@ import LANDING_TEXT from '../../../Content/LandingPage';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import SmileIcon from '@material-ui/icons/SentimentSatisfiedAlt';
+import { youtubeConstants, instagramConstants } from '../../../Constants/SocialMediaConstants';
 
 export default function ProfileLinkGroup({ showHeader }) {
 
@@ -30,7 +31,7 @@ export default function ProfileLinkGroup({ showHeader }) {
                 </div>
                 <div className={styles.linkContainer}>
                     <InstagramIcon fontSize='inherit' className={styles.icon} style={{ color: 'var(--instagram-violet)' }} />
-                    <a href='https://www.instagram.com/kumataenglish/' className={styles.link}>
+                    <a href={instagramConstants.profilePage} className={styles.link}>
                         <p className={styles.linkText}>
                             <span style={{ textDecoration: 'underline' }}>
                                 {LANDING_TEXT.myInstagram}
@@ -41,7 +42,7 @@ export default function ProfileLinkGroup({ showHeader }) {
                 </div>
                 <div className={styles.linkContainer}>
                     <YouTubeIcon fontSize='inherit' className={styles.icon} style={{ color: 'var(--youtube-red)' }} />
-                    <a href='https://www.youtube.com/channel/UCWPsPmiSso_y66JhI5bCQTQ/featured' className={styles.link}>
+                    <a href={youtubeConstants.channelFeatured} className={styles.link}>
                         <p className={styles.linkText}>
                             <span style={{ textDecoration: 'underline' }}>
                                 {LANDING_TEXT.myYoutube}

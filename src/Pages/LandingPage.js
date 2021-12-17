@@ -11,6 +11,7 @@ import CoachingHeader from '../Components/LandingPage/ServicesSection/Coaching/C
 import CoachingInDetail from '../Components/LandingPage/ServicesSection/Coaching/CoachingInDetail';
 import ScrollForMore from '../Components/LandingPage/ScrollForMore';
 import { useFormFactor } from '../Util/FormFactorContext';
+import MyYoutubeHandler from '../Components/LandingPage/YoutubeSection/MyYoutubeHandler';
 
 // Lower end of the page can be lazily loaded
 // const CanadaImage = React.lazy(() => import('../Components/LandingPage/CanadaImage'));
@@ -44,6 +45,9 @@ export default function LandingPage() {
                     <CoachingHeader />
                     <CoachingInDetail />
                 </div>
+            </section>
+            <section id='youtube-section'>
+                <MyYoutubeHandler />
             </section>
             <section id='canada-image-section'>
                 <CanadaImage />

@@ -21,10 +21,10 @@ const LANDING_TEXT = {
         'カナダ、バンクーバーへの留学経験有'
     ],
     scrollDown: '下にスクロールしてください',
-    linksAboutMe: '私に就いてのリンク',
-    moreAboutMe: '私の話',
-    myInstagram: '私のインスタグラム',
-    myYoutube: '私のユーチューブ',
+    linksAboutMe: 'Kumataについて',
+    moreAboutMe: '自己紹介',
+    myInstagram: 'Instagram',
+    myYoutube: 'Youtube',
     imageAria: '英語が人生を楽しくしてくれる。あなたも英語で人生をより豊かにしませんか？',
     servicesHeader: {
         providedServices: '提供しているサービス',
@@ -309,6 +309,18 @@ const LANDING_TEXT = {
                 '※ 全期間受講した場合でも、103,840円！！　他社のコーチングと比較した場合でも、かなりリーズナブルな価格で提供しております！'
             ]
         }
+    },
+    youtube: {
+        title: 'Kumataのユーチューブ',
+        topics: '提供しているトピックス',
+        videoTypeList: [
+            '発音の方法',
+            'TOEICの解説',
+            '勉強法',
+            'モチベーション'
+        ],
+        closingRemark: '様々な動画を投稿しているので、英語の学習の際にぜひご覧ください！',
+        toMyChannel: 'Youtubeへ'
     }
 };
 

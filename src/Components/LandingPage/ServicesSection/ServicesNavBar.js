@@ -23,10 +23,12 @@ export default function ServicesNavBar({ show }) {
             <ServiceAnchorButton slimMode text={TEXT.youtube}
                                  icon='youtube'
                                  backgroundColor='var(--orange)'
+                                 clickHandler={(event) => scrollToTarget({ targetId: 'youtube-section', delay: 200, scrollTargetTo: 'center' }, event)}
             />
             <ServiceAnchorButton slimMode text={TEXT.instagram}
                                  icon='instagram'
                                  backgroundColor='var(--pink)'
+                                 clickHandler={(event) => scrollToTarget({ targetId: 'instagram-section', delay: 200 }, event)}
             />
         </div>
     );
