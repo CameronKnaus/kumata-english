@@ -1,3 +1,5 @@
+@import '../../../Global/Global.css';
+
 .profileTitle {
     background: -webkit-linear-gradient(60deg, var(--green), var(--navy), #8FD714);
     -webkit-background-clip: text;

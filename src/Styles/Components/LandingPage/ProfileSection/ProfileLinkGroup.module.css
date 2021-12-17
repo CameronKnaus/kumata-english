@@ -1,3 +1,5 @@
+@import '../../../Global/Global.css';
+
 .componentContainer {
     padding: 0;
     min-width: var(--min-supported-width);
