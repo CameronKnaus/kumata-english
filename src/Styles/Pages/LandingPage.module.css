@@ -1,3 +1,7 @@
+@import '../Global/ColorScheme.css';
+@import '../Global/Typography.css';
+@import '../Global/Layout.css';
+
 .introSection {
     background-color: #FDFDFD;
     background-image: url(../../Images/Backgrounds/notebook-dark.png);
