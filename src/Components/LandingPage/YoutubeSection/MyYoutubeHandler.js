@@ -62,7 +62,9 @@ export default function MyYoutubeHandler() {
                         </p>
                         <a href={youtubeConstants.channelFeatured}>
                             <button className={styles.toYoutubeButton}>
-                                <YouTubeIcon fontSize='inherit' className={styles.youtubeIcon} />
+                                <div className={styles.youtubeIcon}>
+                                    <YouTubeIcon fontSize='inherit' />
+                                </div>
                                 {TEXT.toMyChannel}
                             </button>
                         </a>
