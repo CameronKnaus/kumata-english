@@ -31,39 +31,41 @@ export default function MyYoutubeHandler() {
     }
 
     return (
-        <div className={`average-container ${styles.sectionContainer}`}>
-            <div className={styles.descriptionBanner}>
-                {TEXT.title}
-            </div>
-            <div className={styles.flexContainer}>
-                <div className={styles.embeddedVideoContainer}>
-                    <iframe allowFullScreen width={youtubeDimensions.width} height={youtubeDimensions.height}
-                            src={youtubeConstants.showcaseVideo} title='YouTube video player'
-                            frameBorder='0'
-                            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                    />
+        <div className={`average-container ${styles.componentWrapper}`}>
+            <div className={styles.sectionContainer}>
+                <div className={styles.descriptionBanner}>
+                    {TEXT.title}
                 </div>
-                <div className={styles.youtubeDescription}>
-                    <h3 className={styles.topicHeader}>
-                        {TEXT.topics}
-                    </h3>
-                    <div className={styles.topicList}>
-                        {
-                            TEXT.videoTypeList.map((type, index) => (
-                                <div key={`video-type-${index}`} className={styles.topic}>
-                                    {type}
-                                </div>
-                            ))
-                        }
+                <div className={styles.flexContainer}>
+                    <div className={styles.embeddedVideoContainer}>
+                        <iframe allowFullScreen width={youtubeDimensions.width} height={youtubeDimensions.height}
+                                src={youtubeConstants.showcaseVideo} title='YouTube video player'
+                                frameBorder='0'
+                                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                        />
                     </div>
-                    <div className={styles.closingContainer}>
+                    <div className={styles.youtubeDescription}>
+                        <h3 className={styles.topicHeader}>
+                            {TEXT.topics}
+                        </h3>
+                        <div className={styles.topicList}>
+                            {
+                                TEXT.videoTypeList.map((type, index) => (
+                                    <div key={`video-type-${index}`} className={styles.topic}>
+                                        {type}
+                                    </div>
+                                ))
+                            }
+                        </div>
                         <p className={styles.closingText}>
                             {TEXT.closingRemark}
                         </p>
-                        <button className={styles.toYoutubeButton}>
-                            <YouTubeIcon fontSize='inherit' className={styles.youtubeIcon} />
-                            {TEXT.toMyChannel}
-                        </button>
+                        <a href={youtubeConstants.channelFeatured}>
+                            <button className={styles.toYoutubeButton}>
+                                <YouTubeIcon fontSize='inherit' className={styles.youtubeIcon} />
+                                {TEXT.toMyChannel}
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

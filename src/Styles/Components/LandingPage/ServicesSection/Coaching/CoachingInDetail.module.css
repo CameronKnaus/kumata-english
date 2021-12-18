@@ -1,5 +1,5 @@
 .container {
-    background-color: var(--purple-light);
+    background-color: var(--theme-purple-light);
     padding-bottom: 15px;
 }
 
@@ -13,7 +13,7 @@
 
 .closingHeader, .closingDescLine {
     text-align: center;
-    color: var(--purple);
+    color: var(--theme-purple);
 }
 
 .closingHeader {

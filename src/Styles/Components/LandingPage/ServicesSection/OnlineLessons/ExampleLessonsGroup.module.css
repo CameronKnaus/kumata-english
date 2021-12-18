@@ -1,6 +1,6 @@
 .header {
-    color: var(--navy);
-    background: -webkit-linear-gradient(260deg, var(--navy) 40%, var(--green));
+    color: var(--theme-navy);
+    background: -webkit-linear-gradient(260deg, var(--theme-navy) 40%, var(--theme-green));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;

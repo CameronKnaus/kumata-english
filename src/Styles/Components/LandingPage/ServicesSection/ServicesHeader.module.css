@@ -3,15 +3,15 @@
 }
 
 .headerContainer h2 {
-    color: var(--navy);
-    background: -webkit-linear-gradient(0deg, var(--green), var(--purple), var(--orange), var(--pink));
+    color: var(--theme-navy);
+    background: -webkit-linear-gradient(0deg, var(--theme-green), var(--theme-purple), var(--theme-orange), var(--theme-pink));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0;
 }
 
 .headerContainer p {
-    color: var(--dark-accent);
+    color: var(--theme-gray-scale-5);
 }
 
 .buttonContainer {

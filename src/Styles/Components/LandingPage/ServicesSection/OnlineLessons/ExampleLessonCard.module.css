@@ -3,7 +3,7 @@
     background-color: #eefbfc;
     border-radius: 12px;
     /*box-shadow: 1px 1px 10px 0 #eefbfc;*/
-    color: var(--navy);
+    color: var(--theme-navy);
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -25,7 +25,7 @@
 }
 
 .timeFrame {
-    color: var(--navy);
+    color: var(--theme-navy);
     font-weight: bold;
     font-size: var(--enlarged-body-text-font-size);
     line-height: var(--enlarged-body-text-line-height);
@@ -33,7 +33,7 @@
 
 .activityDescription {
     padding-left: 30px;
-    color: var(--navy-dark);
+    color: var(--theme-navy-dark);
     font-size: var(--body-text-font-size);
     line-height: var(--body-text-line-height);
 }

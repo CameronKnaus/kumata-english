@@ -19,7 +19,7 @@ export default function ProfileLinkGroup({ showHeader }) {
             }
             <div className={styles.groupContainer}>
                 <div className={styles.linkContainer}>
-                    <SmileIcon fontSize='inherit' className={styles.icon} style={{ color: 'var(--brown)' }} />
+                    <SmileIcon fontSize='inherit' className={styles.icon} style={{ color: 'var(--theme-brown)' }} />
                     <Link to='/about-me' className={styles.link}>
                         <p className={styles.linkText}>
                             <span style={{ textDecoration: 'underline' }}>

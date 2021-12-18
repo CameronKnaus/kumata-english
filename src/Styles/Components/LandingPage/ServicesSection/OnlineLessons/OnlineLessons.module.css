@@ -8,8 +8,8 @@
 }
 
 .contentBox {
-    background-color: var(--navy);
-    color: var(--gray-scale-14);
+    background-color: var(--theme-navy);
+    color: var(--theme-gray-scale-14);
     min-width: var(--min-supported-width);
 }
 
@@ -18,16 +18,16 @@
 }
 
 .titleText {
-    color: var(--gray-scale-15);
+    color: var(--theme-gray-scale-15);
     margin-bottom: 5px;
-    text-shadow: 2px 2px 2px var(--navy-dark);
+    text-shadow: 2px 2px 2px var(--theme-navy-dark);
     font-size: var(--extra-large-header-text-font-size);
     line-height: var(--extra-large-header-text-line-height);
 }
 
 .manToManText {
     margin-top: 0;
-    text-shadow: 2px 1px 0 var(--navy-dark);
+    text-shadow: 2px 1px 0 var(--theme-navy-dark);
     font-size: var(--large-header-text-font-size);
     line-height: var(--large-header-text-line-height);
 }

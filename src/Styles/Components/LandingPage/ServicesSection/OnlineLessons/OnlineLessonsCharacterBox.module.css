@@ -1,7 +1,7 @@
 .container {
-    border-bottom: 15px solid var(--navy);
-    border-top: 15px solid var(--navy);
-    border-right: 15px solid var(--navy);
+    border-bottom: 15px solid var(--theme-navy);
+    border-top: 15px solid var(--theme-navy);
+    border-right: 15px solid var(--theme-navy);
     min-width: var(--min-supported-width);
 }
 
@@ -12,7 +12,7 @@
 .thoughtText {
     padding-top: 20px;
     text-align: center;
-    color: var(--gray-scale-4);
+    color: var(--theme-gray-scale-4);
 }
 
 .imageContainer {
@@ -32,7 +32,7 @@
 .solutionText {
     text-align: center;
     font-weight: bold;
-    color: var(--navy);
+    color: var(--theme-navy);
 }
 
 @media (max-width: 767px) {

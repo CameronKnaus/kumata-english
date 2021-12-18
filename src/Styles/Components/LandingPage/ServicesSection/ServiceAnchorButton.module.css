@@ -1,6 +1,6 @@
 .buttonStyle {
     padding: 15px 25px;
-    color: var(--gray-scale-15);
+    color: var(--theme-gray-scale-15);
     display: flex;
     justify-content: space-between;
     border-radius: 4px;
@@ -13,7 +13,7 @@
 }
 
 .slimButtonStyle {
-    color: var(--gray-scale-15);
+    color: var(--theme-gray-scale-15);
     display: flex;
     transition: filter 0.3s ease;
     padding: 5px 25px;

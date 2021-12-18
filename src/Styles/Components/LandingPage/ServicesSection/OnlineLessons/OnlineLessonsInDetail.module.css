@@ -1,6 +1,6 @@
 .blueContainer {
     padding: 30px 0 50px;
     margin-bottom: 50px;
-    background-color: var(--navy-light);
+    background-color: var(--theme-navy-light);
     min-width: var(--min-supported-width);
 }

@@ -9,7 +9,7 @@
 
 .targetList {
     list-style-type: '✓';
-    color: var(--navy-dark);
+    color: var(--theme-navy-dark);
     padding-left: 25px;
     padding-right: 15px;
     font-size: var(--small-header-text-font-size);
@@ -26,13 +26,13 @@
 }
 
 .mainDetail {
-    color: var(--navy-dark);
+    color: var(--theme-navy-dark);
     font-size: var(--small-header-text-font-size);
     line-height: var(--small-header-text-line-height);
 }
 
 .secondaryDetail {
-    color: var(--navy);
+    color: var(--theme-navy);
     list-style: none;
     font-size: var(--body-text-font-size);
     line-height: var(--body-text-line-height);
@@ -40,15 +40,15 @@
 }
 
 .lessonDetailsTitle {
-    color: var(--navy);
-    background: -webkit-linear-gradient(80deg, var(--navy), var(--green));
+    color: var(--theme-navy);
+    background: -webkit-linear-gradient(80deg, var(--theme-navy), var(--theme-green));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .targetAudienceTitle {
-    color: var(--navy);
-    background: -webkit-linear-gradient(260deg, var(--navy) 40%, var(--green));
+    color: var(--theme-navy);
+    background: -webkit-linear-gradient(260deg, var(--theme-navy) 40%, var(--theme-green));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

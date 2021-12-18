@@ -1,11 +1,11 @@
 .titleText {
-    color: var(--purple);
+    color: var(--theme-purple);
     font-size: var(--large-header-text-font-size);
     line-height: var(--large-header-text-line-height);
 }
 
 .descriptionText {
-    color: var(--purple-dark);
+    color: var(--theme-purple-dark);
     font-size: var(--small-header-text-font-size);
     line-height: var(--small-header-text-line-height);
     padding-left: 12px;
@@ -15,7 +15,7 @@
     font-weight: bold;
     font-size: var(--small-header-text-font-size);
     line-height: var(--small-header-text-line-height);
-    color: var(--purple);
+    color: var(--theme-purple);
 }
 
 .solutionContainer {
@@ -26,20 +26,20 @@
     margin-top: -6px;
     font-size: 40px;
     padding-right: 10px;
-    color: var(--purple);
+    color: var(--theme-purple);
     display: inline-block;
 }
 
 @media (max-width: 767px) {
     .titleText {
-        color: var(--purple);
+        color: var(--theme-purple);
         font-size: var(--header-text-font-size);
         line-height: var(--header-text-line-height);
         text-align: center;
     }
 
     .descriptionText {
-        color: var(--purple-dark);
+        color: var(--theme-purple-dark);
         font-size: var(--small-header-text-font-size);
         line-height: var(--small-header-text-line-height);
         text-align: center;
@@ -62,14 +62,14 @@
 
 @media (max-width: 555px) {
     .titleText {
-        color: var(--purple);
+        color: var(--theme-purple);
         font-size: var(--small-header-text-font-size);
         line-height: var(--small-header-text-line-height);
         text-align: center;
     }
 
     .descriptionText {
-        color: var(--purple-dark);
+        color: var(--theme-purple-dark);
         font-size: var(--body-text-font-size);
         line-height: var(--body-text-line-height);
     }

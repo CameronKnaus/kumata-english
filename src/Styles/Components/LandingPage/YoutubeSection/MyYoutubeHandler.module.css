@@ -1,3 +1,7 @@
+.componentWrapper {
+    padding: 0 10px;
+}
+
 .sectionContainer {
     margin-top: 120px;
     box-sizing: border-box;
@@ -25,11 +29,11 @@
 .descriptionBanner {
     border-radius: 12px 12px 0 0;
     box-sizing: border-box;
-    background-color: var(--orange);
-    text-shadow: 1px 1px 2px var(--orange-dark);
+    background-color: var(--theme-orange);
+    text-shadow: 1px 1px 2px var(--theme-orange-dark);
     width: 100%;
     padding: 12px;
-    color: var(--gray-scale-15);
+    color: var(--theme-gray-scale-15);
     font-size: var(--large-header-text-font-size);
     line-height: var(--large-header-text-line-height);
 }
@@ -38,7 +42,7 @@
     font-size: var(--header-text-font-size);
     line-height: var(--header-text-line-height);
     width: 100%;
-    color: var(--gray-scale-4);
+    color: var(--theme-gray-scale-4);
     text-align: center;
 }
 
@@ -52,22 +56,18 @@
     margin: 10px;
     font-size: var(--small-header-text-font-size);
     line-height: var(--small-header-text-line-height);
-    color: var(--orange-dark);
-    background-color: var(--orange-light);
+    color: var(--theme-orange-dark);
+    background-color: var(--theme-orange-light);
     border-radius: 6px;
     padding: 5px 15px;
     flex-grow: 1;
     text-align: center;
 }
 
-.closingContainer {
-    width: 100%;
-}
-
 .closingText {
     font-size: var(--enlarged-body-text-font-size);
     line-height: var(--enlarged-body-text-line-height);
-    color: var(--gray-scale-5)
+    color: var(--theme-gray-scale-5)
 }
 
 @media (max-width: 991px) {
@@ -85,7 +85,7 @@
 .toYoutubeButton {
     background-color: var(--youtube-red);
     border-radius: 12px;
-    color: var(--gray-scale-15);
+    color: var(--theme-gray-scale-15);
     font-size: var(--small-header-text-font-size);
     line-height: var(--small-header-text-line-height);
     display: flex;
@@ -103,7 +103,7 @@
 
 .youtubeIcon {
     font-size: 36px;
-    color: var(--gray-scale-15);
+    color: var(--theme-gray-scale-15);
     padding: 3px 5px 3px 10px;
 }
 
@@ -136,5 +136,11 @@
     .topic, .closingText {
         font-size: var(--body-text-font-size);
         line-height: var(--body-text-line-height);
+    }
+}
+
+@media (max-width: 350px) {
+    .componentWrapper {
+        padding: 0;
     }
 }

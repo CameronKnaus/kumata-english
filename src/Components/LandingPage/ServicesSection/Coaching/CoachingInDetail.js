@@ -33,8 +33,8 @@ export default function CoachingInDetail() {
                 </div>
             </div>
             <div className={styles.costContainer}>
-                <CostMenu accentColor='var(--purple)'
-                          shadowColor='var(--purple-dark)'
+                <CostMenu accentColor='var(--theme-purple)'
+                          shadowColor='var(--theme-purple-dark)'
                           bannerTitle={COST_MENU.bannerTitle}
                           headerCost={COST_MENU.headerCost}
                           menuItems={COST_MENU.menuItems}

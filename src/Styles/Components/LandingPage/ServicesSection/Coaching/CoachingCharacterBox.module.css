@@ -1,7 +1,7 @@
 .container {
-    border-bottom: 15px solid var(--purple);
-    border-top: 15px solid var(--purple);
-    border-left: 15px solid var(--purple);
+    border-bottom: 15px solid var(--theme-purple);
+    border-top: 15px solid var(--theme-purple);
+    border-left: 15px solid var(--theme-purple);
     min-width: var(--min-supported-width);
     position: relative;
 }

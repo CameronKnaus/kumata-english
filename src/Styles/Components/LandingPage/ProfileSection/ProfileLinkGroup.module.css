@@ -32,8 +32,8 @@
     padding-top: 60px;
     font-size: var(--small-header-text-font-size);
     line-height: var(--small-header-text-line-height);
-    color: var(--gray-scale-6);
-    background: -webkit-linear-gradient(0deg, var(--purple), var(--green), var(--pink), var(--navy));
+    color: var(--theme-gray-scale-6);
+    background: -webkit-linear-gradient(0deg, var(--theme-purple), var(--theme-green), var(--theme-pink), var(--theme-navy));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

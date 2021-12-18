@@ -10,7 +10,7 @@
 .container {
     display: flex;
     width: 300px;
-    color: var(--gray-scale-3);
+    color: var(--theme-gray-scale-3);
     line-height: var(--small-header-text-line-height);
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
     margin-right: 10px;
     display: inline-block;
     background-color: transparent;
-    border: 2px solid var(--gray-scale-3);
+    border: 2px solid var(--theme-gray-scale-3);
     border-radius: 100%;
     text-align: center;
     transition-duration: 0.3s;
@@ -35,6 +35,6 @@
 }
 
 .container:hover .iconContainer {
-    background-color: var(--gray-scale-3);
-    color: var(--gray-scale-15);
+    background-color: var(--theme-gray-scale-3);
+    color: var(--theme-gray-scale-15);
 }

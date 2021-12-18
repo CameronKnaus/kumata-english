@@ -1,6 +1,6 @@
 .header {
-    color: var(--navy);
-    background: -webkit-linear-gradient(140deg, var(--purple) 30%, var(--navy-dark));
+    color: var(--theme-navy);
+    background: -webkit-linear-gradient(140deg, var(--theme-purple) 30%, var(--theme-navy-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -15,13 +15,13 @@
     padding: 15px 20px;
     margin: 0 auto 60px;
     box-sizing: border-box;
-    background-color: var(--purple-extra-light);
+    background-color: var(--theme-purple-extra-light);
     border-radius: 12px;
 }
 
 .exampleList {
     padding-top: 10px;
-    color: var(--purple-dark);
+    color: var(--theme-purple-dark);
     font-size: var(--small-header-text-font-size);
     line-height: var(--small-header-text-line-height);
 }

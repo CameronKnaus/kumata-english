@@ -47,22 +47,22 @@ export default function ServicesHeader() {
                 <div className={styles.buttonContainer}>
                     <ServiceAnchorButton text={TEXT.lesson}
                                          icon='lessons'
-                                         backgroundColor='var(--navy)'
+                                         backgroundColor='var(--theme-navy)'
                                          clickHandler={(event) => scrollToTarget({ targetId: 'online-lessons-section', delay: 200 }, event)}
                     />
                     <ServiceAnchorButton text={TEXT.coaching}
                                          icon='coaching'
-                                         backgroundColor='var(--purple)'
+                                         backgroundColor='var(--theme-purple)'
                                          clickHandler={(event) => scrollToTarget({ targetId: 'coaching-section', delay: 200 }, event)}
                     />
                     <ServiceAnchorButton text={TEXT.youtube}
                                          icon='youtube'
-                                         backgroundColor='var(--orange)'
+                                         backgroundColor='var(--theme-orange)'
                                          clickHandler={(event) => scrollToTarget({ targetId: 'youtube-section', delay: 200, scrollTargetTo: 'center' }, event)}
                     />
                     <ServiceAnchorButton text={TEXT.instagram}
                                          icon='instagram'
-                                         backgroundColor='var(--pink)'
+                                         backgroundColor='var(--theme-pink)'
                                          clickHandler={(event) => scrollToTarget({ targetId: 'instagram-section', delay: 200 }, event)}
                     />
                 </div>

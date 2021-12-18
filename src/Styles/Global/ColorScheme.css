@@ -1,46 +1,46 @@
 :root {
-    --gray-scale-0: #000;
-    --gray-scale-1: #111;
-    --gray-scale-2: #222;
-    --gray-scale-3: #333;
-    --gray-scale-4: #444;
-    --gray-scale-5: #555;
-    --gray-scale-6: #666;
-    --gray-scale-7: #777;
-    --gray-scale-8: #888;
-    --gray-scale-9: #999;
-    --gray-scale-10: #AAA;
-    --gray-scale-11: #BBB;
-    --gray-scale-12: #CCC;
-    --gray-scale-13: #DDD;
-    --gray-scale-14: #EEE;
-    --gray-scale-15: #ffffff;
+    --theme-gray-scale-0: #000;
+    --theme-gray-scale-1: #111;
+    --theme-gray-scale-2: #222;
+    --theme-gray-scale-3: #333;
+    --theme-gray-scale-4: #444;
+    --theme-gray-scale-5: #555;
+    --theme-gray-scale-6: #666;
+    --theme-gray-scale-7: #777;
+    --theme-gray-scale-8: #888;
+    --theme-gray-scale-9: #999;
+    --theme-gray-scale-10: #AAA;
+    --theme-gray-scale-11: #BBB;
+    --theme-gray-scale-12: #CCC;
+    --theme-gray-scale-13: #DDD;
+    --theme-gray-scale-14: #EEE;
+    --theme-gray-scale-15: #ffffff;
 
-    --green-extra-light: #EBFFFB;
-    --green-light: #d6fff6;
-    --green: #00b890;
-    --green-dark: #006650;
+    --theme-green-extra-light: #EBFFFB;
+    --theme-green-light: #d6fff6;
+    --theme-green: #00b890;
+    --theme-green-dark: #006650;
 
-    --purple-extra-light: #f5f3f7;
-    --purple-light: #E2DAE7;
-    --purple: #805D93;
-    --purple-dark: #36283E;
+    --theme-purple-extra-light: #f5f3f7;
+    --theme-purple-light: #E2DAE7;
+    --theme-purple: #805D93;
+    --theme-purple-dark: #36283E;
 
-    --crimson-extra-light: #FCEDEF;
-    --crimson-light: #F4B8BF;
-    --crimson: #74121D;
-    --crimson-dark: #35080D;
+    --theme-crimson-extra-light: #FCEDEF;
+    --theme-crimson-light: #F4B8BF;
+    --theme-crimson: #74121D;
+    --theme-crimson-dark: #35080D;
 
-    --navy-light: #DDF7F8;
-    --navy: #156064;
-    --navy-dark: #0e4143;
+    --theme-navy-light: #DDF7F8;
+    --theme-navy: #156064;
+    --theme-navy-dark: #0e4143;
 
-    --pink: #ef767a;
-    --brown: #554348;
+    --theme-pink: #ef767a;
+    --theme-brown: #554348;
 
-    --orange-light: #FEE2D7;
-    --orange: #fb8f67;
-    --orange-dark: #ef4406;
+    --theme-orange-light: #FEE2D7;
+    --theme-orange: #fb8f67;
+    --theme-orange-dark: #ef4406;
 
     --youtube-red: #ff0000;
     --instagram-violet: #bc2a8d;
