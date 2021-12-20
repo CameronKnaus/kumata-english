@@ -7,6 +7,7 @@ import LandingPage from './Pages/LandingPage';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import FormFactorContext from './Util/FormFactorContext';
 import ParallaxCache from './Util/ParallaxCache';
+import AboutMe from './Components/AboutMe/AboutMe';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -15,7 +16,9 @@ ReactDOM.render(
                 <ParallaxCache />
                 <BrowserRouter>
                     <Routes>
-                        <Route path={PAGE_ROUTES.landingPage} element={<LandingPage />} />
+                        <Route path={PAGE_ROUTES.landingPage} element={<LandingPage />}>
+                            <Route path={PAGE_ROUTES.aboutMe} element={<AboutMe />} />
+                        </Route>
                     </Routes>
                 </BrowserRouter>
             </FormFactorContext>

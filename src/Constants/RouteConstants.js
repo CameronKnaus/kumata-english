@@ -1,3 +1,4 @@
 export const PAGE_ROUTES = {
-    landingPage: '/'
+    landingPage: '/',
+    aboutMe: 'about-me'
 };

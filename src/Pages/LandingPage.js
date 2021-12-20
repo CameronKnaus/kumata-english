@@ -13,6 +13,7 @@ import ScrollForMore from '../Components/LandingPage/ScrollForMore';
 import { useFormFactor } from '../Util/FormFactorContext';
 import MyYoutubeHandler from '../Components/LandingPage/YoutubeSection/MyYoutubeHandler';
 import MyInstagramHandler from '../Components/LandingPage/InstagramSection/MyInstagramHandler';
+import { Outlet } from 'react-router-dom';
 
 // Lower end of the page can be lazily loaded
 // const CanadaImage = React.lazy(() => import('../Components/LandingPage/CanadaImage'));
@@ -26,6 +27,7 @@ export default function LandingPage() {
 
     return (
         <div style={{ paddingBottom: NAV_BAR_OFFSET }}>
+            <Outlet />
             <section id='intro-section'>
                 <div className={styles.introSection}>
                     <KumataCoin />

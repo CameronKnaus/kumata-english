@@ -6,6 +6,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import SmileIcon from '@material-ui/icons/SentimentSatisfiedAlt';
 import { youtubeConstants, instagramConstants } from '../../../Constants/SocialMediaConstants';
+import { PAGE_ROUTES } from '../../../Constants/RouteConstants';
 
 export default function ProfileLinkGroup({ showHeader }) {
 
@@ -20,7 +21,7 @@ export default function ProfileLinkGroup({ showHeader }) {
             <div className={styles.groupContainer}>
                 <div className={styles.linkContainer}>
                     <SmileIcon fontSize='inherit' className={styles.icon} style={{ color: 'var(--theme-brown)' }} />
-                    <Link to='/about-me' className={styles.link}>
+                    <Link to={PAGE_ROUTES.aboutMe} className={styles.link}>
                         <p className={styles.linkText}>
                             <span style={{ textDecoration: 'underline' }}>
                                 {LANDING_TEXT.moreAboutMe}

@@ -1,0 +1,130 @@
+.dimmedBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(33, 33, 33, 0.7);
+    z-index: 20;
+    animation: fadeIn 0.6s;
+}
+
+@keyframes fadeIn {
+    0% {
+        background-color: rgba(33, 33, 33, 0);
+    }
+    100% {
+        background-color: rgba(33, 33, 33, 0.7);
+    }
+}
+
+.pageContainer {
+    position: fixed;
+    bottom: 0;
+    z-index: 21;
+    top: 5vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: var(--min-supported-width);
+    max-width: 650px;
+    max-height: 88vh;
+    background-color: var(--theme-gray-scale-15);
+    overflow-y: scroll;
+    animation: slideIn 0.6s;
+}
+
+.closePanel {
+    animation: slideIn 0.6s;
+}
+
+@keyframes slideIn {
+    0% {
+        top: 100vh;
+    }
+    100% {
+        top: 5vh;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        top: 5vh;
+    }
+    100% {
+        top: 100vh;
+    }
+}
+
+.pageContainer h2 {
+    margin-top: 36px;
+}
+
+.pageContainer p {
+    color: var(--theme-gray-scale-4);
+}
+
+.headerOne {
+    color: var(--theme-navy);
+    background: -webkit-linear-gradient(0deg, var(--theme-orange), var(--theme-purple) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.headerTwo {
+    color: var(--theme-navy);
+    background: -webkit-linear-gradient(5deg, var(--theme-green), var(--theme-purple) 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.headerThree {
+    color: var(--theme-navy);
+    background: -webkit-linear-gradient(2deg, var(--theme-purple), var(--theme-orange) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.modalContainer {
+    background-color: var(--theme-gray-scale-15);
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: var(--min-supported-width);
+}
+
+.modalHeader {
+    background-color: var(--theme-brown);
+    color: var(--theme-gray-scale-14);
+    position: sticky;
+    display: flex;
+    align-content: center;
+    top: 0;
+    padding: 10px 0;
+}
+
+.introText {
+    padding-left: 10px;
+}
+
+.closeButton {
+    position: absolute;
+    right: 10px;
+    font-size: 2.4rem;
+}
+
+.closeButton:hover {
+    cursor: pointer;
+}
+
+.imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 320px;
+    height: 320px;
+}
