@@ -41,7 +41,11 @@ export default function MyInstagramHandler() {
                         <p className={styles.instaDescription}>
                             {TEXT.instaDescription}
                         </p>
-                        <a href={instagramConstants.profilePage} style={{ textDecoration: 'none' }}>
+                        <a href={instagramConstants.profilePage}
+                           style={{ textDecoration: 'none' }}
+                           target='_blank'
+                           rel='noreferrer'
+                        >
                             <button className={styles.toInstagramButton}>
                                 <div className={styles.instagramIcon}>
                                     <InstagramIcon fontSize='inherit' />

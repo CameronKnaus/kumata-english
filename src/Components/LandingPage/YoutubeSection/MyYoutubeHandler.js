@@ -51,7 +51,11 @@ export default function MyYoutubeHandler() {
                         <p className={styles.closingText}>
                             {TEXT.closingRemark}
                         </p>
-                        <a href={youtubeConstants.channelFeatured} style={{ textDecoration: 'none' }}>
+                        <a href={youtubeConstants.channelFeatured}
+                           style={{ textDecoration: 'none' }}
+                           target='_blank'
+                           rel='noreferrer'
+                        >
                             <button className={styles.toYoutubeButton}>
                                 <div className={styles.youtubeIcon}>
                                     <YouTubeIcon fontSize='inherit' />

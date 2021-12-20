@@ -32,7 +32,11 @@ export default function ProfileLinkGroup({ showHeader }) {
                 </div>
                 <div className={styles.linkContainer}>
                     <InstagramIcon fontSize='inherit' className={styles.icon} style={{ color: 'var(--instagram-violet)' }} />
-                    <a href={instagramConstants.profilePage} className={styles.link}>
+                    <a href={instagramConstants.profilePage}
+                       className={styles.link}
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                         <p className={styles.linkText}>
                             <span style={{ textDecoration: 'underline' }}>
                                 {LANDING_TEXT.myInstagram}
@@ -43,7 +47,11 @@ export default function ProfileLinkGroup({ showHeader }) {
                 </div>
                 <div className={styles.linkContainer}>
                     <YouTubeIcon fontSize='inherit' className={styles.icon} style={{ color: 'var(--youtube-red)' }} />
-                    <a href={youtubeConstants.channelFeatured} className={styles.link}>
+                    <a href={youtubeConstants.channelFeatured}
+                       className={styles.link}
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                         <p className={styles.linkText}>
                             <span style={{ textDecoration: 'underline' }}>
                                 {LANDING_TEXT.myYoutube}
