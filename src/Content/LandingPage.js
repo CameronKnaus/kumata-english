@@ -11,7 +11,7 @@ const LANDING_TEXT = {
         'Kumata Englishのホームページにお越し頂き、ありがとうございます！',
         '楽しく英語を学びましょう！'
     ],
-    profile: '【プロファイル】',
+    profile: '【プロフィール】',
     // accoladesのところを編集するのを注意！順番が大切。
     accolades: [
         'フリーランス英会話講師',
@@ -28,10 +28,10 @@ const LANDING_TEXT = {
     imageAria: '英語が人生を楽しくしてくれる。あなたも英語で人生をより豊かにしませんか？',
     servicesHeader: {
         providedServices: '提供しているサービス',
-        noteAboutModule: 'Scroll to learn more or press a button to jump to that section',
+        noteAboutModule: '詳細はスクロールか下記ボタンをクリック！',
         lesson: 'レッスン',
         coaching: 'コーチング',
-        youtube: 'ユーチューブ',
+        youtube: 'Youtube',
         instagram: 'インスタ'
     },
     costMenuSharedText: {
@@ -43,8 +43,8 @@ const LANDING_TEXT = {
         kumataTalk: {
             doubtsList: [
                 '「英会話を始めたいけど、今更遅いよね？」',
-                '「オンライン英会話を始めたけど全然話せるようにならない。。。」',
-                'そういった方の為に、「話せるようになる」レッスンを提供します！'
+                '「英語に興味はあるけど、もう全部忘れちゃった。。。」',
+                '「オンライン英会話を始めたけど全然話せるようにならない。。。」'
             ],
             mySolution: 'そういった方の為に、「話せるようになる」レッスンを提供します！'
         },
@@ -311,7 +311,7 @@ const LANDING_TEXT = {
         }
     },
     youtube: {
-        title: 'Kumataのユーチューブ',
+        title: 'Kumata Youtube',
         topics: '提供しているトピックス',
         videoTypeList: [
             '発音の方法',
