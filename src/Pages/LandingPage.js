@@ -27,6 +27,12 @@ export default function LandingPage() {
     const isSM = useFormFactor().SM;
 
     return (
+        <h1 style={{ textAlign: 'center' }}>
+            工事中
+        </h1>
+    );
+
+    return (// eslint-disable-line
         <div style={{ paddingBottom: NAV_BAR_OFFSET }}>
             <Outlet />
             <section id='intro-section'>
