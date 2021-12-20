@@ -353,7 +353,13 @@ const LANDING_TEXT = {
         header: '毎日投稿しております！',
         instaDescription: '毎日英語フレーズや単語を投稿しています。英語学習方法やモチベーションのストーリーもよく投稿しています。（この日本語をお好きにおしゃれにしてな）',
         toMyProfile: 'Instagramへ'
-    }
+    },
+    beebogo: {
+        title: 'おすすめの英語学習アプリ',
+        descriptionHeader: 'Kumataコーチングとぴったりと合う英語学習アプリ',
+        description: '英語コーチングやレッスンで習った単語を忘れないようにBeeboGoで復習できます！自動的に単語長のようなクイズできるウェブアプリです。',
+        toMyChannel: 'BeeboGoへ'
+    },
 };
 
 export default LANDING_TEXT;

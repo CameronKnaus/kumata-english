@@ -14,6 +14,7 @@ import { useFormFactor } from '../Util/FormFactorContext';
 import MyYoutubeHandler from '../Components/LandingPage/YoutubeSection/MyYoutubeHandler';
 import MyInstagramHandler from '../Components/LandingPage/InstagramSection/MyInstagramHandler';
 import { Outlet } from 'react-router-dom';
+import BeeboGoSponsor from '../Components/LandingPage/BeeboGoSponsorSection/BeeboGoSponsor';
 
 // Lower end of the page can be lazily loaded
 // const CanadaImage = React.lazy(() => import('../Components/LandingPage/CanadaImage'));
@@ -54,6 +55,9 @@ export default function LandingPage() {
             </section>
             <section id='instagram-section'>
                 <MyInstagramHandler />
+            </section>
+            <section id='sponsor-section'>
+                <BeeboGoSponsor />
             </section>
             <section id='canada-image-section'>
                 <CanadaImage />

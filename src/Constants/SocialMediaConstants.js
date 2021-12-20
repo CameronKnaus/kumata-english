@@ -6,3 +6,5 @@ export const youtubeConstants = {
 export const instagramConstants = {
     profilePage: 'https://www.instagram.com/kumataenglish/'
 };
+
+export const BEEBOGO_HOME_PAGE = 'https://www.beebogo.com';

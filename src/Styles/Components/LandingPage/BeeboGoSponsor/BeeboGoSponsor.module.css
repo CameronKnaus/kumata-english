@@ -1,0 +1,145 @@
+.componentWrapper {
+    padding: 0 10px;
+    min-width: var(--min-supported-width);
+}
+
+.sectionContainer {
+    margin-top: 120px;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #FCFCFC;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 2px 2px 3px 0 #F8F8F8;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.logoContainer {
+    margin: 20px 0 20px 60px;
+}
+
+.logo {
+    width: 350px;
+}
+
+.beeboGoDescription {
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.descriptionBanner {
+    border-radius: 12px 12px 0 0;
+    box-sizing: border-box;
+    background-color: #EF065B;
+    text-shadow: 1px 1px 2px #8b0435;
+    width: 100%;
+    padding: 12px;
+    color: var(--theme-gray-scale-15);
+    font-size: var(--large-header-text-font-size);
+    line-height: var(--large-header-text-line-height);
+}
+
+.descriptionHeader {
+    font-size: var(--header-text-font-size);
+    line-height: var(--header-text-line-height);
+    width: 100%;
+    color: var(--theme-gray-scale-6);
+    text-align: center;
+}
+
+.descriptionText {
+    font-size: var(--enlarged-body-text-font-size);
+    line-height: var(--enlarged-body-text-line-height);
+    color: var(--theme-gray-scale-5);
+    text-align: center;
+}
+
+.toBeeboGoButton {
+    background-color: #EF065B;
+    border-radius: 12px;
+    color: var(--theme-gray-scale-15);
+    font-size: var(--small-header-text-font-size);
+    line-height: var(--small-header-text-line-height);
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    transition-duration: 0.2s;
+    margin: 15px auto 15px;
+    width: 80%;
+    min-width: 200px;
+    max-width: 320px;
+    justify-content: center;
+}
+
+.tobeeboGoButton:hover {
+    filter: brightness(0.85);
+}
+
+.beeboGoIcon {
+    font-size: 30px;
+    color: var(--theme-gray-scale-15);
+    padding: 3px 5px 3px 10px;
+}
+
+@media (max-width: 991px) {
+    .descriptionHeader {
+        font-size: var(--small-header-text-font-size);
+        line-height: var(--small-header-text-line-height);
+    }
+
+    .topic, .descriptionText {
+        font-size: var(--body-text-font-size);
+        line-height: var(--body-text-line-height);
+    }
+
+    .logoContainer {
+        margin: 20px 0 20px 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .flexContainer {
+        flex-wrap: wrap;
+    }
+
+    .logoContainer {
+        margin: 20px;
+    }
+
+    .descriptionText {
+        font-size: var(--enlarged-body-text-font-size);
+        line-height: var(--enlarged-body-text-line-height);
+        padding: 10px 15px;
+    }
+
+    .logo {
+        width: 320px;
+    }
+}
+
+@media (max-width: 555px) {
+    .descriptionBanner {
+        font-size: var(--header-text-font-size);
+        line-height: var(--header-text-line-height);
+    }
+
+    .descriptionText {
+        font-size: var(--body-text-font-size);
+        line-height: var(--body-text-line-height);
+    }
+
+    .logo {
+        width: 240px;
+    }
+}
+
+@media (max-width: 350px) {
+    .componentWrapper {
+        padding: 0;
+    }
+}
