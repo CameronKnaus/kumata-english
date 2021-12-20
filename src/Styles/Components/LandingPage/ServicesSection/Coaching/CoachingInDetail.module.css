@@ -1,6 +1,7 @@
 .container {
     background-color: var(--theme-purple-light);
     padding-bottom: 15px;
+    overflow: hidden;
 }
 
 .parallaxContainer {

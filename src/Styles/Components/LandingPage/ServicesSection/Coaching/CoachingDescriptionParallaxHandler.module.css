@@ -12,6 +12,7 @@
 .image {
     width: 400px;
     height: 400px;
+    right: 15px;
 }
 
 @media (max-width: 767px) {
