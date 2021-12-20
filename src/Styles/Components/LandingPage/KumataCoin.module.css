@@ -7,10 +7,25 @@
     margin: 0 auto;
 }
 
+.headerImageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.headerImage {
+    width: 600px;
+    margin: -160px 0 -100px;
+}
+
 @media (max-width: 768px) {
     .svgImageWrap {
         max-height: 180px;
         max-width: 180px;
+    }
+
+    .headerImage {
+        width: 450px;
+        margin: -140px 0 -80px;
     }
 }
 
@@ -18,5 +33,10 @@
     .svgImageWrap {
         max-height: 150px;
         max-width: 150px;
+    }
+
+    .headerImage {
+        width: 320px;
+        margin: -120px 0 -60px;
     }
 }
