@@ -7,6 +7,7 @@
     z-index: 10;
     border-top: 1px solid var(--theme-gray-scale-3);
     transition-duration: 0.5s;
+    min-width: var(--min-supported-width);
 }
 
 .showNavBar {
