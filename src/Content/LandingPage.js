@@ -321,6 +321,12 @@ const LANDING_TEXT = {
         ],
         closingRemark: '様々な動画を投稿しているので、英語の学習の際にぜひご覧ください！',
         toMyChannel: 'Youtubeへ'
+    },
+    instagram: {
+        title: 'Kumata Instagram',
+        header: '毎日投稿しております！',
+        instaDescription: '毎日英語フレーズや単語を投稿しています。英語学習方法やモチベーションのストーリーもよく投稿しています。（この日本語をお好きにおしゃれにしてな）',
+        toMyProfile: 'Instagramへ'
     }
 };
 

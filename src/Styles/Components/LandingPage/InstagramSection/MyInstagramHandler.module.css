@@ -1,0 +1,199 @@
+.componentWrapper {
+    padding: 0 10px;
+    min-width: var(--min-supported-width);
+}
+
+.contentWrapper a {
+    text-decoration: none;
+}
+
+.sectionContainer {
+    margin-top: 80px;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #FEFEFE;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 2px 2px 3px 0 #F8F8F8;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.instagramPostsSection {
+    margin: 15px;
+}
+
+.descriptionSection {
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.descriptionBanner {
+    border-radius: 12px 12px 0 0;
+    box-sizing: border-box;
+    background-color: var(--theme-pink);
+    text-shadow: 1px 1px 2px var(--theme-pink-dark);
+    width: 100%;
+    padding: 12px;
+    color: var(--theme-gray-scale-15);
+    font-size: var(--large-header-text-font-size);
+    line-height: var(--large-header-text-line-height);
+}
+
+.postsHolster {
+    height: 360px;
+    width: 640px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.imageOne, .imageTwo, .imageThree {
+    width: 50%;
+    border: 2px solid var(--theme-gray-scale-3);
+    position: absolute;
+}
+
+.imageOne {
+    left: 0;
+    top: 10px;
+    z-index: 4;
+    transform: rotate(-4deg);
+    box-shadow: 1px 1px 6px 0 var(--theme-gray-scale-7);
+}
+
+.imageTwo {
+    left: 27%;
+    z-index: 5;
+    transform: rotate(0);
+    box-shadow: 1px 1px 12px 0 var(--theme-gray-scale-5);
+}
+
+.imageThree {
+    left: 50%;
+    top: 10px;
+    z-index: 3;
+    transform: rotate(4deg);
+    box-shadow: 1px 1px 6px 0 var(--theme-gray-scale-7);
+}
+
+.header {
+    font-size: var(--header-text-font-size);
+    line-height: var(--header-text-line-height);
+    width: 100%;
+    color: var(--theme-gray-scale-5);
+    text-align: center;
+}
+
+.instaDescription {
+    font-size: var(--enlarged-body-text-font-size);
+    line-height: var(--enlarged-body-text-line-height);
+    text-align: center;
+    color: var(--theme-gray-scale-6);
+    padding: 4px 10px;
+}
+
+.toInstagramButton {
+    background-color: var(--instagram-violet);
+    border-radius: 12px;
+    color: var(--theme-gray-scale-15);
+    font-size: var(--small-header-text-font-size);
+    line-height: var(--small-header-text-line-height);
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    transition-duration: 0.2s;
+    margin: 15px auto 15px;
+    width: 80%;
+    min-width: 200px;
+    max-width: 320px;
+    justify-content: center;
+}
+
+.toInstagramButton:hover {
+    filter: brightness(0.85);
+}
+
+.instagramIcon {
+    font-size: 32px;
+    color: var(--theme-gray-scale-15);
+    padding: 3px 5px 3px 10px;
+}
+
+@media (max-width: 1199px) {
+    .instagramPostsSection {
+        margin: 15px;
+    }
+
+    .postsHolster {
+        height: 280px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 991px) {
+    .postsHolster {
+        height: 230px;
+        width: 400px;
+    }
+
+    .header {
+        font-size: var(--small-header-text-font-size);
+        line-height: var(--small-header-text-line-height);
+    }
+
+    .instaDescription {
+        font-size: var(--body-text-font-size);
+        line-height: var(--body-text-line-height);
+    }
+}
+
+@media (max-width: 767px) {
+    .postsHolster {
+        height: 260px;
+        width: 480px;
+        margin-right: 0;
+    }
+
+    .flexContainer {
+        flex-wrap: wrap;
+    }
+
+    .header {
+        font-size: var(--header-text-font-size);
+        line-height: var(--header-text-line-height);
+    }
+}
+
+@media (max-width: 555px) {
+    .descriptionBanner {
+        font-size: var(--header-text-font-size);
+        line-height: var(--header-text-line-height);
+    }
+
+    .postsHolster {
+        height: 180px;
+        width: 320px;
+    }
+}
+
+@media (max-width: 450px) {
+    .postsHolster {
+        height: 140px;
+        width: 280px;
+    }
+
+    /*.imageOne, .imageTwo, .imageThree {*/
+    /*    width: 40%;*/
+    /*    border: 2px solid var(--theme-gray-scale-3);*/
+    /*    position: absolute;*/
+    /*}*/
+}
+
+@media (max-width: 350px) {
+    .componentWrapper {
+        padding: 0;
+    }
+}

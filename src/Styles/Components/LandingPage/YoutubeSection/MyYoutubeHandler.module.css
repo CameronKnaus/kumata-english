@@ -1,5 +1,6 @@
 .componentWrapper {
     padding: 0 10px;
+    min-width: var(--min-supported-width);
 }
 
 .sectionContainer {
@@ -42,7 +43,7 @@
     font-size: var(--header-text-font-size);
     line-height: var(--header-text-line-height);
     width: 100%;
-    color: var(--theme-gray-scale-4);
+    color: var(--theme-gray-scale-6);
     text-align: center;
 }
 
@@ -67,7 +68,8 @@
 .closingText {
     font-size: var(--enlarged-body-text-font-size);
     line-height: var(--enlarged-body-text-line-height);
-    color: var(--theme-gray-scale-5)
+    color: var(--theme-gray-scale-5);
+    text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -92,9 +94,11 @@
     align-items: center;
     padding-right: 15px;
     transition-duration: 0.2s;
-    justify-self: right;
-    float: right;
-    margin: 15px;
+    margin: 15px auto 15px;
+    width: 80%;
+    min-width: 200px;
+    max-width: 320px;
+    justify-content: center;
 }
 
 .toYoutubeButton:hover {

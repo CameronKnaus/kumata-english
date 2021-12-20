@@ -5,15 +5,6 @@ import { useFormFactor } from '../../../Util/FormFactorContext';
 import { youtubeConstants } from '../../../Constants/SocialMediaConstants';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 
-/*
-POTENTIAL WORKING LATEST VIDEO IFRAME REQUIRES CHANNEL NAME FROM KUMATA
-<iframe allowFullScreen
-        width='600'
-        height='340'
-        src='https://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=' frameBorder='0'
-/>
-* */
-
 // Youtube video size
 const LARGE_SCREEN = { width: '560', height: '315' };
 const MED_SCREEN = { width: '420', height: '236' };
@@ -60,7 +51,7 @@ export default function MyYoutubeHandler() {
                         <p className={styles.closingText}>
                             {TEXT.closingRemark}
                         </p>
-                        <a href={youtubeConstants.channelFeatured}>
+                        <a href={youtubeConstants.channelFeatured} style={{ textDecoration: 'none' }}>
                             <button className={styles.toYoutubeButton}>
                                 <div className={styles.youtubeIcon}>
                                     <YouTubeIcon fontSize='inherit' />
