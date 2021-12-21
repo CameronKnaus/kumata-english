@@ -23,10 +23,7 @@ export default function ProfileLinkGroup({ showHeader }) {
                     <SmileIcon fontSize='inherit' className={styles.icon} style={{ color: 'var(--theme-brown)' }} />
                     <Link to={PAGE_ROUTES.aboutMe} className={styles.link}>
                         <p className={styles.linkText}>
-                            <span style={{ textDecoration: 'underline' }}>
-                                {LANDING_TEXT.moreAboutMe}
-                            </span>
-                            {' >'}
+                            {LANDING_TEXT.moreAboutMe + ' >'}
                         </p>
                     </Link>
                 </div>
@@ -38,10 +35,7 @@ export default function ProfileLinkGroup({ showHeader }) {
                        rel='noreferrer'
                     >
                         <p className={styles.linkText}>
-                            <span style={{ textDecoration: 'underline' }}>
-                                {LANDING_TEXT.myInstagram}
-                            </span>
-                            {' >'}
+                            {LANDING_TEXT.myInstagram + ' >'}
                         </p>
                     </a>
                 </div>
@@ -53,10 +47,7 @@ export default function ProfileLinkGroup({ showHeader }) {
                        rel='noreferrer'
                     >
                         <p className={styles.linkText}>
-                            <span style={{ textDecoration: 'underline' }}>
-                                {LANDING_TEXT.myYoutube}
-                            </span>
-                            {' >'}
+                            {LANDING_TEXT.myYoutube + ' >'}
                         </p>
                     </a>
                 </div>
