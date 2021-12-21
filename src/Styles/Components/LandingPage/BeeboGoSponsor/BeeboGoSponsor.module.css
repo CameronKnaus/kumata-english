@@ -16,6 +16,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
 }
 
 .logoContainer {
@@ -57,6 +58,7 @@
     line-height: var(--enlarged-body-text-line-height);
     color: var(--theme-gray-scale-5);
     text-align: center;
+    padding: 0 15px;
 }
 
 .toBeeboGoButton {

@@ -39,7 +39,7 @@ export default function BeeboGoSponsor() {
                                 <div className={styles.beeboGoIcon}>
                                     <SchoolIcon fontSize='inherit' />
                                 </div>
-                                {TEXT.toMyChannel}
+                                {TEXT.toBeeboGo}
                             </button>
                         </a>
                     </div>

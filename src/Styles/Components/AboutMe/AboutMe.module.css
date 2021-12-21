@@ -128,3 +128,16 @@
     width: 320px;
     height: 320px;
 }
+
+.closingStatement {
+    color: var(--theme-navy-mild-light);
+    background: -webkit-linear-gradient(0deg, var(--link-blue), var(--theme-green) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-weight: bold;
+}
+
+.closingLineTwo {
+    padding-bottom: 30px;
+}

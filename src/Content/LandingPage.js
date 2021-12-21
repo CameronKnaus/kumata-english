@@ -44,7 +44,11 @@ const LANDING_TEXT = {
                     '「英語であなたの人生は変わる」を証明したいという気持ちを胸に、レッスンを提供させていただいています。英語で人生をより楽しくしませんか？'
                 ]
             }
-        ]
+        ],
+        closingStatement: {
+            lineOne: 'みなさんと一緒に英語を勉強できるのを',
+            lineTwo: '楽しみにしてます！！'
+        }
     },
     scrollDown: '下にスクロールしてください',
     linksAboutMe: 'Kumataについて',
@@ -222,7 +226,7 @@ const LANDING_TEXT = {
                 }
             ],
             emailSubjectLine: '「マンツーマンオンライン英会話の件について」',
-            emailContents: 'お名前：',
+            emailContents: '体験レッスン(30分)お申し込みをご希望の方は下記に記載の上、ご連絡お願いいたします。%0D%0A【名前】%0D%0A【希望日時】例）12/21 18:00~22:00 の間%0D%0A【目標】%0D%0A【現在のレベル】',
             howToApply: (emailSubject) => `${emailSubject}お名前を記載の上、送信お願いします。`,
             // 免責とかはこちら
             disclaimerList: [
@@ -328,7 +332,7 @@ const LANDING_TEXT = {
                 }
             ],
             emailSubjectLine: '「コーチングの件について」',
-            emailContents: 'CHANGE ME', // TODO
+            emailContents: '体験レッスン(30分)お申し込みをご希望の方は下記に記載の上、ご連絡お願いいたします。%0D%0A【名前】%0D%0A【希望日時】例）12/21 18:00~22:00 の間%0D%0A【目標】%0D%0A【現在のレベル】',
             howToApply: (emailSubject) => `ぜひ興味ある方は、件名${emailSubject}、お名前を記載の上、送信お願いします。`,
             // 免責とかはこちら
             disclaimerList: [
@@ -351,14 +355,14 @@ const LANDING_TEXT = {
     instagram: {
         title: 'Kumata Instagram',
         header: '毎日投稿しております！',
-        instaDescription: '毎日英語フレーズや単語を投稿しています。英語学習方法やモチベーションのストーリーもよく投稿しています。（この日本語をお好きにおしゃれにしてな）',
+        instaDescription: '日常で使える英会話フレーズを毎日投稿しています！また、英語の勉強法やモチベーションを保つ方法なども投稿しているので、ぜひチェックしてみてね！',
         toMyProfile: 'Instagramへ'
     },
     beebogo: {
         title: 'おすすめの英語学習アプリ',
-        descriptionHeader: 'Kumataコーチングとぴったりと合う英語学習アプリ',
-        description: '英語コーチングやレッスンで習った単語を忘れないようにBeeboGoで復習できます！自動的に単語長のようなクイズできるウェブアプリです。',
-        toMyChannel: 'BeeboGoへ'
+        descriptionHeader: 'Kumataコーチングとぴったり合う英語学習アプリ',
+        description: '英語コーチングやレッスンで習った単語を忘れないようにBeeboGoで復習できます！自分専用の単語クイズを自動で作成してくれるアプリです。',
+        toBeeboGo: 'BeeboGoへ'
     },
 };
 

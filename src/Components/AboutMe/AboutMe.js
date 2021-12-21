@@ -7,6 +7,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import webpKumata from '../../Images/webpDist/CoachKumata.webp';
 import regularKumata from '../../Images/Characters/CoachKumata.png';
 import Image from '../UIElements/Image';
+import { useFormFactor } from '../../Util/FormFactorContext';
 
 const HEADER_STYLES = [
     styles.headerOne,
@@ -17,6 +18,7 @@ const HEADER_STYLES = [
 export default function AboutMe() {
     const navigate = useNavigate();
     const ABOUT_ME = LANDING_TEXT.aboutMeSection;
+    const isXS = useFormFactor().XS;
 
     React.useEffect(() => {
         // Lock the background page.  Only unlock it when this modal is closed.
@@ -26,6 +28,8 @@ export default function AboutMe() {
             document.body.style.overflow = 'scroll';
         };
     }, []);
+
+    const closingFont = isXS ? 'small-header-text' : 'header-text';
 
     return (
         <>
@@ -46,8 +50,9 @@ export default function AboutMe() {
                     {
                             ABOUT_ME.textGroups.map((textGroup, index) => (
                                 <div key={`text-group-${index}`}>
-                                    <h2 className={`${index === 0 ? 'header-text' : 'small-header-text'} ${HEADER_STYLES[index]}`}>
+                                    <h2 className={`${index === 0 ? 'large-header-text' : 'header-text'} ${HEADER_STYLES[index]}`}>
                                         {textGroup.header}
+
                                     </h2>
                                     {
                                         textGroup.paragraphs.map((paragraph, paragraphIndex) => (
@@ -59,6 +64,12 @@ export default function AboutMe() {
                                 </div>
                             ))
                         }
+                </div>
+                <div className={`${styles.closingStatement} ${closingFont}`}>
+                    {ABOUT_ME.closingStatement.lineOne}
+                </div>
+                <div className={`${styles.closingStatement} ${styles.closingLineTwo} ${closingFont}`}>
+                    {ABOUT_ME.closingStatement.lineTwo}
                 </div>
             </div>
         </>

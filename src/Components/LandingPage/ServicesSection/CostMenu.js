@@ -11,6 +11,7 @@ export default function CostMenu({
     menuItems,
     saleDescription = '',
     emailSubjectLine = '',
+    emailBody = '',
     howToApply = () => { /* NOOP*/ },
     disclaimerList
 }) {
@@ -111,7 +112,7 @@ export default function CostMenu({
                     <p className={styles.howToApplyDescription}>
                         {howToApply(emailSubjectLine)}
                     </p>
-                    <a href={`mailto:${TEXT.email}?subject=${emailSubjectLine}`}>
+                    <a href={`mailto:${TEXT.email}?subject=${emailSubjectLine}&body=${emailBody}`}>
                         <button className={styles.emailButton} style={buttonStyle}>
                             {TEXT.emailLink}
                         </button>
