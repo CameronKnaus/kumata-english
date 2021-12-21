@@ -148,4 +148,8 @@
     .componentWrapper {
         padding: 0;
     }
+
+    .descriptionBanner {
+        border-radius: 0;
+    }
 }
