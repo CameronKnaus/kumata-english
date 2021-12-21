@@ -100,7 +100,8 @@
     position: sticky;
     display: flex;
     align-content: center;
-    top: 0;
+    /* -1px because Safari shows a sliver of background without it */
+    top: -1px;
     padding: 10px 0;
 }
 
