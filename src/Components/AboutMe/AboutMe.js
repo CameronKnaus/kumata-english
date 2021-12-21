@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { PAGE_ROUTES } from '../../Constants/RouteConstants';
 import LANDING_TEXT from '../../Content/LandingPage';
 import CloseIcon from '@material-ui/icons/Close';
-import webpKumata from '../../Images/webpDist/CoachKumata.webp';
-import regularKumata from '../../Images/Characters/CoachKumata.png';
+import webpKumata from '../../Images/webpDist/IntroKumata.webp';
+import regularKumata from '../../Images/Characters/IntroKumata.jpg';
 import Image from '../UIElements/Image';
 import { useFormFactor } from '../../Util/FormFactorContext';
 
@@ -45,7 +45,7 @@ export default function AboutMe() {
                 </div>
                 <div className={styles.modalContainer}>
                     <div className={styles.imageContainer}>
-                        <Image webpImage={webpKumata} regularImage={regularKumata} classes={styles.image} imageBaseType='png' />
+                        <Image webpImage={webpKumata} regularImage={regularKumata} classes={styles.image} imageBaseType='jpg' />
                     </div>
                     {
                             ABOUT_ME.textGroups.map((textGroup, index) => (

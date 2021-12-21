@@ -141,3 +141,10 @@
 .closingLineTwo {
     padding-bottom: 30px;
 }
+
+@media (max-width: 555px) {
+    .image {
+        width: 260px;
+        height: 260px;
+    }
+}
