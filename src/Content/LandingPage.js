@@ -179,6 +179,14 @@ const LANDING_TEXT = {
             saleDescription: '',
             menuItems: [
                 {
+                    title: '１レッスン',
+                    price: '３０分',
+                    specialPrice: '３０分',
+                    noteList: [
+                        ''
+                    ]
+                },
+                {
                     title: '月4回',
                     price: '10,000円',
                     // specialPriceとpriceは違かったら割引があるように現れる。
