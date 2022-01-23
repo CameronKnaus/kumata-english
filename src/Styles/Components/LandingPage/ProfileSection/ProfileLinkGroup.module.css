@@ -30,7 +30,9 @@
 }
 
 .headerText {
-    padding-top: 60px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 16px;
     font-size: var(--small-header-text-font-size);
     line-height: var(--small-header-text-line-height);
     color: var(--theme-gray-scale-6);
@@ -42,6 +44,10 @@
 @media (max-width: 767px) {
     .componentContainer {
         padding: 0 15px;
+        background-color: #FBFBFB;
+        border-top: 2px solid #F4F4F4;
+        border-bottom: 2px solid #F4F4F4;
+        margin-top: 16px;
     }
 
     .linkContainer {
