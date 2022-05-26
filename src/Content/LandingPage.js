@@ -324,16 +324,16 @@ const LANDING_TEXT = {
                 },
                 {
                     title: '１ヶ月目',
-                    price: '40,000円',
-                    specialPrice: '40,000円',
+                    price: '50,000円',
+                    specialPrice: '50,000円',
                     noteList: [
                         '（２８日間）'
                     ]
                 },
                 {
                     title: '２ヶ月目',
-                    price: '50,000円',
-                    specialPrice: '50,000円',
+                    price: '60,000円',
+                    specialPrice: '60,000円',
                     noteList: [
                         '（３５日間）'
                     ]
