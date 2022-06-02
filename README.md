@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# This project was made as an act of charity.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I do not own or operate anything related to the Kumata english brand, social media profiles, or educational services.  I made this site for the owner of the Kumata brand at no charge.  **For those looking through the code, just know that some less-than-ideal practices were used to cut down on the amount of time spent on this project.**
 
 ## Available Scripts
 
