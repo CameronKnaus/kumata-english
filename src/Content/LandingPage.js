@@ -226,8 +226,8 @@ const LANDING_TEXT = {
                 },
                 {
                     title: '月8回',
-                    price: '17,000円',
-                    specialPrice: '17,000円',
+                    price: '18,000円',
+                    specialPrice: '18,000円',
                     noteList: [
                         ''
                     ]
