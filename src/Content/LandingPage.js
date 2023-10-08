@@ -17,7 +17,7 @@ const LANDING_TEXT = {
         'フリーランス英会話講師',
         'フリーランス英語コーチ',
         'Instagramで毎日使えるフレーズを更新',
-        'TOEIC 910点',
+        'TOEIC 920点',
         'カナダ、バンクーバーへの留学経験有'
     ],
     aboutMeSection: {
