@@ -188,10 +188,10 @@ const LANDING_TEXT = {
                 },
                 {
                     title: '月4回',
-                    price: '10,000円',
+                    price: '11,000円',
                     // specialPriceとpriceは違かったら割引があるように現れる。
                     // セールがなかったらspecialPriceとpriceを等しくしてください
-                    specialPrice: '10,000円',
+                    specialPrice: '11,000円',
                     /*
                         noteListで何も書いてなかったら何も現れない。
 
@@ -218,16 +218,16 @@ const LANDING_TEXT = {
                 },
                 {
                     title: '月6回',
-                    price: '14,000円',
-                    specialPrice: '14,000円',
+                    price: '15,000円',
+                    specialPrice: '15,000円',
                     noteList: [
                         ''
                     ]
                 },
                 {
                     title: '月8回',
-                    price: '18,000円',
-                    specialPrice: '18,000円',
+                    price: '19,000円',
+                    specialPrice: '19,000円',
                     noteList: [
                         ''
                     ]
@@ -324,16 +324,16 @@ const LANDING_TEXT = {
                 },
                 {
                     title: '１ヶ月目',
-                    price: '50,000円',
-                    specialPrice: '50,000円',
+                    price: '55,000円',
+                    specialPrice: '55,000円',
                     noteList: [
                         '（２８日間）'
                     ]
                 },
                 {
                     title: '２ヶ月目',
-                    price: '60,000円',
-                    specialPrice: '60,000円',
+                    price: '65,000円',
+                    specialPrice: '65,000円',
                     noteList: [
                         '（３５日間）'
                     ]
