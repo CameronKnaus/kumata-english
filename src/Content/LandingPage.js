@@ -188,10 +188,10 @@ const LANDING_TEXT = {
                 },
                 {
                     title: '月4回',
-                    price: '20,000円',
+                    price: '15,000円',
                     // specialPriceとpriceは違かったら割引があるように現れる。
                     // セールがなかったらspecialPriceとpriceを等しくしてください
-                    specialPrice: '20,000円',
+                    specialPrice: '15,000円',
                     /*
                         noteListで何も書いてなかったら何も現れない。
 
