@@ -170,8 +170,8 @@ const LANDING_TEXT = {
             headerCost: {
                 title: '入会金：',
                 // costとspecialCostは等しくなかったら割引があるデザインは現れる
-                cost: '10,000',
-                specialCost: '10,000',
+                cost: '15,000',
+                specialCost: '15,000',
                 costNote: '（初月のみ）',
                 specialNote: '期間限定の割引!'
             },
@@ -188,10 +188,10 @@ const LANDING_TEXT = {
                 },
                 {
                     title: '月4回',
-                    price: '11,000円',
+                    price: '20,000円',
                     // specialPriceとpriceは違かったら割引があるように現れる。
                     // セールがなかったらspecialPriceとpriceを等しくしてください
-                    specialPrice: '11,000円',
+                    specialPrice: '20,000円',
                     /*
                         noteListで何も書いてなかったら何も現れない。
 
@@ -218,16 +218,16 @@ const LANDING_TEXT = {
                 },
                 {
                     title: '月6回',
-                    price: '15,000円',
-                    specialPrice: '15,000円',
+                    price: '20,000円',
+                    specialPrice: '20,000円',
                     noteList: [
                         ''
                     ]
                 },
                 {
                     title: '月8回',
-                    price: '19,000円',
-                    specialPrice: '19,000円',
+                    price: '25,000円',
+                    specialPrice: '25,000円',
                     noteList: [
                         ''
                     ]
@@ -324,16 +324,16 @@ const LANDING_TEXT = {
                 },
                 {
                     title: '１ヶ月目',
-                    price: '55,000円',
-                    specialPrice: '55,000円',
+                    price: '70,000円',
+                    specialPrice: '70,000円',
                     noteList: [
                         '（２８日間）'
                     ]
                 },
                 {
                     title: '２ヶ月目',
-                    price: '65,000円',
-                    specialPrice: '65,000円',
+                    price: '80,000円',
+                    specialPrice: '80,000円',
                     noteList: [
                         '（３５日間）'
                     ]
