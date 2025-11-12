@@ -171,7 +171,7 @@ const LANDING_TEXT = {
                 title: '入会金：',
                 // costとspecialCostは等しくなかったら割引があるデザインは現れる
                 cost: '15,000',
-                specialCost: '15,000',
+                specialCost: '10,000',
                 costNote: '（初月のみ）',
                 specialNote: '期間限定の割引!'
             },
