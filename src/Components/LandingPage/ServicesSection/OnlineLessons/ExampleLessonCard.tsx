@@ -1,10 +1,17 @@
+import { ActivityList } from '../../../../Content/LandingPage';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/OnlineLessons/ExampleLessonCard.module.css';
+
+interface ExampleLessonCardProps {
+  title: string;
+  description: string;
+  activityList: ActivityList;
+}
 
 export default function ExampleLessonCard({
   title,
   description,
   activityList,
-}) {
+}: ExampleLessonCardProps) {
   if (!activityList || !title) {
     return null;
   }

@@ -20,7 +20,7 @@ export default function KumataProfile() {
           imageBaseType="png"
           classes={styles.smallSnowKumataImage}
         />
-        <ProfileText small />
+        <ProfileText />
         <ProfileLinkGroup showHeader />
       </div>
     );

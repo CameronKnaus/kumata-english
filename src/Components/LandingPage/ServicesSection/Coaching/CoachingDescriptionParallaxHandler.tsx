@@ -1,5 +1,5 @@
 import CoachingDoubts from './CoachingDoubts';
-import { useFormFactor } from '../../../../Util/FormFactorContext';
+import { useFormFactor } from '../../../../Util/useFormFactor';
 import { Parallax } from 'react-scroll-parallax';
 import webpKumata from '../../../../Images/webpDist/CoachKumata.webp';
 import regularKumata from '../../../../Images/Characters/CoachKumata.png';

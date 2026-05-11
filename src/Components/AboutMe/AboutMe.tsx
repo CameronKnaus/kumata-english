@@ -6,8 +6,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import webpKumata from '../../Images/webpDist/IntroKumata.webp';
 import regularKumata from '../../Images/Characters/IntroKumata.jpg';
 import Image from '../UIElements/Image';
-import { useFormFactor } from '../../Util/FormFactorContext';
 import { useEffect } from 'react';
+import { useFormFactor } from '../../Util/useFormFactor';
 
 const HEADER_STYLES = [styles.headerOne, styles.headerTwo, styles.headerThree];
 

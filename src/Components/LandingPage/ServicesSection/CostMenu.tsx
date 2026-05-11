@@ -21,8 +21,8 @@ interface CostMenuProps {
   saleDescription: string;
   emailBody: string;
   emailSubjectLine: string;
-  disclaimerList: string[];
-  howToApply: (str: string) => void;
+  disclaimerList?: string[];
+  howToApply: (str: string) => string;
 }
 
 export default function CostMenu({

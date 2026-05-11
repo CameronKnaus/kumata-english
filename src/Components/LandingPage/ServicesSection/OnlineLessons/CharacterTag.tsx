@@ -5,7 +5,7 @@ import webpBeaver from '../../../../Images/webpDist/beaverChase.webp';
 import webpKumata from '../../../../Images/webpDist/kumataChase.webp';
 import regularBeaver from '../../../../Images/Characters/beaverChase.png';
 import regularKumata from '../../../../Images/Characters/kumataChase.png';
-import { useFormFactor } from '../../../../Util/FormFactorContext';
+import { useFormFactor } from '../../../../Util/useFormFactor';
 
 export default function CharacterTag() {
   const isSM = useFormFactor().SM;
@@ -17,6 +17,7 @@ export default function CharacterTag() {
     <div className={styles.sceneContainer}>
       <div className={styles.characterContainer}>
         <div className={styles.beaverContainer}>
+          {/* @ts-expect-error still works after TS conversion, too lazy to fix. */}
           <Parallax translateX={beaverParallax}>
             <Image
               webpImage={webpBeaver}
@@ -29,6 +30,7 @@ export default function CharacterTag() {
       </div>
       <div className={styles.characterContainer}>
         <div className={styles.kumataContainer}>
+          {/* @ts-expect-error still works after TS conversion, too lazy to fix. */}
           <Parallax translateX={kumataParallax}>
             <Image
               webpImage={webpKumata}

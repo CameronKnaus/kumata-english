@@ -1,6 +1,14 @@
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/Coaching/ExampleCoachingGroup.module.css';
 
-export default function ExampleCoachingGroup({ header, contentList = [] }) {
+interface ExampleCoachingGroupProps {
+  header: string;
+  contentList?: string[];
+}
+
+export default function ExampleCoachingGroup({
+  header,
+  contentList = [],
+}: ExampleCoachingGroupProps) {
   return (
     <div className="average-container">
       <div className={styles.exampleTile}>

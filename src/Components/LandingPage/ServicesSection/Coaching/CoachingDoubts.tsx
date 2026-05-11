@@ -11,7 +11,7 @@ export default function CoachingDoubts() {
   const doubtsList = TEXT.doubtsList;
   const doubtsListSprings = useSprings(
     doubtsList.length,
-    doubtsList.map((doubtItem, index) => {
+    doubtsList.map((_, index) => {
       return {
         config: { mass: 5, tension: 1000, friction: 600 },
         delay: 400 + index * 300,
@@ -44,7 +44,7 @@ export default function CoachingDoubts() {
               className={`${styles.doubtText}`}
               style={doubtsListSprings[index]}
             >
-              {doubtsList[index]}
+              {doubt}
             </animated.li>
           );
         })}

@@ -10,7 +10,13 @@ import {
 } from '../../../Constants/SocialMediaConstants';
 import { PAGE_ROUTES } from '../../../Constants/RouteConstants';
 
-export default function ProfileLinkGroup({ showHeader }) {
+interface ProfileLinkGroupProps {
+  showHeader?: boolean;
+}
+
+export default function ProfileLinkGroup({
+  showHeader,
+}: ProfileLinkGroupProps) {
   return (
     <div className={styles.componentContainer}>
       {showHeader && (

@@ -9,10 +9,10 @@ import OnlineLessonsInDetail from '../Components/LandingPage/ServicesSection/Onl
 import CoachingHeader from '../Components/LandingPage/ServicesSection/Coaching/CoachingHeader';
 import CoachingInDetail from '../Components/LandingPage/ServicesSection/Coaching/CoachingInDetail';
 import ScrollForMore from '../Components/LandingPage/ScrollForMore';
-import { useFormFactor } from '../Util/FormFactorContext';
 import MyYoutubeHandler from '../Components/LandingPage/YoutubeSection/MyYoutubeHandler';
 import MyInstagramHandler from '../Components/LandingPage/InstagramSection/MyInstagramHandler';
 import { Outlet } from 'react-router-dom';
+import { useFormFactor } from '../Util/useFormFactor';
 // import BeeboGoSponsor from '../Components/LandingPage/BeeboGoSponsorSection/BeeboGoSponsor';
 
 const NAV_BAR_OFFSET = 40;

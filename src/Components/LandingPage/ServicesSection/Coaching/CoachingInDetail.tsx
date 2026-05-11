@@ -40,7 +40,6 @@ export default function CoachingInDetail() {
           emailSubjectLine={COST_MENU.emailSubjectLine}
           emailBody={COST_MENU.emailContents}
           howToApply={COST_MENU.howToApply}
-          disclaimerList={COST_MENU.disclaimerList}
         />
       </div>
     </>

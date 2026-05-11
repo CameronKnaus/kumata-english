@@ -367,5 +367,7 @@ const LANDING_TEXT = {
 };
 
 export type Content = typeof LANDING_TEXT;
+export type ActivityList =
+  Content['onlineLessons']['beginnerTarget']['activityList'];
 
 export default LANDING_TEXT;

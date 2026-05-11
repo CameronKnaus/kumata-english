@@ -2,7 +2,7 @@ import styles from '../../../Styles/Components/LandingPage/ProfileSection/Profil
 import LANDING_TEXT from '../../../Content/LandingPage';
 import AccoladeItem from './AccoladeItem';
 
-export default function ProfileText({ small }) {
+export default function ProfileText() {
   return (
     <>
       <h2 className={`${styles.profileTitle} small-title-text`}>
@@ -10,7 +10,7 @@ export default function ProfileText({ small }) {
       </h2>
       <ul className={styles.accoladeList}>
         {LANDING_TEXT.accolades.map(accolade => (
-          <AccoladeItem key={accolade} accolade={accolade} small={small} />
+          <AccoladeItem key={accolade} accolade={accolade} />
         ))}
       </ul>
     </>

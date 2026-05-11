@@ -3,7 +3,11 @@ import ServiceAnchorButton from './ServiceAnchorButton';
 import scrollToTarget from '../../../Util/ScrollToTarget';
 import LANDING_TEXT from '../../../Content/LandingPage';
 
-export default function ServicesNavBar({ show }) {
+interface ServicesNavBarProps {
+  show: boolean;
+}
+
+export default function ServicesNavBar({ show }: ServicesNavBarProps) {
   const TEXT = LANDING_TEXT.servicesHeader;
 
   return (

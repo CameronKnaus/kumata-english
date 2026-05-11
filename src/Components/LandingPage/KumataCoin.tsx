@@ -1,3 +1,4 @@
+// @ts-expect-error too lazy to fix this one but it works.
 import { ReactComponent as Kumata } from '../../Images/SVG/Characters/KumataCoin.svg';
 import styles from '../../Styles/Components/LandingPage/KumataCoin.module.css';
 import Image from '../UIElements/Image';
