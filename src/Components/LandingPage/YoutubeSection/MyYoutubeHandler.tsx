@@ -1,6 +1,6 @@
 import styles from '../../../Styles/Components/LandingPage/YoutubeSection/MyYoutubeHandler.module.css';
 import LANDING_TEXT from '../../../Content/LandingPage';
-import { useFormFactor } from '../../../Util/FormFactorContext';
+import { useFormFactor } from '../../../Util/useFormFactor';
 import { youtubeConstants } from '../../../Constants/SocialMediaConstants';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 

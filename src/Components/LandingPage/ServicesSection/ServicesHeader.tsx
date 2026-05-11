@@ -1,7 +1,7 @@
 import styles from '../../../Styles/Components/LandingPage/ServicesSection/ServicesHeader.module.css';
 import LANDING_TEXT from '../../../Content/LandingPage';
 import ServiceAnchorButton from './ServiceAnchorButton';
-import { useFormFactor } from '../../../Util/FormFactorContext';
+import { useFormFactor } from '../../../Util/useFormFactor';
 import scrollToTarget from '../../../Util/ScrollToTarget';
 import ServicesNavBar from './ServicesNavBar';
 import { useEffect, useRef, useState } from 'react';

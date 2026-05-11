@@ -1,8 +1,12 @@
 import { animated, useSpring, config } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
-import { useFormFactor } from '../../../Util/FormFactorContext';
+import { useFormFactor } from '../../../Util/useFormFactor';
 
-export default function AccoladeItem({ accolade }) {
+interface AccoladeItemProps {
+  accolade: string;
+}
+
+export default function AccoladeItem({ accolade }: AccoladeItemProps) {
   const { ref, inView } = useInView({ triggerOnce: true });
   const isSM = useFormFactor().SM;
 

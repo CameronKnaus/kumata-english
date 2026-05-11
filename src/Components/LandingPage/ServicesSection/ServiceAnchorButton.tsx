@@ -3,7 +3,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import SportsIcon from '@mui/icons-material/Sports';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { useFormFactor } from '../../../Util/FormFactorContext';
+import { useFormFactor } from '../../../Util/useFormFactor';
 
 const iconMapper = {
   lessons: <SchoolIcon fontSize="inherit" />,

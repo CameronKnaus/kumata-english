@@ -9,7 +9,7 @@ import webpImageTwo from '../../../Images/webpDist/MoonInstaKumata.webp';
 import regularImageThree from '../../../Images/Characters/ParticularInstaKumata.jpg';
 import webpImageThree from '../../../Images/webpDist/ParticularInstaKumata.webp';
 import Image from '../../UIElements/Image';
-import { useFormFactor } from '../../../Util/FormFactorContext';
+import { useFormFactor } from '../../../Util/useFormFactor';
 
 export default function MyInstagramHandler() {
   const TEXT = LANDING_TEXT.instagram;

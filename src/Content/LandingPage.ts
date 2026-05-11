@@ -1,6 +1,4 @@
 /* Removing Lint checkers for comma dangle and white space to make changes easier for non-programmers */
-/* eslint-disable comma-dangle */
-/* eslint-disable no-trailing-spaces */
 
 // Keeping all landing page text here for simplicity. Under normal circumstances all of this text content would be split up
 

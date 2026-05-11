@@ -7,7 +7,7 @@ import regularImageTall from '../../../Images/Characters/TallSnowKumata.jpg';
 import ProfileText from './ProfileText';
 import { Parallax } from 'react-scroll-parallax';
 import LANDING_TEXT from '../../../Content/LandingPage';
-import { useFormFactor } from '../../../Util/FormFactorContext';
+import { useFormFactor } from '../../../Util/useFormFactor';
 import ProfileLinkGroup from './ProfileLinkGroup';
 
 export default function KumataProfile() {

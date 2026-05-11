@@ -1,6 +1,6 @@
 import styles from '../../Styles/Components/LandingPage/AboutKumata.module.css';
 import LANDING_TEXT from '../../Content/LandingPage';
-import { useFormFactor } from '../../Util/FormFactorContext';
+import { useFormFactor } from '../../Util/useFormFactor';
 
 export default function AboutKumata() {
   const isXS = useFormFactor().XS;
@@ -15,7 +15,7 @@ export default function AboutKumata() {
       <div className={styles.descriptionContainer}>
         {LANDING_TEXT.kumataOpeningLines.map((line, index, self) => (
           <p
-            key={`about-line-${index}`} // eslint-disable-line
+            key={`about-line-${index}`}
             className={`${isXS ? 'small-header-text' : 'header-text'}`}
             style={{
               textAlign: index === self.length - 1 ? 'right' : 'left',
