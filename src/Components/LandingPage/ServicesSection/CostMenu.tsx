@@ -1,7 +1,29 @@
-import React from 'react';
 import styles from '../../../Styles/Components/LandingPage/ServicesSection/CostMenu.module.css';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import LANDING_TEXT from '../../../Content/LandingPage';
+import LANDING_TEXT, { Content } from '../../../Content/LandingPage';
+
+type CostMenu = Content['onlineLessons']['costMenu'];
+
+type Cost = {
+  title: string;
+  cost: string;
+  specialCost: string;
+  costNote: string;
+  specialNote: string;
+};
+
+interface CostMenuProps {
+  accentColor: string;
+  shadowColor: string;
+  bannerTitle: string;
+  headerCost: Cost;
+  menuItems: CostMenu['menuItems'];
+  saleDescription: string;
+  emailBody: string;
+  emailSubjectLine: string;
+  disclaimerList: string[];
+  howToApply: (str: string) => void;
+}
 
 export default function CostMenu({
   accentColor = '#333',
@@ -12,11 +34,9 @@ export default function CostMenu({
   saleDescription = '',
   emailSubjectLine = '',
   emailBody = '',
-  howToApply = () => {
-    /* NOOP*/
-  },
+  howToApply,
   disclaimerList,
-}) {
+}: CostMenuProps) {
   const TEXT = LANDING_TEXT.costMenuSharedText;
 
   // Styles
@@ -29,43 +49,6 @@ export default function CostMenu({
   const accentedDividerStyle = { backgroundColor: accentColor };
   const howToApplyHeaderStyle = { color: accentColor };
   const buttonStyle = { backgroundColor: accentColor };
-
-  const menuList = React.useMemo(() => {
-    if (!menuItems) {
-      return null;
-    }
-
-    return menuItems.map(menuItem => {
-      const hasDiscount = menuItem.price !== menuItem.specialPrice;
-
-      return (
-        <div key={menuItem.title} className={styles.menuItem}>
-          <div className={styles.costLineContainer}>
-            <div className={styles.costDescriptionGroup}>{menuItem.title}</div>
-            <div className={styles.costGroup}>
-              <div className={`${hasDiscount ? styles.stalePrice : ''}`}>
-                {menuItem.price}
-              </div>
-              {hasDiscount && (
-                <div className={styles.discountedPrice}>
-                  {menuItem.specialPrice}
-                </div>
-              )}
-            </div>
-          </div>
-          {menuItem.noteList &&
-            menuItem.noteList.map((note, index) => (
-              <div
-                key={`${menuItem.title}-cost-note-${index}`}
-                className={styles.saleDescription}
-              >
-                {note}
-              </div>
-            ))}
-        </div>
-      );
-    });
-  }, [menuItems]);
 
   const headerCostDiscount = headerCost.cost !== headerCost.specialCost;
 
@@ -106,7 +89,38 @@ export default function CostMenu({
           className={styles.accentedDividerBar}
           style={accentedDividerStyle}
         />
-        {menuList}
+        {menuItems.map(menuItem => {
+          const hasDiscount = menuItem.price !== menuItem.specialPrice;
+
+          return (
+            <div key={menuItem.title} className={styles.menuItem}>
+              <div className={styles.costLineContainer}>
+                <div className={styles.costDescriptionGroup}>
+                  {menuItem.title}
+                </div>
+                <div className={styles.costGroup}>
+                  <div className={`${hasDiscount ? styles.stalePrice : ''}`}>
+                    {menuItem.price}
+                  </div>
+                  {hasDiscount && (
+                    <div className={styles.discountedPrice}>
+                      {menuItem.specialPrice}
+                    </div>
+                  )}
+                </div>
+              </div>
+              {menuItem.noteList &&
+                menuItem.noteList.map((note, index) => (
+                  <div
+                    key={`${menuItem.title}-cost-note-${index}`}
+                    className={styles.saleDescription}
+                  >
+                    {note}
+                  </div>
+                ))}
+            </div>
+          );
+        })}
         <div className={styles.howToApplyContainer}>
           <h3 className={styles.howToApplyHeader} style={howToApplyHeaderStyle}>
             {TEXT.howToApplyHeader}

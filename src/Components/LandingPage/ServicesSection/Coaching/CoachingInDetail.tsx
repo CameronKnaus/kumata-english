@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/Coaching/CoachingInDetail.module.css';
 import CostMenu from '../CostMenu';
 import LANDING_TEXT from '../../../../Content/LandingPage';

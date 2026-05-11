@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/Coaching/CoachingDoubts.module.css';
 import LANDING_TEXT from '../../../../Content/LandingPage';
 import { animated, config, useSpring, useSprings } from 'react-spring';

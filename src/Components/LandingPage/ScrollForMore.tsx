@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../Styles/Components/LandingPage/ScrollForMore.module.css';
 import ArrowIcon from '@mui/icons-material/ArrowDownward';
 import LANDING_TEXT from '../../Content/LandingPage';

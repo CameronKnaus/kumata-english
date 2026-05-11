@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../../../Styles/Components/LandingPage/ProfileSection/ProfileLinkGroup.module.css';
 import LANDING_TEXT from '../../../Content/LandingPage';

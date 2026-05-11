@@ -1,4 +1,3 @@
-import React from 'react';
 import CoachingDoubts from './CoachingDoubts';
 import { useFormFactor } from '../../../../Util/FormFactorContext';
 import { Parallax } from 'react-scroll-parallax';

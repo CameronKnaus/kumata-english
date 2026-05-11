@@ -1,26 +1,26 @@
-import React from 'react';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/Coaching/CoachingCharacterBox.module.css';
 import regularImage from '../../../../Images/Characters/kumataCoachingBeaver.png';
 import webpImage from '../../../../Images/webpDist/kumataCoachingBeaver.webp';
 import Image from '../../../UIElements/Image';
 import LANDING_TEXT from '../../../../Content/LandingPage';
+import { useEffect, useRef, useState } from 'react';
 
 export default function CoachingCharacterBox() {
   const wordList = LANDING_TEXT.coaching.coachingLearnedWords;
-  const [wordIndex, setWordIndex] = React.useState(0);
-  const [showWord, setShowWord] = React.useState(false);
+  const [wordIndex, setWordIndex] = useState(0);
+  const [showWord, setShowWord] = useState(false);
 
   // Get a reference to this component to avoid memory leak with async functions and unmounting
-  const mountedRef = React.useRef(true);
+  const mountedRef = useRef(true);
 
   // When the component is being unmounted, set the mountedRef to be false
-  React.useEffect(() => {
+  useEffect(() => {
     return () => {
       mountedRef.current = false;
     };
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
       setShowWord(false);
       setTimeout(() => {

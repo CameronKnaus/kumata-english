@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/OnlineLessons/ExampleLessonCard.module.css';
 
 export default function ExampleLessonCard({

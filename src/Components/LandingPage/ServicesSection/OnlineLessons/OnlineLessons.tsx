@@ -1,4 +1,3 @@
-import React from 'react';
 import OnlineLessonsCharacterBox from './OnlineLessonsCharacterBox';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/OnlineLessons/OnlineLessons.module.css';
 import LANDING_TEXT from '../../../../Content/LandingPage';
@@ -8,8 +7,9 @@ export default function OnlineLessons() {
   const TEXT = LANDING_TEXT.onlineLessons;
   const isSM = useFormFactor().SM;
 
-  const textBanner = React.useMemo(() => {
-    return (
+  return (
+    <div className={styles.flexContainer}>
+      {isSM && <OnlineLessonsCharacterBox text={TEXT.kumataTalk} />}
       <div className={styles.contentBox}>
         <div className={styles.textWrapper}>
           <h3 className={styles.titleText}>{TEXT.eikaiwa}</h3>
@@ -20,18 +20,6 @@ export default function OnlineLessons() {
           <p className={styles.descriptionText}>{TEXT.serviceDescription}</p>
         </div>
       </div>
-    );
-  }, [
-    TEXT.answerAllQuestions,
-    TEXT.eikaiwa,
-    TEXT.manToMan,
-    TEXT.serviceDescription,
-  ]);
-
-  return (
-    <div className={styles.flexContainer}>
-      {isSM && <OnlineLessonsCharacterBox text={TEXT.kumataTalk} />}
-      {textBanner}
       {!isSM && <OnlineLessonsCharacterBox text={TEXT.kumataTalk} />}
     </div>
   );

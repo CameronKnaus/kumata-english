@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../../Styles/Components/LandingPage/ServicesSection/ServicesNavBar.module.css';
 import ServiceAnchorButton from './ServiceAnchorButton';
 import scrollToTarget from '../../../Util/ScrollToTarget';

@@ -232,7 +232,7 @@ const LANDING_TEXT = {
       emailSubjectLine: '「マンツーマンオンライン英会話の件について」',
       emailContents:
         '体験レッスン(30分)お申し込みをご希望の方は下記に記載の上、ご連絡お願いいたします。%0D%0A【名前】%0D%0A【希望日時】例）12/21 18:00~22:00 の間%0D%0A【目標】%0D%0A【現在のレベル】',
-      howToApply: emailSubject =>
+      howToApply: (emailSubject: string) =>
         `${emailSubject}お名前を記載の上、送信お願いします。`,
       // 免責とかはこちら
       disclaimerList: [
@@ -340,7 +340,7 @@ const LANDING_TEXT = {
       emailSubjectLine: '「コーチングの件について」',
       emailContents:
         '体験レッスン(30分)お申し込みをご希望の方は下記に記載の上、ご連絡お願いいたします。%0D%0A【名前】%0D%0A【希望日時】例）12/21 18:00~22:00 の間%0D%0A【目標】%0D%0A【現在のレベル】',
-      howToApply: emailSubject =>
+      howToApply: (emailSubject: string) =>
         `ぜひ興味ある方は、件名${emailSubject}、お名前を記載の上、送信お願いします。`,
     },
   },
@@ -367,5 +367,7 @@ const LANDING_TEXT = {
     toBeeboGo: 'BeeboGoへ',
   },
 };
+
+export type Content = typeof LANDING_TEXT;
 
 export default LANDING_TEXT;

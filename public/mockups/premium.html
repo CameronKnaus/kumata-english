@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kumata English – Redesign Mockup (Premium Coaching Studio)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700;900&family=Instrument+Serif&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-soft: #fbfaf7;
+  --bg-card: #ffffff;
+  --bg-tint: #f4f1ec;
+  --line: #e8e3da;
+  --line-strong: #d6cfc1;
+  --ink: #14110d;
+  --ink-soft: #4a4540;
+  --ink-mute: #84807a;
+  --ink-faint: #b8b2a7;
+  --green: #00b890;
+  --green-deep: #006650;
+  --green-soft: #ecf8f3;
+  --navy: #156064;
+  --navy-soft: #e6f0f0;
+  --orange: #c66c44;
+  --pink: #b3505a;
+  --jp: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+  --en: 'Inter', sans-serif;
+  --serif: 'Instrument Serif', 'Noto Serif JP', serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--jp);
+  color: var(--ink);
+  background: var(--bg);
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'palt';
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+.container { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+.container-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+
+/* ====== Reveal ====== */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+
+/* ====== Buttons ====== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-family: var(--jp);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--green-deep);
+  color: white;
+  box-shadow: 0 1px 2px rgba(20,17,13,0.08), 0 6px 14px rgba(0,102,80,0.18);
+}
+.btn-primary:hover { background: #005243; transform: translateY(-1px); box-shadow: 0 1px 2px rgba(20,17,13,0.08), 0 10px 20px rgba(0,102,80,0.24); }
+.btn-secondary {
+  background: white;
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+.btn-secondary:hover { background: var(--bg-soft); border-color: var(--ink-mute); }
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  padding: 10px 16px;
+}
+.btn-ghost:hover { background: var(--bg-tint); }
+
+/* ====== Header ====== */
+.site-header {
+  position: sticky; top: 0;
+  background: rgba(255,255,255,0.84);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--line);
+  z-index: 50;
+}
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand-mark {
+  width: 32px; height: 32px;
+  background: var(--green-deep);
+  border-radius: 8px;
+  display: grid; place-items: center;
+  color: white;
+  font-family: var(--en);
+  font-weight: 700;
+  font-size: 14px;
+}
+.brand-name { font-family: var(--en); font-weight: 600; font-size: 16px; letter-spacing: -0.01em; }
+.nav-links {
+  display: none;
+  gap: 28px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+@media (min-width: 820px) { .nav-links { display: flex; } }
+.nav-links a { text-decoration: none; transition: color 0.15s ease; }
+.nav-links a:hover { color: var(--ink); }
+.nav-cta { display: flex; gap: 8px; align-items: center; }
+
+/* ====== Hero ====== */
+.hero {
+  padding: 80px 0 100px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -20%; right: -10%;
+  width: 60%; height: 80%;
+  background: radial-gradient(closest-side, rgba(0,184,144,0.08), transparent 70%);
+  pointer-events: none;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+}
+@media (min-width: 920px) { .hero-grid { grid-template-columns: 1.15fr 0.85fr; gap: 80px; } }
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--en);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  background: white;
+  padding: 6px 14px 6px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  margin-bottom: 28px;
+}
+.eyebrow .badge {
+  background: var(--green-soft);
+  color: var(--green-deep);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.hero h1 {
+  font-family: var(--jp);
+  font-weight: 700;
+  font-size: clamp(36px, 5.4vw, 60px);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 22px;
+  color: var(--ink);
+}
+.hero h1 em { font-family: var(--serif); font-style: italic; color: var(--green-deep); font-weight: 400; }
+.hero .lead {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  margin-bottom: 36px;
+  max-width: 520px;
+}
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 28px; }
+.trust-strip {
+  display: flex; flex-wrap: wrap;
+  gap: 12px 24px;
+  font-size: 13px;
+  color: var(--ink-mute);
+}
+.trust-strip span { display: inline-flex; align-items: center; gap: 6px; }
+.trust-strip .dot { width: 4px; height: 4px; background: var(--ink-faint); border-radius: 50%; }
+
+.hero-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.hero-art .frame {
+  width: min(420px, 100%);
+  aspect-ratio: 5/6;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 24px;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(20,17,13,0.04), 0 30px 60px -20px rgba(20,17,13,0.12);
+  overflow: hidden;
+}
+.hero-art .frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 14px; }
+.hero-art .mini-mascot {
+  position: absolute;
+  bottom: -24px; right: -24px;
+  width: 120px;
+  filter: drop-shadow(0 12px 20px rgba(20,17,13,0.16));
+}
+.hero-art .float-card {
+  position: absolute;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 6px 24px rgba(20,17,13,0.08);
+  font-size: 13px;
+  display: flex; align-items: center; gap: 10px;
+}
+.hero-art .float-card .ic {
+  width: 32px; height: 32px;
+  background: var(--green-soft);
+  color: var(--green-deep);
+  border-radius: 8px;
+  display: grid; place-items: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.hero-art .float-card.fc1 { top: 24px; left: -28px; animation: gentle-float 6s ease-in-out infinite; }
+.hero-art .float-card.fc2 { bottom: 64px; left: -36px; animation: gentle-float 6.5s ease-in-out infinite 1s; }
+.hero-art .float-card strong { display: block; font-weight: 700; color: var(--ink); }
+.hero-art .float-card small { color: var(--ink-mute); }
+@keyframes gentle-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* ====== Trial booking ====== */
+.trial-section {
+  padding: 30px 0 80px;
+  background: var(--bg-soft);
+}
+.trial-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 36px;
+  max-width: 880px;
+  margin: 0 auto;
+  box-shadow: 0 1px 2px rgba(20,17,13,0.04), 0 24px 48px -16px rgba(20,17,13,0.08);
+}
+.trial-head {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+.trial-head h2 {
+  font-family: var(--jp);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+}
+.trial-head .meta {
+  font-size: 13px;
+  color: var(--ink-mute);
+}
+.trial-head .pill {
+  display: inline-block;
+  font-family: var(--en);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--green-deep);
+  background: var(--green-soft);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.slot-grid { display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 28px; }
+@media (min-width: 700px) { .slot-grid { grid-template-columns: repeat(3, 1fr); } }
+.slot {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  background: white;
+  display: flex; align-items: center; justify-content: space-between;
+  transition: all 0.15s ease;
+}
+.slot small { display: block; font-size: 12px; color: var(--ink-mute); margin-bottom: 2px; }
+.slot strong { font-weight: 600; font-size: 15px; }
+.slot:hover { border-color: var(--green-deep); background: var(--green-soft); }
+.slot.active {
+  border-color: var(--green-deep);
+  background: var(--green-soft);
+  box-shadow: 0 0 0 3px rgba(0,184,144,0.12);
+}
+.slot .check { color: var(--green-deep); font-weight: 700; opacity: 0; }
+.slot.active .check { opacity: 1; }
+.trial-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+@media (min-width: 700px) { .trial-form { grid-template-columns: 1fr 1fr; } }
+.field label { display: block; font-size: 13px; font-weight: 600; color: var(--ink-soft); margin-bottom: 6px; }
+.field input, .field select {
+  width: 100%;
+  font-family: var(--jp); font-size: 15px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: white;
+  outline: none;
+  transition: border 0.15s ease, box-shadow 0.15s ease;
+}
+.field input:focus, .field select:focus { border-color: var(--green-deep); box-shadow: 0 0 0 3px rgba(0,184,144,0.12); }
+.level-radio { display: flex; gap: 8px; flex-wrap: wrap; }
+.level-radio label { cursor: pointer; }
+.level-radio input { display: none; }
+.level-radio span {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 14px;
+  background: white;
+  transition: all 0.15s ease;
+}
+.level-radio input:checked + span {
+  border-color: var(--green-deep);
+  background: var(--green-soft);
+  color: var(--green-deep);
+  font-weight: 600;
+}
+.trial-foot {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 16px; flex-wrap: wrap;
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.trial-foot .note { font-size: 13px; color: var(--ink-mute); display: flex; align-items: center; gap: 6px; }
+
+/* ====== Value props ====== */
+.value-section { padding: 80px 0; }
+.section-eyebrow {
+  font-family: var(--en);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--green-deep);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.section-title {
+  font-family: var(--jp);
+  font-weight: 700;
+  font-size: clamp(28px, 3.6vw, 40px);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+.section-lead {
+  font-size: 17px;
+  color: var(--ink-soft);
+  max-width: 620px;
+  line-height: 1.75;
+}
+.section-head { margin-bottom: 56px; }
+.section-head.centered { text-align: center; }
+.section-head.centered .section-lead { margin: 14px auto 0; }
+
+.value-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+@media (min-width: 800px) { .value-grid { grid-template-columns: repeat(3, 1fr); } }
+.value-card {
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+}
+.value-card:hover { transform: translateY(-2px); border-color: var(--line-strong); box-shadow: 0 1px 2px rgba(20,17,13,0.04), 0 14px 32px -14px rgba(20,17,13,0.08); }
+.value-icon {
+  width: 44px; height: 44px;
+  background: var(--green-soft);
+  color: var(--green-deep);
+  border-radius: 12px;
+  display: grid; place-items: center;
+  font-family: var(--en);
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+.value-card h3 { font-size: 19px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.01em; }
+.value-card p { color: var(--ink-soft); font-size: 15px; line-height: 1.75; }
+
+/* ====== About editorial ====== */
+.about-section {
+  padding: 80px 0;
+  background: var(--bg-soft);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  align-items: start;
+}
+@media (min-width: 900px) { .about-grid { grid-template-columns: 0.85fr 1.15fr; gap: 70px; } }
+.about-photo {
+  position: relative;
+  aspect-ratio: 4/5;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--bg-tint);
+  border: 1px solid var(--line);
+}
+.about-photo img { width: 100%; height: 100%; object-fit: cover; }
+.about-mascot-accent {
+  position: absolute;
+  bottom: -20px; right: -20px;
+  width: 100px;
+  filter: drop-shadow(0 12px 20px rgba(20,17,13,0.18));
+}
+.about-bio h3 { font-family: var(--serif); font-style: italic; font-size: 36px; font-weight: 400; margin-bottom: 16px; color: var(--ink); line-height: 1.2; }
+.about-bio p { color: var(--ink-soft); font-size: 16px; line-height: 1.85; margin-bottom: 18px; }
+.about-bio p strong { color: var(--ink); font-weight: 600; }
+.accolades-list {
+  list-style: none;
+  margin-top: 28px;
+  display: grid;
+  gap: 10px;
+}
+.accolades-list li {
+  display: flex; gap: 12px; align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  font-size: 15px;
+  color: var(--ink);
+}
+.accolades-list li:last-child { border-bottom: 1px solid var(--line); }
+.accolades-list .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--green-deep);
+  flex-shrink: 0;
+}
+
+/* ====== Services overview ====== */
+.services-section { padding: 100px 0; }
+.services-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  margin-top: 8px;
+}
+@media (min-width: 900px) { .services-cards { grid-template-columns: 1fr 1fr; } }
+.service-card {
+  position: relative;
+  padding: 36px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: white;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+}
+.service-card:hover { transform: translateY(-3px); box-shadow: 0 1px 2px rgba(20,17,13,0.04), 0 30px 60px -20px rgba(20,17,13,0.14); border-color: var(--line-strong); }
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 4px;
+  background: var(--green-deep);
+}
+.service-card.coaching::before { background: var(--navy); }
+.service-tag {
+  font-family: var(--en);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 16px;
+}
+.service-card h3 { font-size: 26px; font-weight: 700; margin-bottom: 10px; letter-spacing: -0.02em; }
+.service-card p.desc { color: var(--ink-soft); font-size: 15px; line-height: 1.75; margin-bottom: 24px; }
+.service-card .price-row {
+  display: flex; align-items: baseline; gap: 8px;
+  margin-bottom: 6px;
+}
+.service-card .price-row .num {
+  font-family: var(--en);
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: -0.02em;
+}
+.service-card .price-row .per { color: var(--ink-mute); font-size: 14px; }
+.service-card .price-note { color: var(--ink-mute); font-size: 13px; margin-bottom: 24px; }
+.service-card .feature-mini {
+  list-style: none;
+  margin: 0 0 28px;
+  display: grid;
+  gap: 10px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+.service-card .feature-mini li { font-size: 14px; color: var(--ink-soft); display: flex; gap: 10px; align-items: flex-start; }
+.service-card .feature-mini li::before { content: '✓'; color: var(--green-deep); font-weight: 700; flex-shrink: 0; }
+.service-mascot {
+  position: absolute;
+  right: -20px; top: 14px;
+  width: 80px;
+  opacity: 0.94;
+}
+
+/* ====== Eikaiwa / Coaching details ====== */
+.detail-section { padding: 100px 0; border-top: 1px solid var(--line); }
+.detail-section.alt { background: var(--bg-soft); }
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  margin-top: 8px;
+}
+@media (min-width: 980px) { .detail-grid { grid-template-columns: 0.9fr 1.1fr; gap: 70px; } }
+.detail-side h3 { font-size: 22px; font-weight: 700; margin-bottom: 14px; }
+.detail-side p { color: var(--ink-soft); font-size: 15px; line-height: 1.8; margin-bottom: 20px; }
+.detail-side .meta-pills {
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.detail-side .meta-pills span {
+  padding: 6px 12px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.detail-main {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 32px;
+}
+.detail-section.alt .detail-main { background: white; }
+
+.feature-row {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+.feature-row .item {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+.feature-row .check-icon {
+  width: 28px; height: 28px;
+  background: var(--green-soft);
+  color: var(--green-deep);
+  border-radius: 8px;
+  display: grid; place-items: center;
+  font-weight: 700;
+  margin-top: 2px;
+}
+.feature-row .item-body strong { display: block; font-weight: 700; font-size: 16px; margin-bottom: 4px; }
+.feature-row .item-body span { color: var(--ink-soft); font-size: 14px; }
+
+.timeline-clean {
+  margin: 28px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+@media (min-width: 720px) { .timeline-clean { grid-template-columns: repeat(3, 1fr); } }
+.tc-step {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  background: var(--bg-soft);
+}
+.tc-step .step-num {
+  font-family: var(--en);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--green-deep);
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+.tc-step .time { font-weight: 700; font-size: 15px; margin-bottom: 6px; }
+.tc-step p { font-size: 13px; color: var(--ink-soft); }
+
+/* Pricing tables */
+.pricing-rows {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+@media (min-width: 800px) { .pricing-rows { grid-template-columns: repeat(4, 1fr); } }
+.pricing-rows.two-col { grid-template-columns: 1fr; }
+@media (min-width: 800px) { .pricing-rows.two-col { grid-template-columns: 1fr 1fr; max-width: 600px; } }
+.pricing-cell {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  background: white;
+  position: relative;
+  transition: all 0.18s ease;
+}
+.pricing-cell:hover { border-color: var(--green-deep); transform: translateY(-2px); }
+.pricing-cell.popular { border-color: var(--green-deep); background: var(--green-soft); }
+.pricing-cell.popular::after {
+  content: '人気';
+  position: absolute;
+  top: -10px; left: 16px;
+  background: var(--green-deep);
+  color: white;
+  font-family: var(--en);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+.pricing-cell .name { font-size: 13px; color: var(--ink-mute); margin-bottom: 6px; }
+.pricing-cell .amount { font-family: var(--en); font-weight: 700; font-size: 22px; letter-spacing: -0.01em; }
+.pricing-cell .amount-suffix { font-size: 14px; color: var(--ink-mute); }
+.price-fineprint { font-size: 13px; color: var(--ink-mute); text-align: center; margin-top: 18px; }
+
+.vocab-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 20px 0; }
+.vocab-row .v {
+  padding: 6px 12px;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: var(--en);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.coach-list {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+}
+.coach-list li {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 16px 18px;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.coach-list li .num {
+  flex-shrink: 0;
+  width: 28px; height: 28px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid; place-items: center;
+  font-family: var(--en);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--green-deep);
+}
+.coach-list li span { font-size: 15px; color: var(--ink-soft); }
+
+/* ====== Comparison table ====== */
+.compare-section { padding: 100px 0; border-top: 1px solid var(--line); background: var(--bg-soft); }
+.compare-table {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.compare-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid var(--line);
+}
+.compare-row:first-child { border-top: none; }
+.compare-cell {
+  padding: 18px 24px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.compare-cell:not(:first-child) { border-left: 1px solid var(--line); }
+.compare-row.head .compare-cell {
+  background: var(--bg-soft);
+  font-weight: 700;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 28px 24px;
+}
+.compare-row.head .head-tag { font-family: var(--en); font-size: 11px; font-weight: 600; letter-spacing: 0.1em; color: var(--green-deep); }
+.compare-row.head .head-name { font-size: 19px; }
+.compare-row.head .head-small { font-size: 13px; color: var(--ink-mute); font-weight: 400; }
+.compare-row .label { color: var(--ink-mute); font-weight: 600; font-size: 14px; }
+.recommended-stripe {
+  background: var(--green-soft);
+  padding: 14px 24px;
+  font-size: 14px;
+  color: var(--green-deep);
+  font-weight: 600;
+  text-align: center;
+  border-top: 1px solid var(--line);
+}
+
+/* ====== Testimonials ====== */
+.testi-section { padding: 100px 0; border-top: 1px solid var(--line); }
+.testi-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+@media (min-width: 900px) { .testi-grid { grid-template-columns: repeat(3, 1fr); } }
+.testi-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex; flex-direction: column; gap: 18px;
+}
+.testi-card .stars { color: #d4a017; letter-spacing: 2px; font-size: 16px; }
+.testi-card blockquote {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--ink);
+  flex: 1;
+}
+.testi-card blockquote::before { content: '"'; font-family: var(--serif); font-size: 36px; color: var(--green-deep); line-height: 0; vertical-align: -10px; margin-right: 4px; }
+.testi-card .who {
+  display: flex; align-items: center; gap: 14px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.testi-card .avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--bg-tint);
+  display: grid; place-items: center;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+.testi-card .name { font-weight: 700; font-size: 15px; }
+.testi-card .meta { color: var(--ink-mute); font-size: 13px; }
+.testi-card .course-pill {
+  display: inline-block;
+  font-family: var(--en);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  background: var(--green-soft);
+  color: var(--green-deep);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.placeholder-note {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--ink-mute);
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+/* ====== FAQ ====== */
+.faq-section { padding: 100px 0; background: var(--bg-soft); border-top: 1px solid var(--line); }
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.faq-item { border-top: 1px solid var(--line); }
+.faq-item:first-child { border-top: none; }
+.faq-q {
+  display: flex; align-items: center;
+  padding: 22px 26px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  user-select: none;
+  transition: background 0.15s ease;
+}
+.faq-q:hover { background: var(--bg-soft); }
+.faq-q .q-text { flex: 1; }
+.faq-q .chev {
+  flex-shrink: 0;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  font-size: 16px;
+  color: var(--ink-mute);
+  transition: transform 0.3s ease, background 0.2s ease, color 0.2s ease;
+}
+.faq-item.open .chev { transform: rotate(45deg); background: var(--green-soft); color: var(--green-deep); }
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.3s ease;
+  padding: 0 26px;
+  color: var(--ink-soft);
+  line-height: 1.85;
+  font-size: 15px;
+}
+.faq-item.open .faq-a { max-height: 400px; padding: 0 26px 22px; }
+
+/* ====== Social ====== */
+.social-section { padding: 100px 0; border-top: 1px solid var(--line); }
+.social-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: center;
+}
+@media (min-width: 900px) { .social-grid { grid-template-columns: 1fr 1fr; gap: 60px; } }
+.social-side h2 { font-size: 32px; font-weight: 700; line-height: 1.3; letter-spacing: -0.02em; margin-bottom: 14px; }
+.social-side p { color: var(--ink-soft); font-size: 16px; line-height: 1.8; margin-bottom: 26px; }
+.social-links { display: flex; flex-wrap: wrap; gap: 12px; }
+.social-link {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 10px 16px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+.social-link:hover { border-color: var(--ink-soft); transform: translateY(-1px); }
+.social-link .ic {
+  width: 28px; height: 28px;
+  border-radius: 8px;
+  display: grid; place-items: center;
+  font-family: var(--en);
+  font-weight: 700;
+  font-size: 11px;
+  color: white;
+}
+.social-link.ig .ic { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.social-link.yt .ic { background: #ff0000; }
+.social-grid .preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.social-grid .preview-grid .tile {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--bg-tint), var(--bg-soft));
+  border: 1px solid var(--line);
+  display: grid; place-items: center;
+  font-family: var(--en);
+  font-size: 11px;
+  color: var(--ink-mute);
+}
+.social-grid .preview-grid .tile.real { background-image: url('/mockup-assets/ParticularInstaKumata.webp'); background-size: cover; background-position: center; border: none; }
+.social-grid .preview-grid .tile.real2 { background-image: url('/mockup-assets/MoonInstaKumata.webp'); background-size: cover; background-position: center; border: none; }
+.social-grid .preview-grid .tile.real3 { background-image: url('/mockup-assets/DetailInstaKumata.webp'); background-size: cover; background-position: center; border: none; }
+
+/* ====== Final CTA ====== */
+.final-section {
+  padding: 120px 0;
+  background: linear-gradient(180deg, var(--bg-soft), var(--bg));
+  border-top: 1px solid var(--line);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.final-section::before {
+  content: '';
+  position: absolute;
+  top: -30%; left: 50%; transform: translateX(-50%);
+  width: 70%; height: 70%;
+  background: radial-gradient(closest-side, rgba(0,184,144,0.10), transparent 70%);
+  pointer-events: none;
+}
+.final-mascot {
+  width: 120px;
+  margin: 0 auto 20px;
+  position: relative;
+  filter: drop-shadow(0 14px 22px rgba(20,17,13,0.12));
+  animation: gentle-float 5s ease-in-out infinite;
+}
+.final-section h2 {
+  font-family: var(--jp);
+  font-weight: 700;
+  font-size: clamp(32px, 4.4vw, 50px);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+  position: relative;
+}
+.final-section h2 em { font-family: var(--serif); font-style: italic; color: var(--green-deep); font-weight: 400; }
+.final-section .sub {
+  color: var(--ink-soft);
+  font-size: 17px;
+  margin-bottom: 36px;
+  max-width: 540px;
+  margin-left: auto; margin-right: auto;
+  position: relative;
+}
+.final-cta-row { position: relative; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.final-email { margin-top: 24px; font-size: 13px; color: var(--ink-mute); position: relative; }
+.final-email a { color: var(--green-deep); font-weight: 600; }
+
+/* ====== Footer ====== */
+.site-footer {
+  background: var(--bg-soft);
+  padding: 50px 0 30px;
+  border-top: 1px solid var(--line);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+@media (min-width: 800px) { .footer-grid { grid-template-columns: 1.4fr repeat(3, 1fr); } }
+.footer-col h4 { font-family: var(--en); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 14px; }
+.footer-col a { display: block; text-decoration: none; color: var(--ink-soft); font-size: 14px; padding: 4px 0; }
+.footer-col a:hover { color: var(--ink); }
+.footer-brand p { color: var(--ink-soft); font-size: 14px; line-height: 1.8; max-width: 320px; }
+.footer-bottom { padding-top: 24px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--ink-mute); }
+
+/* ====== Mockup chip ====== */
+.mockup-chip {
+  position: fixed;
+  bottom: 20px; right: 20px;
+  background: var(--ink);
+  color: white;
+  font-family: var(--en);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  padding: 8px 14px;
+  border-radius: 999px;
+  z-index: 60;
+  font-weight: 600;
+}
+
+/* ====== Toast ====== */
+.toast {
+  position: fixed;
+  bottom: 30px; left: 50%;
+  transform: translateX(-50%) translateY(120%);
+  background: var(--ink);
+  color: white;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 12px 32px rgba(20,17,13,0.2);
+  transition: transform 0.4s cubic-bezier(.22,.61,.36,1);
+  z-index: 100;
+  display: inline-flex; align-items: center; gap: 10px;
+}
+.toast .check-ic { width: 22px; height: 22px; background: var(--green); border-radius: 50%; display: grid; place-items: center; color: var(--ink); font-weight: 700; flex-shrink: 0; }
+.toast.show { transform: translateX(-50%) translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-mark">K</div>
+      <span class="brand-name">Kumata English</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#services">サービス</a>
+      <a href="#eikaiwa">料金</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#about">プロフィール</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#trial" class="btn btn-primary" style="padding:10px 18px;font-size:14px;">無料体験を予約</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <div class="eyebrow"><span class="badge">NEW</span>無料体験レッスン受付中</div>
+      <h1>話せるようになる、<br><em>本気の英語</em>を。</h1>
+      <p class="lead">マンツーマンで、あなたのペースに合わせて。大阪生まれの英会話講師Kumataが、TOEIC 400点から945点までの自身の経験をもとに「確実に話せる」を作ります。</p>
+      <div class="hero-ctas">
+        <a href="#trial" class="btn btn-primary">無料体験を予約する</a>
+        <a href="#services" class="btn btn-secondary">サービス詳細を見る</a>
+      </div>
+      <div class="trust-strip">
+        <span>TOEIC 945点</span>
+        <span class="dot"></span>
+        <span>バンクーバー留学経験</span>
+        <span class="dot"></span>
+        <span>フリーランス英語コーチ</span>
+      </div>
+    </div>
+    <div class="hero-art reveal">
+      <div class="frame">
+        <img src="/mockup-assets/IntroKumata.webp" alt="Kumata">
+        <img class="mini-mascot" src="/mockup-assets/happyKumata.webp" alt="">
+      </div>
+      <div class="float-card fc1">
+        <div class="ic">✓</div>
+        <div>
+          <strong>30分・無料</strong>
+          <small>クレカ不要</small>
+        </div>
+      </div>
+      <div class="float-card fc2">
+        <div class="ic" style="background:#fef0ea;color:#c66c44;">★</div>
+        <div>
+          <strong>マンツーマン</strong>
+          <small>あなただけのレッスン</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRIAL ============ -->
+<section class="trial-section" id="trial">
+  <div class="container">
+    <div class="trial-card reveal">
+      <div class="trial-head">
+        <div>
+          <span class="pill">STEP 1 ／ 無料体験</span>
+          <h2 style="margin-top:8px;">体験レッスンの日時を選択</h2>
+          <p class="meta">30分のオンラインレッスン。クレジットカード不要、当日キャンセル無料。</p>
+        </div>
+      </div>
+      <div class="slot-grid">
+        <div class="slot active" data-slot="1">
+          <div>
+            <small>5月13日 (火)</small>
+            <strong>19:00 – 19:30</strong>
+          </div>
+          <span class="check">✓</span>
+        </div>
+        <div class="slot" data-slot="2">
+          <div>
+            <small>5月14日 (水)</small>
+            <strong>20:00 – 20:30</strong>
+          </div>
+          <span class="check">✓</span>
+        </div>
+        <div class="slot" data-slot="3">
+          <div>
+            <small>5月15日 (木)</small>
+            <strong>21:00 – 21:30</strong>
+          </div>
+          <span class="check">✓</span>
+        </div>
+      </div>
+      <p style="text-align:center;font-size:14px;color:var(--ink-mute);margin-top:-12px;margin-bottom:24px;"><a href="#" style="color:var(--green-deep);font-weight:600;text-decoration:none;">他の日時を見る →</a></p>
+      <div class="trial-form">
+        <div class="field">
+          <label>お名前</label>
+          <input type="text" placeholder="山田 花子">
+        </div>
+        <div class="field">
+          <label>メールアドレス</label>
+          <input type="email" placeholder="hanako@example.com">
+        </div>
+        <div class="field" style="grid-column:1/-1">
+          <label>現在の英語レベル</label>
+          <div class="level-radio">
+            <label><input type="radio" name="level" checked><span>初心者</span></label>
+            <label><input type="radio" name="level"><span>中級者</span></label>
+            <label><input type="radio" name="level"><span>上級者</span></label>
+            <label><input type="radio" name="level"><span>わからない</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="trial-foot">
+        <span class="note">🔒 個人情報は予約のみに使用します</span>
+        <button class="btn btn-primary" id="book-btn">無料体験を予約する →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUE PROPS ============ -->
+<section class="value-section">
+  <div class="container">
+    <div class="section-head centered reveal">
+      <div class="section-eyebrow">3 PILLARS</div>
+      <h2 class="section-title">「話せる」を作る、<br>3つの柱。</h2>
+      <p class="section-lead">どのレッスンでも、これら3つを軸に進めます。教科書通りではなく、実際に使える英語を最短ルートで。</p>
+    </div>
+    <div class="value-grid">
+      <div class="value-card reveal">
+        <div class="value-icon">01</div>
+        <h3>発音のコツ</h3>
+        <p>正しく発音できると、モチベーションがかなり上がる。「通じる」体験を、初回レッスンから積み上げます。</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">02</div>
+        <h3>文法の基礎</h3>
+        <p>文法がしっかりすれば、長文も自然に話せるように。1から丁寧に立て直し、自信を取り戻します。</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon">03</div>
+        <h3>実践フレーズ</h3>
+        <p>教科書にはない、ネイティブが「実際に」使うフレーズを直伝。次のレッスンですぐ使える知識へ。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="about-photo">
+          <img src="/mockup-assets/IntroKumata.webp" alt="Kumata">
+          <img class="about-mascot-accent" src="/mockup-assets/BashfulKumata.webp" alt="">
+        </div>
+      </div>
+      <div class="about-bio reveal">
+        <div class="section-eyebrow">ABOUT</div>
+        <h3>"英語であなたの人生は変わる" を証明したい。</h3>
+        <p>大阪生まれ・大阪育ち。学生時代の最初のTOEICは <strong>400点台</strong>でした。きっかけは大学の「英語でしか話してはいけない施設」。そこから英語が楽しくなり、もっと話せるようになりたいと思うように。</p>
+        <p>タイの孤児院ボランティア、ニューヨーク旅行、ユネスコ国際会議でのエスコート、そしてカナダ・バンクーバーへの留学を経て、現在はフリーランスの英会話講師・英語コーチとして活動しています。</p>
+        <p>「失敗」は「成長するために必要な道」。一緒に、英語で人生をもっと楽しくしませんか？</p>
+        <ul class="accolades-list">
+          <li><span class="dot"></span>フリーランス英会話講師</li>
+          <li><span class="dot"></span>フリーランス英語コーチ</li>
+          <li><span class="dot"></span>TOEIC 945点</li>
+          <li><span class="dot"></span>カナダ・バンクーバーへの留学経験</li>
+          <li><span class="dot"></span>Instagramで毎日使えるフレーズを更新</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="section-head centered reveal">
+      <div class="section-eyebrow">SERVICES</div>
+      <h2 class="section-title">2つのサービスから選ぶ。</h2>
+      <p class="section-lead">マイペースに続ける英会話レッスンと、短期で本気で伸ばすコーチング。あなたの目標に合わせて選択できます。</p>
+    </div>
+    <div class="services-cards">
+      <div class="service-card reveal">
+        <img class="service-mascot" src="/mockup-assets/happyKumata.webp" alt="">
+        <div class="service-tag">01 ／ EIKAIWA</div>
+        <h3>オンライン英会話レッスン</h3>
+        <p class="desc">マンツーマン・30分。マイペースに、確実に「話せる」を積み上げるレッスン。</p>
+        <div class="price-row"><span class="num">¥15,000</span><span class="per">〜 ／ 月</span></div>
+        <div class="price-note">入会金 ¥15,000（初月のみ）</div>
+        <ul class="feature-mini">
+          <li>マンツーマン形式</li>
+          <li>月4〜8回のフレキシブルな頻度</li>
+          <li>発音・文法・フレーズを総合的に</li>
+        </ul>
+        <a href="#eikaiwa" class="btn btn-secondary">詳細を見る →</a>
+      </div>
+      <div class="service-card coaching reveal">
+        <img class="service-mascot" src="/mockup-assets/CoachKumata.webp" alt="">
+        <div class="service-tag">02 ／ COACHING</div>
+        <h3>英語コーチング</h3>
+        <p class="desc">2〜3ヶ月の短期集中。毎日サポート付きで、ゼロからでも英語を「習慣」に。</p>
+        <div class="price-row"><span class="num">¥70,000</span><span class="per">〜 ／ 月</span></div>
+        <div class="price-note">入会金 ¥10,000 ・ 教材費 ¥3,840</div>
+        <ul class="feature-mini">
+          <li>毎日のインプット・アウトプット</li>
+          <li>LINEで24時間質問対応</li>
+          <li>週2回のオンラインレッスン</li>
+        </ul>
+        <a href="#coaching" class="btn btn-secondary">詳細を見る →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EIKAIWA DETAIL ============ -->
+<section class="detail-section alt" id="eikaiwa">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">01 / EIKAIWA</div>
+      <h2 class="section-title">オンライン英会話レッスン</h2>
+      <p class="section-lead">マンツーマンだから、不明点は何でも質問OK。レッスン内で何度も繰り返すから、自然と自分の意見が言えるようになります。</p>
+    </div>
+    <div class="detail-grid">
+      <div class="detail-side reveal">
+        <h3>こんな方におすすめ</h3>
+        <p>はじめての英会話、ブランクがあって不安、海外旅行で会話できるようになりたい、発音をきれいにしたい。そんな方に最適です。</p>
+        <div class="meta-pills">
+          <span>英語が全くわからない方</span>
+          <span>文法を1から学び直したい方</span>
+          <span>海外旅行で会話したい方</span>
+          <span>新しい趣味が欲しい方</span>
+          <span>発音をきれいにしたい方</span>
+        </div>
+      </div>
+      <div class="detail-main reveal">
+        <div class="feature-row">
+          <div class="item">
+            <div class="check-icon">✓</div>
+            <div class="item-body">
+              <strong>発音のコツをお教えします</strong>
+              <span>正しく発音できると、モチベーションがかなり上がります。</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="check-icon">✓</div>
+            <div class="item-body">
+              <strong>文法の基礎知識も丁寧に</strong>
+              <span>文法がしっかりすればするほど、長文を話せるようになります。</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="check-icon">✓</div>
+            <div class="item-body">
+              <strong>実際に使えるフレーズをシェア</strong>
+              <span>教科書にはない、ネイティブが日常で使うフレーズを直伝。</span>
+            </div>
+          </div>
+        </div>
+
+        <h4 style="font-size:15px;font-weight:700;color:var(--ink-mute);text-transform:uppercase;letter-spacing:0.08em;margin-top:24px;margin-bottom:10px;">レッスンの流れ ／ 30分</h4>
+        <div class="timeline-clean">
+          <div class="tc-step">
+            <div class="step-num">STEP 01</div>
+            <div class="time">0〜15分</div>
+            <p>挨拶・自己紹介・最近の出来事フリートーク</p>
+          </div>
+          <div class="tc-step">
+            <div class="step-num">STEP 02</div>
+            <div class="time">15〜25分</div>
+            <p>アウトプットを意識した文法の勉強</p>
+          </div>
+          <div class="tc-step">
+            <div class="step-num">STEP 03</div>
+            <div class="time">25〜30分</div>
+            <p>習った大事な内容の復習</p>
+          </div>
+        </div>
+
+        <h4 style="font-size:15px;font-weight:700;color:var(--ink-mute);text-transform:uppercase;letter-spacing:0.08em;margin-top:32px;margin-bottom:10px;">料金 ／ 入会金 ¥15,000（初月のみ）</h4>
+        <div class="pricing-rows">
+          <div class="pricing-cell">
+            <div class="name">１レッスン</div>
+            <div class="amount">30<span class="amount-suffix">分</span></div>
+          </div>
+          <div class="pricing-cell">
+            <div class="name">月4回</div>
+            <div class="amount">¥15,000</div>
+            <div class="amount-suffix">／月</div>
+          </div>
+          <div class="pricing-cell popular">
+            <div class="name">月6回</div>
+            <div class="amount">¥20,000</div>
+            <div class="amount-suffix">／月</div>
+          </div>
+          <div class="pricing-cell">
+            <div class="name">月8回</div>
+            <div class="amount">¥25,000</div>
+            <div class="amount-suffix">／月</div>
+          </div>
+        </div>
+        <p class="price-fineprint">※ 月額継続制。退会は翌月以降可能 ／ 再入会時に入会金が再度発生します。</p>
+        <div style="margin-top:28px;">
+          <a href="#trial" class="btn btn-primary">無料体験を予約する →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COACHING DETAIL ============ -->
+<section class="detail-section" id="coaching">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">02 / COACHING</div>
+      <h2 class="section-title">英語コーチング</h2>
+      <p class="section-lead">専門のコーチが毎日伴走。週に数回受講する英会話とは異なり、あなたの毎日をマンツーマンでサポート。英語力ゼロでも、短期間で成長を体感できます。</p>
+    </div>
+    <div class="detail-grid">
+      <div class="detail-side reveal">
+        <h3>受講生が身につける単語の一例</h3>
+        <p>3ヶ月のプログラムで、これらのようなビジネスシーンでも使える語彙力をしっかり定着させます。</p>
+        <div class="vocab-row">
+          <span class="v">Ambiguous</span>
+          <span class="v">Decipher</span>
+          <span class="v">Chronological</span>
+          <span class="v">Famine</span>
+          <span class="v">Abundant</span>
+          <span class="v">Impair</span>
+          <span class="v">Negligent</span>
+          <span class="v">Prestigious</span>
+          <span class="v">Rigid</span>
+          <span class="v">Scrutinize</span>
+          <span class="v">Transition</span>
+          <span class="v">Widespread</span>
+        </div>
+      </div>
+      <div class="detail-main reveal">
+        <h4 style="font-size:15px;font-weight:700;color:var(--ink-mute);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;">プログラムの内容</h4>
+        <ul class="coach-list">
+          <li><span class="num">01</span><span>毎日文法をインプット・アウトプットを通して学習</span></li>
+          <li><span class="num">02</span><span>不明点はLINEで質問して、いつでも疑問を解消</span></li>
+          <li><span class="num">03</span><span>週2回のオンラインレッスンで学んだことをアウトプット</span></li>
+          <li><span class="num">04</span><span>毎日リスニング・発音チェック・英作文の課題</span></li>
+        </ul>
+
+        <h4 style="font-size:15px;font-weight:700;color:var(--ink-mute);text-transform:uppercase;letter-spacing:0.08em;margin-top:32px;margin-bottom:10px;">料金 ／ 入会金 ¥10,000・教材費 ¥3,840</h4>
+        <div class="pricing-rows two-col">
+          <div class="pricing-cell">
+            <div class="name">1ヶ月目</div>
+            <div class="amount">¥70,000</div>
+            <div class="amount-suffix">28日間</div>
+          </div>
+          <div class="pricing-cell popular">
+            <div class="name">2ヶ月目</div>
+            <div class="amount">¥80,000</div>
+            <div class="amount-suffix">35日間</div>
+          </div>
+        </div>
+        <p class="price-fineprint">※ 無料カウンセリング受付中。あなたに合うか、一緒に話しながら決めましょう。</p>
+        <div style="margin-top:28px;">
+          <a href="#trial" class="btn btn-primary">無料カウンセリングを予約する →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARISON ============ -->
+<section class="compare-section">
+  <div class="container-narrow">
+    <div class="section-head centered reveal">
+      <div class="section-eyebrow">COMPARE</div>
+      <h2 class="section-title">どちらが自分に合う？</h2>
+      <p class="section-lead">迷ったらこの表で比較を。無料カウンセリングでも一緒に選べます。</p>
+    </div>
+    <div class="compare-table reveal">
+      <div class="compare-row head">
+        <div class="compare-cell"><span class="head-tag">FOR</span><span class="head-name" style="visibility:hidden;">-</span></div>
+        <div class="compare-cell">
+          <span class="head-tag">EIKAIWA</span>
+          <span class="head-name">英会話レッスン</span>
+          <span class="head-small">マイペースに続ける</span>
+        </div>
+        <div class="compare-cell">
+          <span class="head-tag">COACHING</span>
+          <span class="head-name">英語コーチング</span>
+          <span class="head-small">短期集中で伸ばす</span>
+        </div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">期間</div>
+        <div class="compare-cell">月単位・継続自由</div>
+        <div class="compare-cell">2〜3ヶ月の集中</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">頻度</div>
+        <div class="compare-cell">月4〜8回 (30分)</div>
+        <div class="compare-cell">毎日サポート＋週2レッスン</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">サポート</div>
+        <div class="compare-cell">レッスン中のみ</div>
+        <div class="compare-cell">LINEで24時間対応</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">対象</div>
+        <div class="compare-cell">初心者〜中級者</div>
+        <div class="compare-cell">ゼロから〜中級者</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">月額目安</div>
+        <div class="compare-cell">¥15,000〜25,000</div>
+        <div class="compare-cell">¥70,000〜80,000</div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-cell label">こんな方に</div>
+        <div class="compare-cell">趣味として英語を続けたい方</div>
+        <div class="compare-cell">短期で結果を出したい方</div>
+      </div>
+      <div class="recommended-stripe">迷ったら → 無料カウンセリングでKumataと一緒に決めましょう</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testi-section">
+  <div class="container">
+    <div class="section-head centered reveal">
+      <div class="section-eyebrow">STUDENT VOICES</div>
+      <h2 class="section-title">生徒さんの声</h2>
+      <span class="placeholder-note">※ サンプルです。実際のお客様の声に差し替えてください。</span>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>TOEIC 400点台で挫折寸前だった私が、海外出張で困らないレベルに。発音から丁寧に教えてもらえて、自信がついた。</blockquote>
+        <div class="who">
+          <div class="avatar">M</div>
+          <div>
+            <div class="name">Mさん</div>
+            <div class="meta">30代・会社員</div>
+          </div>
+        </div>
+        <span class="course-pill">EIKAIWA · 月8回 · 8ヶ月</span>
+      </div>
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>コーチングのおかげで毎日の習慣ができました。LINEで質問できるのが本当に助かります。TOEIC 380 → 720！</blockquote>
+        <div class="who">
+          <div class="avatar">Y</div>
+          <div>
+            <div class="name">Yさん</div>
+            <div class="meta">40代・主婦</div>
+          </div>
+        </div>
+        <span class="course-pill">COACHING · 3ヶ月</span>
+      </div>
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>留学前の準備として受講。Kumataさんが本当に楽しい先生で、毎週のレッスンが楽しみで仕方なかったです。</blockquote>
+        <div class="who">
+          <div class="avatar">T</div>
+          <div>
+            <div class="name">Tさん</div>
+            <div class="meta">20代・学生</div>
+          </div>
+        </div>
+        <span class="course-pill">EIKAIWA · 月6回 · 6ヶ月</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-head centered reveal">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-title">よくある質問</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q"><span class="q-text">英会話は今更遅いですか？</span><span class="chev">+</span></div>
+        <div class="faq-a">全然遅くありません。私自身、TOEIC 400点台から始めて945点まで到達しました。「今から」がベストタイミングです。年齢に関係なく、楽しく続けることが一番大切。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="q-text">以前学んだ英語を全部忘れてしまいました...</span><span class="chev">+</span></div>
+        <div class="faq-a">大丈夫です。文法の基礎から丁寧に振り返ります。「全部忘れた」という方こそ、変なクセがなくスムーズに上達するケースが多いです。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="q-text">続けられるか不安です</span><span class="chev">+</span></div>
+        <div class="faq-a">続けられる仕組みを一緒に作ります。コーチングではLINEで毎日サポート、英会話では「楽しい！」と思える時間にすることで、自然と続けたくなるレッスンを心がけています。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="q-text">英会話レッスンとコーチング、どう違いますか？</span><span class="chev">+</span></div>
+        <div class="faq-a">英会話は「マイペースに続ける」スタイル、コーチングは「短期で集中的に伸ばす」スタイルです。目標期限がある方はコーチング、長く趣味として続けたい方は英会話がおすすめ。無料カウンセリングで一緒に決められます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="q-text">支払い方法・解約について</span><span class="chev">+</span></div>
+        <div class="faq-a">月額継続制で、退会は翌月以降可能です。再入会時には入会金が再度かかりますのでご注意ください。詳細は予約後に個別にご案内いたします。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL ============ -->
+<section class="social-section">
+  <div class="container">
+    <div class="social-grid">
+      <div class="social-side reveal">
+        <div class="section-eyebrow">DAILY CONTENT</div>
+        <h2>毎日、英語に触れる。</h2>
+        <p>Instagram と YouTube で、日常で使えるフレーズや勉強法を毎日発信中。レッスン前のウォームアップにもどうぞ。</p>
+        <div class="social-links">
+          <a class="social-link ig" href="#"><span class="ic">IG</span>Instagram</a>
+          <a class="social-link yt" href="#"><span class="ic">▶</span>YouTube</a>
+        </div>
+      </div>
+      <div class="preview-grid reveal">
+        <div class="tile real"></div>
+        <div class="tile real2"></div>
+        <div class="tile real3"></div>
+        <div class="tile">＋投稿</div>
+        <div class="tile">＋投稿</div>
+        <div class="tile">＋投稿</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-section">
+  <div class="container">
+    <img class="final-mascot" src="/mockup-assets/DancingKumata.webp" alt="">
+    <h2>一緒に、<em>英語で世界</em>を広げましょう。</h2>
+    <p class="sub">無料体験は30分・クレジットカード不要。気軽な気持ちでお申し込みください。</p>
+    <div class="final-cta-row">
+      <a href="#trial" class="btn btn-primary" style="padding:16px 28px;font-size:16px;">無料体験を予約する →</a>
+      <a href="#services" class="btn btn-secondary" style="padding:16px 28px;font-size:16px;">サービスをもう一度見る</a>
+    </div>
+    <p class="final-email">またはメールで：<a href="mailto:kumataenglish@gmail.com">kumataenglish@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <div class="brand" style="margin-bottom:16px;">
+          <div class="brand-mark">K</div>
+          <span class="brand-name">Kumata English</span>
+        </div>
+        <p>大阪生まれの英会話講師・英語コーチ。「英語であなたの人生は変わる」を、一緒に証明しましょう。</p>
+      </div>
+      <div class="footer-col">
+        <h4>サービス</h4>
+        <a href="#eikaiwa">英会話レッスン</a>
+        <a href="#coaching">英語コーチング</a>
+        <a href="#trial">無料体験を予約</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kumataについて</h4>
+        <a href="#about">プロフィール</a>
+        <a href="#faq">よくある質問</a>
+      </div>
+      <div class="footer-col">
+        <h4>SNS / 連絡</h4>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="mailto:kumataenglish@gmail.com">メール</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Kumata English. All rights reserved.</span>
+      <span>Built with care in Osaka</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mockup-chip">MOCKUP C · PREMIUM STUDIO</div>
+<div class="toast" id="toast"><span class="check-ic">✓</span>予約リクエストを受け付けました</div>
+
+<script>
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+document.querySelectorAll('.slot').forEach(slot => {
+  slot.addEventListener('click', () => {
+    document.querySelectorAll('.slot').forEach(s => s.classList.remove('active'));
+    slot.classList.add('active');
+  });
+});
+
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.querySelector('.faq-q').addEventListener('click', () => item.classList.toggle('open'));
+});
+
+document.getElementById('book-btn').addEventListener('click', () => {
+  const toast = document.getElementById('toast');
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 3600);
+});
+</script>
+
+</body>
+</html>

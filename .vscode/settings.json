@@ -18,5 +18,6 @@
     "titleBar.inactiveBackground": "#91823b99",
     "titleBar.inactiveForeground": "#e7e7e799"
   },
-  "peacock.color": "#91823b"
+  "peacock.color": "#91823b",
+  "cSpell.words": ["Kumata"]
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 import canadaPic from '../../Images/Other/Canada.jpg';
 import canadaWebP from '../../Images/webpDist/Canada.webp';
 import Image from '../UIElements/Image';

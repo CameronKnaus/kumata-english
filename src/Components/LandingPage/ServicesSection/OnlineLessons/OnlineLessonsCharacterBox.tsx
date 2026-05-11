@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/OnlineLessons/OnlineLessonsCharacterBox.module.css';
 import regularSadKumata from '../../../../Images/Characters/sadKumata.png';
 import webpSadKumata from '../../../../Images/webpDist/sadKumata.webp';
@@ -7,16 +6,26 @@ import webpHappyKumata from '../../../../Images/webpDist/happyKumata.webp';
 import Image from '../../../UIElements/Image';
 import { useInView } from 'react-intersection-observer';
 import { useSprings, animated, useTransition, config } from 'react-spring';
+import { useState } from 'react';
 
-export default function OnlineLessonsCharacterBox({ text }) {
+interface OnlineLessonsCharacterBoxProps {
+  text: {
+    doubtsList: string[];
+    mySolution: string;
+  };
+}
+
+export default function OnlineLessonsCharacterBox({
+  text,
+}: OnlineLessonsCharacterBoxProps) {
   const { ref, inView: doubtsInView } = useInView({ triggerOnce: true });
-  const [showHappyKumata, setShowHappyKumata] = React.useState(false);
+  const [showHappyKumata, setShowHappyKumata] = useState(false);
 
   // Set up animation properties for list of doubts
   const doubtsList = text.doubtsList;
   const springsList = useSprings(
     doubtsList.length,
-    doubtsList.map((doubtItem, index) => {
+    doubtsList.map((_, index) => {
       const springGroup = {
         config: { mass: 5, tension: 1000, friction: 600 },
         delay: 400 + index * 700,
@@ -29,6 +38,7 @@ export default function OnlineLessonsCharacterBox({ text }) {
 
       // Begin Kumata transition after the first spring rests
       if (index === 0) {
+        // @ts-expect-error It still works.. so I'm leaving it here :shrug:
         springGroup.onRest = () => setShowHappyKumata(true);
       }
 
@@ -49,7 +59,7 @@ export default function OnlineLessonsCharacterBox({ text }) {
     <div className={styles.container}>
       <div className={styles.textWrap}>
         <div ref={ref} id="doubts-container">
-          {doubtsList.map((doubt, index) => {
+          {doubtsList.map((_, index) => {
             return (
               <animated.div
                 key={`doubt-${index}`}

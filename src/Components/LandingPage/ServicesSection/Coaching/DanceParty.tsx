@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from '../../../UIElements/Image';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/Coaching/DanceParty.module.css';
 import webpBeaver from '../../../../Images/webpDist/DancingBeaver.webp';

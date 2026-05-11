@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../Styles/Components/LandingPage/AboutKumata.module.css';
 import LANDING_TEXT from '../../Content/LandingPage';
 import { useFormFactor } from '../../Util/FormFactorContext';

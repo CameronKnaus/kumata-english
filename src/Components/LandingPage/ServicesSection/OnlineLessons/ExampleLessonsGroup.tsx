@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/OnlineLessons/ExampleLessonsGroup.module.css';
 import LANDING_TEXT from '../../../../Content/LandingPage';
 import ExampleLessonCard from './ExampleLessonCard';

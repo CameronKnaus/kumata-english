@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/OnlineLessons/CharacterTag.module.css';
 import { Parallax } from 'react-scroll-parallax';
 import Image from '../../../UIElements/Image';

@@ -1,15 +1,21 @@
-import React, { FC, ReactNode } from 'react';
+import {
+  ReactNode,
+  useState,
+  createContext,
+  useContext,
+  useEffect,
+} from 'react';
 import { FORM_FACTOR_UPPER_BOUNDS } from '../Constants/FormFactorMapping';
 
-const isXSContext = React.createContext<boolean>(false);
-const isSMContext = React.createContext<boolean>(false);
-const isMDContext = React.createContext<boolean>(false);
+const isXSContext = createContext<boolean>(false);
+const isSMContext = createContext<boolean>(false);
+const isMDContext = createContext<boolean>(false);
 
 export function useFormFactor() {
   return {
-    XS: React.useContext(isXSContext),
-    SM: React.useContext(isSMContext),
-    MD: React.useContext(isMDContext),
+    XS: useContext(isXSContext),
+    SM: useContext(isSMContext),
+    MD: useContext(isMDContext),
   };
 }
 
@@ -21,13 +27,15 @@ interface FormFactorContextProps {
   children: ReactNode;
 }
 
-const FormFactorContext: FC<FormFactorContextProps> = ({ children }) => {
-  const [isXS, setIsXS] = React.useState(checkIfXS());
-  const [isSM, setIsSM] = React.useState(checkIfSM());
-  const [isMD, setIsMD] = React.useState(checkIfMD());
+export default function FormFactorContext({
+  children,
+}: FormFactorContextProps) {
+  const [isXS, setIsXS] = useState(checkIfXS());
+  const [isSM, setIsSM] = useState(checkIfSM());
+  const [isMD, setIsMD] = useState(checkIfMD());
 
   // Window resize event listener
-  React.useEffect(() => {
+  useEffect(() => {
     // Handler for resize event
     const resizeHandler = () => {
       setIsXS(checkIfXS());
@@ -47,6 +55,4 @@ const FormFactorContext: FC<FormFactorContextProps> = ({ children }) => {
       </isSMContext.Provider>
     </isXSContext.Provider>
   );
-};
-
-export default FormFactorContext;
+}

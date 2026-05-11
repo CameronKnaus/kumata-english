@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../Styles/Pages/LandingPage.module.css';
 import KumataCoin from '../Components/LandingPage/KumataCoin';
 import AboutKumata from '../Components/LandingPage/AboutKumata';

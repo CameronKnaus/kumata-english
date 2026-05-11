@@ -1,4 +1,4 @@
-import React from 'react';
+import { useLayoutEffect } from 'react';
 import { useParallaxController } from 'react-scroll-parallax';
 
 /*
@@ -9,9 +9,9 @@ import { useParallaxController } from 'react-scroll-parallax';
 export default function ParallaxCache() {
   const parallaxController = useParallaxController();
 
-  React.useLayoutEffect(() => {
+  useLayoutEffect(() => {
     const handler = () => {
-      setTimeout(() => parallaxController.update(), 600);
+      setTimeout(() => parallaxController?.update(), 600);
     };
     window.addEventListener('load', handler);
     return () => window.removeEventListener('load', handler);

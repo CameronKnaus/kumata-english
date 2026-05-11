@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../Styles/Components/AboutMe/AboutMe.module.css';
 import { useNavigate } from 'react-router-dom';
 import { PAGE_ROUTES } from '../../Constants/RouteConstants';
@@ -8,6 +7,7 @@ import webpKumata from '../../Images/webpDist/IntroKumata.webp';
 import regularKumata from '../../Images/Characters/IntroKumata.jpg';
 import Image from '../UIElements/Image';
 import { useFormFactor } from '../../Util/FormFactorContext';
+import { useEffect } from 'react';
 
 const HEADER_STYLES = [styles.headerOne, styles.headerTwo, styles.headerThree];
 
@@ -16,7 +16,7 @@ export default function AboutMe() {
   const ABOUT_ME = LANDING_TEXT.aboutMeSection;
   const isXS = useFormFactor().XS;
 
-  React.useEffect(() => {
+  useEffect(() => {
     // Lock the background page.  Only unlock it when this modal is closed.
     document.body.style.overflow = 'hidden';
 

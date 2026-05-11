@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/Coaching/ExampleCoachingGroup.module.css';
 
 export default function ExampleCoachingGroup({ header, contentList = [] }) {

@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../../../Styles/Components/LandingPage/ServicesSection/Coaching/ZeroEnglishOkay.module.css';
 import LANDING_TEXT from '../../../../Content/LandingPage';
 import { useInView } from 'react-intersection-observer';

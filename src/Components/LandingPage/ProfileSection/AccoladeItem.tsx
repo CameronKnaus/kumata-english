@@ -1,4 +1,3 @@
-import React from 'react';
 import { animated, useSpring, config } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 import { useFormFactor } from '../../../Util/FormFactorContext';

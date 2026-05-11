@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../../Styles/Components/LandingPage/BeeboGoSponsor/BeeboGoSponsor.module.css';
 import LANDING_TEXT from '../../../Content/LandingPage';
 import { BEEBOGO_HOME_PAGE } from '../../../Constants/SocialMediaConstants';

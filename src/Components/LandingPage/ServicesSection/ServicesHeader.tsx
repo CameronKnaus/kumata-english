@@ -1,16 +1,16 @@
-import React from 'react';
 import styles from '../../../Styles/Components/LandingPage/ServicesSection/ServicesHeader.module.css';
 import LANDING_TEXT from '../../../Content/LandingPage';
 import ServiceAnchorButton from './ServiceAnchorButton';
 import { useFormFactor } from '../../../Util/FormFactorContext';
 import scrollToTarget from '../../../Util/ScrollToTarget';
 import ServicesNavBar from './ServicesNavBar';
+import { useEffect, useRef, useState } from 'react';
 
 export default function ServicesHeader() {
   const TEXT = LANDING_TEXT.servicesHeader;
   const formFactor = useFormFactor();
-  const servicesGroupRef = React.useRef<HTMLDivElement>(null);
-  const [showNavBar, setShowNavBar] = React.useState(false);
+  const servicesGroupRef = useRef<HTMLDivElement>(null);
+  const [showNavBar, setShowNavBar] = useState(false);
 
   let titleClassName = 'large-title-text';
   formFactor.SM && (titleClassName = 'small-title-text');
@@ -28,7 +28,7 @@ export default function ServicesHeader() {
     setShowNavBar(groupOffsetY < pageOffset);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener('scroll', scrollHandler);
     return () => {
       window.removeEventListener('scroll', scrollHandler);

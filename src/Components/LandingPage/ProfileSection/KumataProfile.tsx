@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../../Styles/Components/LandingPage/ProfileSection/KumataProfile.module.css';
 import Image from '../../UIElements/Image';
 import webpImage from '../../../Images/webpDist/SnowKumata.webp';

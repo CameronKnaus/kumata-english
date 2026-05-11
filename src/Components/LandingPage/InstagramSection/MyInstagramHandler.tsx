@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../../Styles/Components/LandingPage/InstagramSection/MyInstagramHandler.module.css';
 import LANDING_TEXT from '../../../Content/LandingPage';
 import { instagramConstants } from '../../../Constants/SocialMediaConstants';
@@ -16,8 +15,8 @@ export default function MyInstagramHandler() {
   const TEXT = LANDING_TEXT.instagram;
   const isSM = useFormFactor().SM;
 
-  const imageGroup = React.useMemo(
-    () => (
+  function renderImageGroup() {
+    return (
       <div className={styles.instagramPostsSection}>
         <div className={styles.postsHolster}>
           <Image
@@ -40,16 +39,15 @@ export default function MyInstagramHandler() {
           />
         </div>
       </div>
-    ),
-    []
-  );
+    );
+  }
 
   return (
     <div className={`average-container ${styles.componentWrapper}`}>
       <div className={styles.sectionContainer}>
         <div className={styles.descriptionBanner}>{TEXT.title}</div>
         <div className={styles.flexContainer}>
-          {isSM && imageGroup}
+          {isSM && renderImageGroup()}
           <div className={styles.descriptionSection}>
             <h3 className={styles.header}>{TEXT.header}</h3>
             <p className={styles.instaDescription}>{TEXT.instaDescription}</p>
@@ -67,7 +65,7 @@ export default function MyInstagramHandler() {
               </button>
             </a>
           </div>
-          {!isSM && imageGroup}
+          {!isSM && renderImageGroup()}
         </div>
       </div>
     </div>
