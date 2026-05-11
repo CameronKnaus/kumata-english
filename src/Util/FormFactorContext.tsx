@@ -1,19 +1,10 @@
-import React from 'react';
+import React, { FC, ReactNode } from 'react';
 import { FORM_FACTOR_UPPER_BOUNDS } from '../Constants/FormFactorMapping';
 
-// Globally accessible context that contains the method that adds notifications to the queue
-const isXSContext = React.createContext(() => {
-  /* Noop */
-});
-const isSMContext = React.createContext(() => {
-  /* Noop */
-});
-const isMDContext = React.createContext(() => {
-  /* Noop */
-});
+const isXSContext = React.createContext<boolean>(false);
+const isSMContext = React.createContext<boolean>(false);
+const isMDContext = React.createContext<boolean>(false);
 
-// Custom hook to get an object containing all supported form factors and their boolean values
-// usage will look something like this ->   const isXS = useFormFactor().XS
 export function useFormFactor() {
   return {
     XS: React.useContext(isXSContext),
@@ -26,7 +17,11 @@ const checkIfXS = () => window.innerWidth < FORM_FACTOR_UPPER_BOUNDS.XS;
 const checkIfSM = () => window.innerWidth < FORM_FACTOR_UPPER_BOUNDS.SM;
 const checkIfMD = () => window.innerWidth < FORM_FACTOR_UPPER_BOUNDS.MD;
 
-export default function FormFactorContext({ children }) {
+interface FormFactorContextProps {
+  children: ReactNode;
+}
+
+const FormFactorContext: FC<FormFactorContextProps> = ({ children }) => {
   const [isXS, setIsXS] = React.useState(checkIfXS());
   const [isSM, setIsSM] = React.useState(checkIfSM());
   const [isMD, setIsMD] = React.useState(checkIfMD());
@@ -52,4 +47,6 @@ export default function FormFactorContext({ children }) {
       </isSMContext.Provider>
     </isXSContext.Provider>
   );
-}
+};
+
+export default FormFactorContext;

@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../../../Styles/Components/LandingPage/ServicesSection/ServiceAnchorButton.module.css';
 import SchoolIcon from '@mui/icons-material/School';
 import SportsIcon from '@mui/icons-material/Sports';
@@ -13,15 +12,23 @@ const iconMapper = {
   instagram: <InstagramIcon fontSize="inherit" />,
 };
 
+type IconType = keyof typeof iconMapper;
+
+type ServiceAnchorButtonOptions = {
+  backgroundColor?: string;
+  text: string;
+  icon: IconType;
+  slimMode?: boolean;
+  clickHandler: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+};
+
 export default function ServiceAnchorButton({
   backgroundColor,
   text,
   icon,
   slimMode = false,
-  clickHandler = () => {
-    /* NOOP */
-  },
-}) {
+  clickHandler,
+}: ServiceAnchorButtonOptions) {
   const isSM = useFormFactor().SM;
 
   const showText = !isSM || (!slimMode && isSM);
@@ -31,7 +38,9 @@ export default function ServiceAnchorButton({
     <button
       className={`${slimMode ? styles.slimButtonStyle : styles.buttonStyle}`}
       style={{ backgroundColor }}
-      onClick={clickHandler}
+      onClick={event => {
+        clickHandler(event);
+      }}
     >
       <div className={iconStyling}>{iconMapper[icon] || ''}</div>
       {showText && <div className={styles.text}>{text}</div>}

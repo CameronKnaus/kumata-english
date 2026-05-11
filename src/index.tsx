@@ -9,7 +9,7 @@ import FormFactorContext from './Util/FormFactorContext';
 import ParallaxCache from './Util/ParallaxCache';
 import AboutMe from './Components/AboutMe/AboutMe';
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ParallaxProvider>
       <FormFactorContext>

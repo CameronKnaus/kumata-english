@@ -1,22 +1,25 @@
-import React from 'react';
+import { FC } from 'react';
 
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types
 const mimeTypeMapper = {
   jpg: 'image/jpeg',
   png: 'image/png',
-};
+} as const;
 
-/**
- * ----------- Mandatory Params -----------
- * webpImage - import the webpVersion of your image and pass it to <Image /> under this prop
- * regularImage - import the regular version of your image and pass it to <Image /> under this prop
- * ----------- Optional Params -----------
- * optionalAlt - String: Alt text to display when Image can't load properly
- * classes - String: list of css classes to use on the Image
- */
+type MimeType = keyof typeof mimeTypeMapper;
+
+interface ImageProps {
+  webpImage: string;
+  regularImage: string;
+  imageBaseType: MimeType;
+  optionalAlt?: string;
+  classes?: string;
+  label?: string;
+  onLoad?: () => void;
+}
 
 // Will attempt to render the image as a webp if the browser supports webp type images.  Else it will try the default image
-export default function Image({
+const Image: FC<ImageProps> = ({
   webpImage,
   regularImage,
   imageBaseType,
@@ -26,9 +29,8 @@ export default function Image({
   onLoad = () => {
     /* NOOP*/
   },
-}) {
-  const fileType = imageBaseType.toLowerCase();
-  const mimeType = mimeTypeMapper[fileType];
+}) => {
+  const mimeType = mimeTypeMapper[imageBaseType];
 
   if (!mimeType) {
     return null;
@@ -48,4 +50,6 @@ export default function Image({
       </picture>
     </div>
   );
-}
+};
+
+export default Image;

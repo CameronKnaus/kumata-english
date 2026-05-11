@@ -9,7 +9,7 @@ import ServicesNavBar from './ServicesNavBar';
 export default function ServicesHeader() {
   const TEXT = LANDING_TEXT.servicesHeader;
   const formFactor = useFormFactor();
-  const servicesGroupRef = React.useRef();
+  const servicesGroupRef = React.useRef<HTMLDivElement>(null);
   const [showNavBar, setShowNavBar] = React.useState(false);
 
   let titleClassName = 'large-title-text';
@@ -21,7 +21,8 @@ export default function ServicesHeader() {
 
   const scrollHandler = () => {
     const additionalOffset = formFactor.XS ? 300 : 250;
-    const groupOffsetY = servicesGroupRef.current.offsetTop + additionalOffset;
+    const groupOffsetY =
+      servicesGroupRef.current?.offsetTop ?? 0 + additionalOffset;
     const pageOffset = window.pageYOffset;
 
     setShowNavBar(groupOffsetY < pageOffset);

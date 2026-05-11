@@ -16,12 +16,6 @@ import MyInstagramHandler from '../Components/LandingPage/InstagramSection/MyIns
 import { Outlet } from 'react-router-dom';
 // import BeeboGoSponsor from '../Components/LandingPage/BeeboGoSponsorSection/BeeboGoSponsor';
 
-// Lower end of the page can be lazily loaded
-// const CanadaImage = React.lazy(() => import('../Components/LandingPage/CanadaImage'));
-// const OnlineLessons = React.lazy(() => import('../Components/LandingPage/ServicesSection/OnlineLessons/OnlineLessons'));
-// const ServicesHeader = React.lazy(() => import('../Components/LandingPage/ServicesSection/ServicesHeader'));
-// const OnlineLessonsInDetail = React.lazy(() => import('../Components/LandingPage/ServicesSection/OnlineLessons/OnlineLessonsInDetail'));
-
 const NAV_BAR_OFFSET = 40;
 export default function LandingPage() {
   const isSM = useFormFactor().SM;
@@ -57,8 +51,8 @@ export default function LandingPage() {
         <MyInstagramHandler />
       </section>
       {/* <section id='sponsor-section'>
-                <BeeboGoSponsor />
-            </section> */}
+          <BeeboGoSponsor />
+      </section> */}
       <section id="canada-image-section">
         <CanadaImage />
       </section>
