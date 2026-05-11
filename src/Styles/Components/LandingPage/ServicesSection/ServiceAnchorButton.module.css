@@ -1,67 +1,67 @@
 .buttonStyle {
-    padding: 15px 25px;
-    color: var(--theme-gray-scale-15);
-    display: flex;
-    justify-content: space-between;
-    border-radius: 4px;
-    transition: filter 0.3s ease;
+  padding: 15px 25px;
+  color: var(--theme-gray-scale-15);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  transition: filter 0.3s ease;
 }
 
 .buttonStyle:hover {
-    filter: brightness(90%);
-    cursor: pointer;
+  filter: brightness(90%);
+  cursor: pointer;
 }
 
 .slimButtonStyle {
-    color: var(--theme-gray-scale-15);
-    display: flex;
-    transition: filter 0.3s ease;
-    padding: 5px 25px;
-    border-radius: 0;
-    flex-grow: 1;
-    margin: 0;
+  color: var(--theme-gray-scale-15);
+  display: flex;
+  transition: filter 0.3s ease;
+  padding: 5px 25px;
+  border-radius: 0;
+  flex-grow: 1;
+  margin: 0;
 }
 
 .slimButtonStyle:hover {
-    filter: brightness(90%);
-    cursor: pointer;
+  filter: brightness(90%);
+  cursor: pointer;
 }
 
 .icon {
-    margin-top: -2px;
-    padding-right: 5px;
-    font-size: 1.8rem;
+  margin-top: -2px;
+  padding-right: 5px;
+  font-size: 1.8rem;
 }
 
 .slimIcons {
-    margin: 0 auto;
-    font-size: 1.8rem;
-    padding-right: 5px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  padding-right: 5px;
 }
 
 .text {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 767px) {
-    .buttonStyle {
-        flex: 0 1 40%;
-        margin: 5px;
-    }
+  .buttonStyle {
+    flex: 0 1 40%;
+    margin: 5px;
+  }
 }
 
 @media (max-width: 555px) {
-    .buttonStyle {
-        padding: 10px 25px 0 25px;
-        flex: 0 1 100%;
-    }
+  .buttonStyle {
+    padding: 10px 25px 0 25px;
+    flex: 0 1 100%;
+  }
 
-    .icon {
-        margin-top: -6px;
-        font-size: 1.7rem;
-    }
+  .icon {
+    margin-top: -6px;
+    font-size: 1.7rem;
+  }
 
-    .text {
-        font-size: 1rem;
-    }
+  .text {
+    font-size: 1rem;
+  }
 }

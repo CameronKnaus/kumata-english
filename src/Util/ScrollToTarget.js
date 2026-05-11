@@ -11,21 +11,21 @@
 */
 
 export default function scrollToTarget(params, event) {
-    event && event.preventDefault && event.preventDefault();
+  event && event.preventDefault && event.preventDefault();
 
-    if(!params.targetId) {
-        return;
-    }
+  if (!params.targetId) {
+    return;
+  }
 
-    const scroll = function() {
-        const questionModule = document.getElementById(params.targetId);
+  const scroll = function () {
+    const questionModule = document.getElementById(params.targetId);
 
-        const scrollBehavior = {
-            behavior: 'smooth',
-            block: params.scrollTargetTo || 'start'
-        };
-        questionModule && questionModule.scrollIntoView(scrollBehavior);
+    const scrollBehavior = {
+      behavior: 'smooth',
+      block: params.scrollTargetTo || 'start',
     };
+    questionModule && questionModule.scrollIntoView(scrollBehavior);
+  };
 
-    params.delay ? setTimeout(scroll, params.delay) : scroll();
+  params.delay ? setTimeout(scroll, params.delay) : scroll();
 }

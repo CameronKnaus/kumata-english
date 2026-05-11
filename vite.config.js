@@ -1,13 +1,13 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import svgr from "vite-plugin-svgr";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
   plugins: [
     react(),
     svgr({
-      include: "**/*.svg",
-      svgrOptions: { exportType: "named", namedExport: "ReactComponent" },
+      include: '**/*.svg',
+      svgrOptions: { exportType: 'named', namedExport: 'ReactComponent' },
     }),
   ],
   server: {
@@ -15,18 +15,6 @@ export default defineConfig({
     open: true,
   },
   build: {
-    outDir: "build",
-  },
-  esbuild: {
-    loader: "jsx",
-    include: /src\/.*\.js$/,
-    exclude: [],
-  },
-  optimizeDeps: {
-    esbuildOptions: {
-      loader: {
-        ".js": "jsx",
-      },
-    },
+    outDir: 'build',
   },
 });

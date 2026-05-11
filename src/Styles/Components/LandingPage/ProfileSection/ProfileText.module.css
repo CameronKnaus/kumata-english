@@ -1,49 +1,55 @@
 .profileTitle {
-    background: -webkit-linear-gradient(60deg, var(--theme-green), var(--theme-navy), #8FD714);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(
+    60deg,
+    var(--theme-green),
+    var(--theme-navy),
+    #8fd714
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .accoladeList {
-    list-style: none;
-    margin: 0;
-    padding: 0 0 0 10px;
-    font-weight: 600;
-    color: var(--theme-navy);
-    text-shadow: 1px 1px 0 var(--theme-gray-scale-13);
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 10px;
+  font-weight: 600;
+  color: var(--theme-navy);
+  text-shadow: 1px 1px 0 var(--theme-gray-scale-13);
 }
 
 .accoladeList li {
-    padding: 40px 0 60px 1rem;
-    text-indent: -0.7rem;
+  padding: 40px 0 60px 1rem;
+  text-indent: -0.7rem;
 }
 
 .accoladeList li:nth-child(1)::before {
-    content: '👨🏻‍🏫 '
+  content: '👨🏻‍🏫 ';
 }
 
 .accoladeList li:nth-child(2)::before {
-    content: '📚 '
+  content: '📚 ';
 }
 
 .accoladeList li:nth-child(3)::before {
-    content: '📱 '
+  content: '📱 ';
 }
 
 .accoladeList li:nth-child(4)::before {
-    content: '✅ '
+  content: '✅ ';
 }
 
 .accoladeList li:nth-child(5)::before {
-    content: '🇨🇦 '
+  content: '🇨🇦 ';
 }
 
 @media (max-width: 768px) {
-    .profileTitle, .accoladeList {
-        text-align: center;
-    }
+  .profileTitle,
+  .accoladeList {
+    text-align: center;
+  }
 
-    .accoladeList li {
-        padding: 30px 25px;
-    }
+  .accoladeList li {
+    padding: 30px 25px;
+  }
 }

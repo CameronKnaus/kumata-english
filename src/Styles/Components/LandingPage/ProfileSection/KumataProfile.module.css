@@ -1,26 +1,26 @@
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .smallContainer {
-    min-width: var(--min-supported-width);
+  min-width: var(--min-supported-width);
 }
 
 .snowKumataImage {
-    width: 100%;
-    border-radius: 6px;
-    box-shadow: 2px 2px 10px 0 var(--theme-gray-scale-13)
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px 0 var(--theme-gray-scale-13);
 }
 
 .smallSnowKumataImage {
-    width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
-    .profileTextGroup {
-        padding: 15px 5%;
-    }
+  .profileTextGroup {
+    padding: 15px 5%;
+  }
 }

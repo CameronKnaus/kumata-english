@@ -1,81 +1,89 @@
 .detailsFlexContainer {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .detailsBlock {
-    flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .targetList {
-    list-style-type: '✓';
-    color: var(--theme-navy-dark);
-    padding-left: 25px;
-    padding-right: 15px;
-    font-size: var(--small-header-text-font-size);
-    line-height: var(--small-header-text-line-height);
+  list-style-type: '✓';
+  color: var(--theme-navy-dark);
+  padding-left: 25px;
+  padding-right: 15px;
+  font-size: var(--small-header-text-font-size);
+  line-height: var(--small-header-text-line-height);
 }
 
 .targetList li {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
 .detailsList {
-    padding-left: 25px;
-    padding-right: 15px;
+  padding-left: 25px;
+  padding-right: 15px;
 }
 
 .mainDetail {
-    color: var(--theme-navy-dark);
-    font-size: var(--small-header-text-font-size);
-    line-height: var(--small-header-text-line-height);
+  color: var(--theme-navy-dark);
+  font-size: var(--small-header-text-font-size);
+  line-height: var(--small-header-text-line-height);
 }
 
 .secondaryDetail {
-    color: var(--theme-navy);
-    list-style: none;
-    font-size: var(--body-text-font-size);
-    line-height: var(--body-text-line-height);
-    padding-bottom: 15px;
+  color: var(--theme-navy);
+  list-style: none;
+  font-size: var(--body-text-font-size);
+  line-height: var(--body-text-line-height);
+  padding-bottom: 15px;
 }
 
 .lessonDetailsTitle {
-    color: var(--theme-navy);
-    background: -webkit-linear-gradient(80deg, var(--theme-navy), var(--theme-green));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  color: var(--theme-navy);
+  background: -webkit-linear-gradient(
+    80deg,
+    var(--theme-navy),
+    var(--theme-green)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .targetAudienceTitle {
-    color: var(--theme-navy);
-    background: -webkit-linear-gradient(260deg, var(--theme-navy) 40%, var(--theme-green));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  color: var(--theme-navy);
+  background: -webkit-linear-gradient(
+    260deg,
+    var(--theme-navy) 40%,
+    var(--theme-green)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 767px) {
-    .title {
-        font-size: var(--large-header-text-font-size);
-        line-height: var(--large-header-text-line-height);
-    }
-    .detailsBlock {
-        flex-basis: 100%;
-    }
+  .title {
+    font-size: var(--large-header-text-font-size);
+    line-height: var(--large-header-text-line-height);
+  }
+  .detailsBlock {
+    flex-basis: 100%;
+  }
 }
 
 @media (max-width: 555px) {
-    .mainDetail {
-        font-size: var(--enlarged-body-text-font-size);
-        line-height: var(--enlarged-body-text-line-height);
-    }
+  .mainDetail {
+    font-size: var(--enlarged-body-text-font-size);
+    line-height: var(--enlarged-body-text-line-height);
+  }
 
-    .secondaryDetail {
-        font-size: var(--reduced-body-text-font-size);
-        line-height: var(--reduced-body-text-line-height);
-    }
+  .secondaryDetail {
+    font-size: var(--reduced-body-text-font-size);
+    line-height: var(--reduced-body-text-line-height);
+  }
 
-    .targetList {
-        font-size: var(--enlarged-body-text-font-size);
-        line-height: var(--enlarged-body-text-line-height);
-    }
+  .targetList {
+    font-size: var(--enlarged-body-text-font-size);
+    line-height: var(--enlarged-body-text-line-height);
+  }
 }

@@ -1,16 +1,20 @@
 .header {
-    color: var(--theme-navy);
-    background: -webkit-linear-gradient(260deg, var(--theme-navy) 40%, var(--theme-green));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    font-weight: bold;
+  color: var(--theme-navy);
+  background: -webkit-linear-gradient(
+    260deg,
+    var(--theme-navy) 40%,
+    var(--theme-green)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: bold;
 }
 
 .flexContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    max-width: 1000px;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: auto;
 }
