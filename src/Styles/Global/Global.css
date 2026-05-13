@@ -2,3 +2,7 @@
 @import '../Global/Layout.css';
 @import '../Global/Typography.css';
 @import '../Global/ColorScheme.css';
+
+* {
+  box-sizing: border-box;
+}

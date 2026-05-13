@@ -7,7 +7,7 @@ export default function CoachingHeader() {
 
   return (
     <div className={styles.flexContainer}>
-      <CoachingCharacterBox />(
+      <CoachingCharacterBox />
       <div className={styles.contentBox}>
         <div className={styles.textWrapper}>
           <h3 className={styles.titleText}>{TEXT.coaching}</h3>
@@ -17,7 +17,6 @@ export default function CoachingHeader() {
           <p className={styles.descriptionText}>{TEXT.serviceDescription}</p>
         </div>
       </div>
-      )
     </div>
   );
 }
